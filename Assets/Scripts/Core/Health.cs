@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Core
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float healtPoint = 100f;
+        [SerializeField] float healthPoints = 100f;
 
         bool isDead = false;
 
@@ -15,8 +17,8 @@ namespace RPG.Core
         public void TakeDamage(float damage)
         {
 
-            healtPoint = Mathf.Max(healtPoint - damage, 0);
-            if (healtPoint == 0)
+            healthPoints = Mathf.Max(healthPoints - damage, 0);
+            if (healthPoints <= 0)
             {
                 Die();
             }
@@ -31,5 +33,21 @@ namespace RPG.Core
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
+
+        public JToken CaptureState()
+        {
+            return JToken.FromObject(healthPoints);
+        }
+
+        public void RestoreState(JToken state)
+        {
+            healthPoints = state.ToObject<float>();
+            if (healthPoints <= 0)
+            {
+                Die();
+            }
+
+        }
+
     }
 }

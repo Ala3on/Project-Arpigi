@@ -75,6 +75,10 @@ PrefabInstance:
       propertyPath: healtPoint
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 6605442488510806701, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: healthPoints
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
 --- !u!1 &4542918969564431629 stripped
@@ -112,7 +116,6 @@ MonoBehaviour:
   suspicionTime: 5
   patrolPath: {fileID: 0}
   patrolSpeedFraction: 0.2
-  chaseSpeedFraction: 0.9
   waypointTolerance: 1
   waypointDwellTime: 3
 --- !u!114 &3543145669486314662

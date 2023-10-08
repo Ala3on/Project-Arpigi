@@ -1,19 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using RPG.Core;
+using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour, IAction
+    public class Mover : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] float maxSpeed = 6;
         NavMeshAgent navMeshAgent;
         Health health;
 
-        void Start()
+        void Awake()
         {
             health = GetComponent<Health>();
             navMeshAgent = GetComponent<NavMeshAgent>();
@@ -51,6 +53,30 @@ namespace RPG.Movement
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
             GetComponent<Animator>().SetFloat("forwardSpeed", speed);
+        }
+
+        struct MoverSaveData
+        {
+            public JToken position;
+            public JToken rotation;
+        }
+
+        public JToken CaptureState()
+        {
+            MoverSaveData data = new MoverSaveData
+            {
+                position = transform.position.ToToken(),
+                rotation = transform.eulerAngles.ToToken()
+            };
+            return JToken.FromObject(data);
+        }
+
+        public void RestoreState(JToken state)
+        {
+            MoverSaveData data = state.ToObject<MoverSaveData>();
+            navMeshAgent.Warp(data.position.ToVector3());
+            transform.eulerAngles = data.rotation.ToVector3();
+            GetComponent<ActionScheduler>().CancelCurrentAction();
         }
 
 

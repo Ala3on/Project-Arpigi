@@ -363,6 +363,9 @@
     <Reference Include="ReportGeneratorMerged">
         <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+        <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
