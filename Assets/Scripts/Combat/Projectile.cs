@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using RPG.Core;
+using RPG.Attributes;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -10,6 +7,10 @@ namespace RPG.Combat
     {
         [SerializeField] float speed = 1;
         [SerializeField] bool isHoming = false;
+        [SerializeField] GameObject hitEffect = null;
+        [SerializeField] float maxLifeTIme = 10;
+        [SerializeField] float lifeAfterImpact = 2;
+        [SerializeField] GameObject[] destroyOnHit = null;
 
 
         Health target = null;
@@ -46,6 +47,8 @@ namespace RPG.Combat
         {
             target = _target;
             damage = _damage;
+
+            Destroy(gameObject, maxLifeTIme);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -53,7 +56,17 @@ namespace RPG.Combat
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead) return;
             target.TakeDamage(damage);
-            Destroy(gameObject);
+            speed = 0;
+            if (hitEffect != null)
+            {
+                Instantiate(hitEffect, GetAimLocation(), transform.rotation);
+            }
+
+            foreach (GameObject toDestroy in destroyOnHit)
+            {
+                Destroy(toDestroy);
+            }
+            Destroy(gameObject, lifeAfterImpact);
         }
     }
 }

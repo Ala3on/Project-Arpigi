@@ -1,19 +1,23 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
+using RPG.Attributes;
 using RPG.Core;
 using RPG.Movement;
+using RPG.Saving;
 using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction
+    public class Fighter : MonoBehaviour, IAction, ISaveable
     {
         [SerializeField] float timeBetweenAttacks = 2f;
 
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
         [SerializeField] Weapon defaultWeapon = null;
+        // [SerializeField] string defaultWeaponName = "Unarmed";
 
         Health target;
         Mover mover;
@@ -22,7 +26,14 @@ namespace RPG.Combat
 
         private void Start()
         {
-            EquipWeapon(defaultWeapon);
+            print(Application.persistentDataPath);
+
+            // Weapon weapon = Resources.Load<Weapon>(defaultWeaponName);
+            if (currentWeapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+
             timeSinceLastAttack = timeBetweenAttacks;
             mover = GetComponent<Mover>();
         }
@@ -74,7 +85,6 @@ namespace RPG.Combat
         {
             GetComponent<ActionScheduler>().StartAction(this);
             target = combatTarget.GetComponent<Health>();
-            print("Prendi questo, bastardo!" + target.name);
         }
 
         public void Cancel()
@@ -105,6 +115,11 @@ namespace RPG.Combat
             Hit();
         }
 
+        public Health GetTargetHealthComponent()
+        {
+            return target;
+        }
+
         public void EquipWeapon(Weapon weapon)
         {
             currentWeapon = weapon;
@@ -113,6 +128,22 @@ namespace RPG.Combat
             weapon.SpawnWeapon(rightHandTransform, leftHandTransform, animator);
 
 
+        }
+
+        public JToken CaptureState()
+        {
+            return JToken.FromObject(currentWeapon.name);
+        }
+
+        public void RestoreState(JToken state)
+        {
+            string weaponName = state.ToObject<string>();
+            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            if (weapon != null)
+            {
+
+                EquipWeapon(weapon);
+            }
         }
     }
 }
