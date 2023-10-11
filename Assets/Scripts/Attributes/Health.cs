@@ -16,26 +16,39 @@ namespace RPG.Attributes
 
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetHealth();
+            healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
         }
 
         public bool IsDead { get { return isDead; } }
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
-
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints <= 0)
             {
+                AwardExperience(instigator);
                 Die();
             }
 
         }
 
+
+
         public float GetPercentageHealth()
         {
-            return 100 * healthPoints / GetComponent<BaseStats>().GetHealth();
+            return 100 * healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health);
         }
+
+        public float GetCurrentHp()
+        {
+            return healthPoints;
+        }
+        public float GetMaxHp()
+        {
+            return GetComponent<BaseStats>().GetStat(Stat.Health);
+        }
+
+
 
         private void Die()
         {
@@ -45,6 +58,15 @@ namespace RPG.Attributes
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
         }
+
+        private void AwardExperience(GameObject instigator)
+        {
+            Experience experience = instigator.GetComponent<Experience>();
+            if (experience == null) return;
+            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
+        }
+
+        // SAVE DATA
 
         public JToken CaptureState()
         {

@@ -41,6 +41,12 @@ namespace RPG.Saving
             RestoreState(LoadJsonFromFile(saveFile));
         }
 
+        public void Delete(string saveFile)
+        {
+            File.Delete(GetPathFromSaveFile(saveFile));
+        }
+
+
         private string GetPathFromSaveFile(string saveFile)
         {
             return Path.Combine(Application.persistentDataPath, saveFile + ".sav");

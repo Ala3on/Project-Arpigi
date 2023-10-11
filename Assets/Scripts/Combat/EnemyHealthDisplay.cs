@@ -25,7 +25,9 @@ namespace RPG.Combat
             }
             else
             {
-                GetComponent<TextMeshProUGUI>().SetText("{0:0}%", health.GetPercentageHealth());
+                //GetComponent<TextMeshProUGUI>().SetText("{0:0}%", health.GetPercentageHealth());
+                GetComponent<TextMeshProUGUI>().SetText(health.GetCurrentHp() + "/" + health.GetMaxHp());
+
             }
         }
     }

@@ -36,6 +36,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Attributes\HealthDisplay.cs" />
+     <Compile Include="Assets\Scripts\Stats\Stats.cs" />
      <Compile Include="Assets\Scripts\Saving\SaveableEntity.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\Fader.cs" />
      <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
@@ -46,23 +48,24 @@
      <Compile Include="Assets\Scripts\SceneManagement\Portal.cs" />
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
+     <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
      <Compile Include="Assets\Scripts\Movement\Mover.cs" />
      <Compile Include="Assets\Scripts\Combat\Projectile.cs" />
+     <Compile Include="Assets\Scripts\Stats\Progression.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicTrigger.cs" />
      <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
      <Compile Include="Assets\Scripts\Control\AIController.cs" />
+     <Compile Include="Assets\Scripts\Attributes\ExpDisplay.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicControlRemover.cs" />
      <Compile Include="Assets\Scripts\Attributes\Health.cs" />
+     <Compile Include="Assets\Scripts\Stats\BaseStats.cs" />
      <Compile Include="Assets\Scripts\Saving\ISaveable.cs" />
+     <Compile Include="Assets\Scripts\Attributes\Experience.cs" />
      <Compile Include="Assets\Scripts\Core\PersistentObjectSpawner.cs" />
      <Compile Include="Assets\Scripts\Combat\WeaponPickup.cs" />
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
-     <Compile Include="Assets\Scripts\Stats\BaseStats.cs" />
-     <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
-     <Compile Include="Assets\Scripts\Stats\Progression.cs" />
-     <Compile Include="Assets\Scripts\Attributes\HealthDisplay.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

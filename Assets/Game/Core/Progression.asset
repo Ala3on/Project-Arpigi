@@ -13,27 +13,60 @@ MonoBehaviour:
   m_Name: Progression
   m_EditorClassIdentifier: 
   charachterClasses:
-  - value: 0
-    characterClass: 0
-    health:
-    - 50
-    - 100
-    - 200
-    - 400
-    - 700
-  - value: 0
-    characterClass: 1
-    health:
-    - 40
-    - 80
-    - 160
-    - 250
-    - 400
-  - value: 0
-    characterClass: 3
-    health:
-    - 20
-  - value: 0
-    characterClass: 2
-    health:
-    - 15
+  - characterClass: 0
+    stats:
+    - stat: 0
+      levels:
+      - 50
+      - 100
+      - 200
+      - 400
+      - 700
+  - characterClass: 1
+    stats:
+    - stat: 0
+      levels:
+      - 30
+      - 60
+      - 100
+      - 200
+      - 400
+    - stat: 1
+      levels:
+      - 20
+      - 40
+      - 80
+      - 100
+      - 200
+  - characterClass: 2
+    stats:
+    - stat: 0
+      levels:
+      - 20
+      - 40
+      - 80
+      - 160
+      - 230
+    - stat: 1
+      levels:
+      - 30
+      - 60
+      - 120
+      - 180
+      - 240
+  - characterClass: 3
+    stats:
+    - stat: 0
+      levels:
+      - 30
+      - 70
+      - 150
+      - 200
+      - 350
+    - stat: 1
+      levels:
+      - 30
+      - 50
+      - 80
+      - 120
+      - 150

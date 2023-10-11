@@ -15,7 +15,7 @@ namespace RPG.Combat
 
         Health target = null;
         float damage = 0;
-
+        GameObject instigator = null;
         private void Start()
         {
             transform.LookAt(GetAimLocation());
@@ -43,11 +43,11 @@ namespace RPG.Combat
             return target.transform.position + Vector3.up * targetCapsule.height / 2;
         }
 
-        public void SetTarget(Health _target, float _damage)
+        public void SetTarget(Health _target, GameObject _instigator, float _damage)
         {
             target = _target;
             damage = _damage;
-
+            instigator = _instigator;
             Destroy(gameObject, maxLifeTIme);
         }
 
@@ -55,7 +55,7 @@ namespace RPG.Combat
         {
             if (other.GetComponent<Health>() != target) return;
             if (target.IsDead) return;
-            target.TakeDamage(damage);
+            target.TakeDamage(instigator, damage);
             speed = 0;
             if (hitEffect != null)
             {

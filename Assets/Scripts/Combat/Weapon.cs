@@ -10,12 +10,14 @@ namespace RPG.Combat
     {
         [SerializeField] AnimatorOverrideController weaponAnimatorOverrideController = null;
         [SerializeField] GameObject weaponPrefab = null;
+        [SerializeField] GameObject shieldPrefab = null;
         [SerializeField] float range = 2f;
         [SerializeField] float damage = 10f;
         [SerializeField] bool isRightHanded = true;
         [SerializeField] Projectile projectile = null;
 
         const string weaponName = "Weapon";
+        const string shieldName = "Shield";
 
         public void SpawnWeapon(Transform rightHand, Transform leftHand, Animator animator)
         {
@@ -25,6 +27,11 @@ namespace RPG.Combat
                 Transform handTransform = isRightHanded ? rightHand : leftHand;
                 GameObject weapon = Instantiate(weaponPrefab, handTransform);
                 weapon.name = weaponName;
+            }
+            if (shieldPrefab != null)
+            {
+                GameObject shield = Instantiate(shieldPrefab, leftHand);
+                shield.name = shieldName;
             }
             var overrideController = animator.runtimeAnimatorController as AnimatorOverrideController;
 
@@ -43,23 +50,38 @@ namespace RPG.Combat
         private void DestroyOldWeapon(Transform rightHand, Transform leftHand)
         {
             Transform oldWeapon = rightHand.Find(weaponName);
+            Transform oldShield = rightHand.Find(shieldName);
+
+            // Check Right Hand
             if (oldWeapon == null)
             {
                 oldWeapon = leftHand.Find(weaponName);
             }
-            if (oldWeapon == null)
+            if (oldWeapon != null)
             {
-                return;
+                oldWeapon.name = "Destroyed";
+                Destroy(oldWeapon.gameObject);
+
             }
-            oldWeapon.name = "Destroyed";
-            Destroy(oldWeapon.gameObject);
+            // Check Left
+            if (oldShield == null)
+            {
+                oldShield = leftHand.Find(shieldName);
+            }
+            if (oldShield != null)
+            {
+                oldShield.name = "ShieldDestroyed";
+                Destroy(oldShield.gameObject);
+
+            }
+
         }
 
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target)
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator)
         {
             Transform handTransform = isRightHanded ? rightHand : leftHand;
             Projectile projectileInstance = Instantiate(projectile, handTransform.position, Quaternion.identity);
-            projectileInstance.SetTarget(target, damage);
+            projectileInstance.SetTarget(target, instigator, damage);
         }
 
         public float GetWeaponDamage()

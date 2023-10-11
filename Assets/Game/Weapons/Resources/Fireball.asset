@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 71a53f863038ec04eb12b45cd2a3e004, type: 2}
-  weaponPrefab: {fileID: 0}
+  weaponPrefab: {fileID: 8520187177085962400, guid: 0d680f7af27d2df4c8b65c6c1975a3c9, type: 3}
+  shieldPrefab: {fileID: 0}
   range: 20
   damage: 15
   isRightHanded: 0
