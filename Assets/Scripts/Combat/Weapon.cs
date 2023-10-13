@@ -13,6 +13,8 @@ namespace RPG.Combat
         [SerializeField] GameObject shieldPrefab = null;
         [SerializeField] float range = 2f;
         [SerializeField] float damage = 10f;
+        [SerializeField] float percentageDamageBonus = 0;
+
         [SerializeField] bool isRightHanded = true;
         [SerializeField] Projectile projectile = null;
 
@@ -77,16 +79,21 @@ namespace RPG.Combat
 
         }
 
-        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator)
+        public void LaunchProjectile(Transform rightHand, Transform leftHand, Health target, GameObject instigator, float calculatedDamage)
         {
             Transform handTransform = isRightHanded ? rightHand : leftHand;
             Projectile projectileInstance = Instantiate(projectile, handTransform.position, Quaternion.identity);
-            projectileInstance.SetTarget(target, instigator, damage);
+            projectileInstance.SetTarget(target, instigator, calculatedDamage);
         }
 
         public float GetWeaponDamage()
         {
             return damage;
+        }
+
+        public float GetPercentageDamageBonus()
+        {
+            return percentageDamageBonus;
         }
 
         public float GetWeaponRange()

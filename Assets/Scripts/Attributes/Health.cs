@@ -1,30 +1,70 @@
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Utils;
 using Newtonsoft.Json.Linq;
 using RPG.Core;
 using RPG.Saving;
 using RPG.Stats;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RPG.Attributes
 {
     public class Health : MonoBehaviour, ISaveable
     {
-        [SerializeField] float healthPoints = 100f;
+        [SerializeField] TakeDamageEvent takeDamage;
+        //[SerializeField] RestoreHealthEvent restoreHealth;
+
+        // workaround per usare un valore dinamico passato all'evento su Invoke()
+        [System.Serializable]
+        public class TakeDamageEvent : UnityEvent<float>
+        {
+        }
+
+        /* [System.Serializable]
+        public class RestoreHealthEvent : UnityEvent<float>
+        {
+        } */
 
         bool isDead = false;
+        BaseStats baseStats;
+
+        LazyValue<float> healthPoints;
+
+
+        private void Awake()
+        {
+            baseStats = GetComponent<BaseStats>();
+            healthPoints = new LazyValue<float>(GetInitialHealth);
+        }
+
+        private float GetInitialHealth()
+        {
+            return baseStats.GetStat(Stat.Health);
+        }
 
         private void Start()
         {
-            healthPoints = GetComponent<BaseStats>().GetStat(Stat.Health);
+            healthPoints.ForceInit();
+
+        }
+
+        private void OnEnable()
+        {
+            baseStats.onLevelUp += RestoreHp;
+        }
+        private void OnDisable()
+        {
+            baseStats.onLevelUp -= RestoreHp;
         }
 
         public bool IsDead { get { return isDead; } }
 
         public void TakeDamage(GameObject instigator, float damage)
         {
-            healthPoints = Mathf.Max(healthPoints - damage, 0);
-            if (healthPoints <= 0)
+            healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
+            takeDamage.Invoke(damage);
+            if (healthPoints.value <= 0)
             {
                 AwardExperience(instigator);
                 Die();
@@ -32,22 +72,29 @@ namespace RPG.Attributes
 
         }
 
-
+        public float GetMaxHp()
+        {
+            return baseStats.GetStat(Stat.Health);
+        }
 
         public float GetPercentageHealth()
         {
-            return 100 * healthPoints / GetComponent<BaseStats>().GetStat(Stat.Health);
+            return 100 * healthPoints.value / GetMaxHp();
+        }
+        public float GetHpFraction()
+        {
+            return healthPoints.value / GetMaxHp();
         }
 
         public float GetCurrentHp()
         {
-            return healthPoints;
-        }
-        public float GetMaxHp()
-        {
-            return GetComponent<BaseStats>().GetStat(Stat.Health);
+            return healthPoints.value;
         }
 
+        private void RestoreHp()
+        {
+            healthPoints.value = GetMaxHp();
+        }
 
 
         private void Die()
@@ -63,20 +110,21 @@ namespace RPG.Attributes
         {
             Experience experience = instigator.GetComponent<Experience>();
             if (experience == null) return;
-            experience.GainExperience(GetComponent<BaseStats>().GetStat(Stat.ExperienceReward));
+            experience.GainExperience(baseStats.GetStat(Stat.ExperienceReward));
         }
 
         // SAVE DATA
 
         public JToken CaptureState()
         {
-            return JToken.FromObject(healthPoints);
+            return JToken.FromObject(healthPoints.value);
         }
 
         public void RestoreState(JToken state)
         {
-            healthPoints = state.ToObject<float>();
-            if (healthPoints <= 0)
+            healthPoints.value = state.ToObject<float>();
+
+            if (healthPoints.value <= 0)
             {
                 Die();
             }

@@ -9,6 +9,8 @@ namespace RPG.Attributes
     public class HealthDisplay : MonoBehaviour
     {
         Health health;
+        [SerializeField] RectTransform foreground = null;
+        [SerializeField] TextMeshProUGUI healthText = null;
 
         private void Awake()
         {
@@ -19,7 +21,10 @@ namespace RPG.Attributes
         {
             // GetComponent<TextMeshProUGUI>().SetText("{0:0}%", health.GetPercentageHealth());
             //GetComponent<TextMeshProUGUI>().SetText(GetComponent<TextMeshProUGUI>().text + " " + health.GetCurrentHp());
-            GetComponent<TextMeshProUGUI>().SetText(health.GetCurrentHp() + "/" + health.GetMaxHp());
+            healthText.SetText("{0:0}/{1:0}", health.GetCurrentHp(), health.GetMaxHp());
+            float fraction = health.GetHpFraction();
+
+            foreground.localScale = new Vector3(fraction, 1, 1);
 
         }
 

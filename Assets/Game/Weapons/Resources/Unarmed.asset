@@ -14,5 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponAnimatorOverrideController: {fileID: 0}
   weaponPrefab: {fileID: 0}
+  shieldPrefab: {fileID: 0}
   range: 2
-  damage: 5
+  damage: 3
+  percentageDamageBonus: 0
+  isRightHanded: 1
+  projectile: {fileID: 0}

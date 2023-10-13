@@ -17,5 +17,6 @@ MonoBehaviour:
   shieldPrefab: {fileID: 0}
   range: 2
   damage: 10
+  percentageDamageBonus: 40
   isRightHanded: 1
   projectile: {fileID: 0}
