@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 18b127311278add48bd1a190e96fcbf3, type: 2}
-  weaponPrefab: {fileID: 8622101627126983588, guid: 27df9ba70eaf20b4c8ac2ce0a070b64c, type: 3}
-  shieldPrefab: {fileID: 512632842096060226, guid: 5bf5124ea955c854c8012a7d6e880dc9, type: 3}
+  weaponPrefab: {fileID: 5933815167799815557, guid: 27df9ba70eaf20b4c8ac2ce0a070b64c, type: 3}
+  shieldPrefab: {fileID: -7383318772397265134, guid: 5bf5124ea955c854c8012a7d6e880dc9, type: 3}
   range: 2
   damage: 10
   percentageDamageBonus: 0

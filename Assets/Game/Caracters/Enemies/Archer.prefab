@@ -9,7 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8695029879113040087, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
       propertyPath: chaseDistance
-      value: 15
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 198167070270149137, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4542918969564431629, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
       propertyPath: m_Name
@@ -19,6 +23,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 01b2546c969fe814794af634cb4534f4, type: 2}
+    - target: {fileID: 5564436766766800964, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5904416654465446798, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
       propertyPath: m_RootOrder
       value: 0

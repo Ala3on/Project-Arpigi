@@ -18,28 +18,29 @@ namespace RPG.Combat
 
         [SerializeField] Transform rightHandTransform = null;
         [SerializeField] Transform leftHandTransform = null;
-        [SerializeField] Weapon defaultWeapon = null;
+        [SerializeField] WeaponConfig defaultWeapon = null;
         // [SerializeField] string defaultWeaponName = "Unarmed";
 
         Health target;
         Mover mover;
         float timeSinceLastAttack = 0;
-        LazyValue<Weapon> currentWeapon;
+        LazyValue<WeaponConfig> currentWeaponConfig;
+        Weapon currentWeapon;
 
         private void Awake()
         {
-            currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
+            currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
         }
 
-        private Weapon SetupDefaultWeapon()
+        private WeaponConfig SetupDefaultWeapon()
         {
-            AttachWeapon(defaultWeapon);
+            currentWeapon = AttachWeapon(defaultWeapon);
             return defaultWeapon;
         }
 
         private void Start()
         {
-            currentWeapon.ForceInit();
+            currentWeaponConfig.ForceInit();
 
             timeSinceLastAttack = timeBetweenAttacks;
             mover = GetComponent<Mover>();
@@ -77,7 +78,7 @@ namespace RPG.Combat
 
         private bool GetIsInRange()
         {
-            return Vector3.Distance(transform.position, target.transform.position) < currentWeapon.value.GetWeaponRange();
+            return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.value.GetWeaponRange();
         }
 
         public bool CanAttackTaget(GameObject combatTarget)
@@ -106,7 +107,7 @@ namespace RPG.Combat
         {
             if (stat == Stat.Attack)
             {
-                yield return currentWeapon.value.GetWeaponDamage();
+                yield return currentWeaponConfig.value.GetWeaponDamage();
             }
         }
 
@@ -114,7 +115,7 @@ namespace RPG.Combat
         {
             if (stat == Stat.Attack)
             {
-                yield return currentWeapon.value.GetPercentageDamageBonus();
+                yield return currentWeaponConfig.value.GetPercentageDamageBonus();
             }
         }
 
@@ -124,14 +125,18 @@ namespace RPG.Combat
             if (target == null) return;
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Attack);
-            print("Damage: " + damage);
 
-            if (currentWeapon.value.HasProjectile())
+
+            if (currentWeaponConfig.value.HasProjectile())
             {
-                currentWeapon.value.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
+                currentWeaponConfig.value.LaunchProjectile(rightHandTransform, leftHandTransform, target, gameObject, damage);
             }
             else
             {
+                if (currentWeapon != null)
+                {
+                    currentWeapon.OnHit();
+                }
                 target.TakeDamage(gameObject, damage);
             }
         }
@@ -146,29 +151,29 @@ namespace RPG.Combat
             return target;
         }
 
-        public void EquipWeapon(Weapon weapon)
+        public void EquipWeapon(WeaponConfig weapon)
         {
-            currentWeapon.value = weapon;
+            currentWeaponConfig.value = weapon;
             if (weapon == null) return;
-            AttachWeapon(weapon);
+            currentWeapon = AttachWeapon(weapon);
 
         }
 
-        private void AttachWeapon(Weapon weapon)
+        private Weapon AttachWeapon(WeaponConfig weapon)
         {
             Animator animator = GetComponent<Animator>();
-            weapon.SpawnWeapon(rightHandTransform, leftHandTransform, animator);
+            return weapon.SpawnWeapon(rightHandTransform, leftHandTransform, animator);
         }
 
         public JToken CaptureState()
         {
-            return JToken.FromObject(currentWeapon.value.name);
+            return JToken.FromObject(currentWeaponConfig.value.name);
         }
 
         public void RestoreState(JToken state)
         {
             string weaponName = state.ToObject<string>();
-            Weapon weapon = Resources.Load<Weapon>(weaponName);
+            WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
             if (weapon != null)
             {
 

@@ -13,7 +13,7 @@ namespace RPG.Attributes
     public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] TakeDamageEvent takeDamage;
-        //[SerializeField] RestoreHealthEvent restoreHealth;
+        [SerializeField] DeathEvent onDie;
 
         // workaround per usare un valore dinamico passato all'evento su Invoke()
         [System.Serializable]
@@ -21,10 +21,10 @@ namespace RPG.Attributes
         {
         }
 
-        /* [System.Serializable]
-        public class RestoreHealthEvent : UnityEvent<float>
+        [System.Serializable]
+        public class DeathEvent : UnityEvent<float>
         {
-        } */
+        }
 
         bool isDead = false;
         BaseStats baseStats;
@@ -63,11 +63,15 @@ namespace RPG.Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
-            takeDamage.Invoke(damage);
             if (healthPoints.value <= 0)
             {
+                onDie.Invoke(damage);
                 AwardExperience(instigator);
                 Die();
+            }
+            else
+            {
+                takeDamage.Invoke(damage);
             }
 
         }
@@ -89,6 +93,11 @@ namespace RPG.Attributes
         public float GetCurrentHp()
         {
             return healthPoints.value;
+        }
+
+        public void Heal(float healtToRestore)
+        {
+            healthPoints.value = Mathf.Min(healthPoints.value + healtToRestore, GetMaxHp());
         }
 
         private void RestoreHp()
