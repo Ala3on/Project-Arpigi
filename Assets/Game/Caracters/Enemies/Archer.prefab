@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: chaseDistance
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -8695029879113040087, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
+      propertyPath: shoutDistance
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 198167070270149137, guid: 734bc911c0dae8847890cf68f06250b0, type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
