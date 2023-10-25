@@ -23,7 +23,7 @@ namespace RPG.Control
         [Range(0, 1)]
         [SerializeField] float waypointTolerance = 1f;
         [SerializeField] float waypointDwellTime = 3f;
-        [SerializeField] float shoutDistance = 12f;
+        [SerializeField] float shoutDistance = 8f;
 
         Fighter fighter;
         GameObject player;
@@ -162,6 +162,8 @@ namespace RPG.Control
         {
             Gizmos.color = Color.blue;
             Gizmos.DrawWireSphere(transform.position, chaseDistance);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, shoutDistance);
         }
     }
 

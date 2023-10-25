@@ -13,10 +13,10 @@ namespace RPG.Stats
         [SerializeField] Progression progression = null;
         [SerializeField] GameObject levelUpEffect = null;
         [SerializeField] bool shouldUseModifier = false;
+        [SerializeField] int currentLevel = 1;
 
         public event Action onLevelUp;
 
-        int currentLevel = 1;
 
         public float GetStat(Stat stat)
         {

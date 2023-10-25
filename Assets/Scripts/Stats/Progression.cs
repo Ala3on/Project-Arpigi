@@ -13,6 +13,10 @@ namespace RPG.Stats
 
         public float GetStat(Stat stat, CharacterClass characterClass, int level)
         {
+            if (level <= 0)
+            {
+                return 0;
+            }
             BuildLookup();
 
             float[] levels = lookupTable[characterClass][stat];
