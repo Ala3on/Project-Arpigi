@@ -68,13 +68,13 @@ MonoBehaviour:
       - 80
       - 160
       - 230
-    - stat: 1
+    - stat: 2
       levels:
+      - 0
       - 30
-      - 60
-      - 120
-      - 180
-      - 240
+      - 70
+      - 150
+      - 320
     - stat: 3
       levels:
       - 2

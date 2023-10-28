@@ -58,6 +58,7 @@ namespace RPG.SceneManagement
 
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
+            UpdateCompanion(otherPortal);
 
             savingWrapper.Save();
 
@@ -75,6 +76,15 @@ namespace RPG.SceneManagement
             player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
             player.transform.rotation = otherPortal.spawnPoint.rotation;
         }
+
+        private void UpdateCompanion(Portal otherPortal)
+        {
+            GameObject companion = FindObjectOfType<AICompanion>().gameObject;
+
+            companion.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position - otherPortal.spawnPoint.forward * 2f);
+            companion.transform.rotation = otherPortal.spawnPoint.rotation;
+        }
+
         private void EnablePlayerController(bool value)
         {
             GameObject player = GameObject.FindWithTag("Player");

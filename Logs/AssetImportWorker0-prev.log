@@ -15,7 +15,7 @@ C:/Users/Francesco/Project/unity/RPG - demo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53917
+49844
 Successfully changed project path to: C:/Users/Francesco/Project/unity/RPG - demo
 C:/Users/Francesco/Project/unity/RPG - demo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Francesco/Project/unity/RPG - demo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [13136] Host "[IP] 172.30.80.1 [Port] 0 [Flags] 2 [Guid] 1431238124 [EditorId] 1431238124 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [18644] Host "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 2071454019 [EditorId] 2071454019 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [13136] Host "[IP] 172.30.80.1 [Port] 0 [Flags] 2 [Guid] 1431238124 [EditorId] 1431238124 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [18644] Host "[IP] 192.168.1.67 [Port] 0 [Flags] 2 [Guid] 2071454019 [EditorId] 2071454019 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 66.28 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 70.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007357 seconds.
+Registered in 0.008185 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 66.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 65.37 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.476 seconds
+- Completed reload, in  0.695 seconds
 Domain Reload Profiling:
-	ReloadAssembly (476ms)
-		BeginReloadAssembly (63ms)
+	ReloadAssembly (696ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (335ms)
-			LoadAssemblies (61ms)
+		EndReloadAssembly (454ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (73ms)
+			SetupTypeCache (185ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (19ms)
-			SetupLoadedEditorAssemblies (205ms)
+			SetupLoadedEditorAssemblies (212ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (67ms)
+				RefreshPlugins (65ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (99ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				ProcessInitializeOnLoadAttributes (100ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005417 seconds.
+Registered in 0.006606 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.780 seconds
+- Completed reload, in  0.891 seconds
 Domain Reload Profiling:
-	ReloadAssembly (781ms)
-		BeginReloadAssembly (87ms)
+	ReloadAssembly (892ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (615ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (699ms)
+			LoadAssemblies (83ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (185ms)
+			SetupTypeCache (244ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (309ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (327ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (70ms)
-				ProcessInitializeOnLoadAttributes (213ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (232ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.51 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3334 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 40 unused Assets / (185.9 KB). Loaded Objects now: 3827.
-Memory consumption went from 209.2 MB to 209.0 MB.
-Total: 2.035200 ms (FindLiveObjects: 0.192400 ms CreateObjectMapping: 0.091400 ms MarkObjects: 1.643300 ms  DeleteObjects: 0.107000 ms)
+Memory consumption went from 209.3 MB to 209.1 MB.
+Total: 2.582500 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.114300 ms MarkObjects: 2.124500 ms  DeleteObjects: 0.115900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,80 +166,326 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 285040.146372 seconds.
-  path: Assets/Game/Props/Street Lamp.prefab
-  artifactKey: Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Street Lamp.prefab using Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e0803878c737b93f49d2869bc2cc5c') in 0.082549 seconds 
+  Time since last request: 79791.279846 seconds.
+  path: Assets/Game/Core/Progression.asset
+  artifactKey: Guid(466f92c9fca3d194dbb7bec875b3e4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Core/Progression.asset using Guid(466f92c9fca3d194dbb7bec875b3e4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37b50f58a6089c25a542bb59e75bde3d') in 0.041468 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.142959 seconds.
-  path: Assets/Game/Props/Street Lamp.prefab
-  artifactKey: Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Street Lamp.prefab using Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a3cf861fe2831a80c1529582f4dcc5') in 0.010627 seconds 
+  Time since last request: 303.791314 seconds.
+  path: Assets/Game/Weapons/Resources/Hoe.asset
+  artifactKey: Guid(4c1773264282dc941a3a1e3dfc8847a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapons/Resources/Hoe.asset using Guid(4c1773264282dc941a3a1e3dfc8847a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eaa6982f13219e18ec55b1cf72a0c65') in 0.007120 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.180507 seconds.
-  path: Assets/Game/Props/Street Lamp.prefab
-  artifactKey: Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Street Lamp.prefab using Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90263a566c8edb8acc968d944372cc49') in 0.011881 seconds 
+  Time since last request: 137.731951 seconds.
+  path: Assets/Game/Caracters/Character.prefab
+  artifactKey: Guid(e8e51e87874d5f2438bcf2c7b766893a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Caracters/Character.prefab using Guid(e8e51e87874d5f2438bcf2c7b766893a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c185f3f8e98139d522ed778e94c90d') in 0.054813 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.656820 seconds.
-  path: Assets/Game/Props/Street Lamp.prefab
-  artifactKey: Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Street Lamp.prefab using Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ecd32780376a85e67b600d8ab104cd') in 0.010922 seconds 
+  Time since last request: 1.146182 seconds.
+  path: Assets/Game/Caracters/Enemies/Archer.prefab
+  artifactKey: Guid(90797e9f99f7bb146847ef66756b283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Caracters/Enemies/Archer.prefab using Guid(90797e9f99f7bb146847ef66756b283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda531bf706eceae2be76f60ef0a5d46') in 0.202454 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.479871 seconds.
-  path: Assets/Game/Props/Street Lamp.prefab
-  artifactKey: Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Street Lamp.prefab using Guid(770f73686259e7645969e5c350b06441) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '170e25127a442a124cc4557082607958') in 0.008193 seconds 
+  Time since last request: 351.635499 seconds.
+  path: Assets/Game/Weapons/Hoe
+  artifactKey: Guid(9ce80a12f8e43cf4191853760fd1548c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapons/Hoe using Guid(9ce80a12f8e43cf4191853760fd1548c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd5a5d9c7158d86db60f97ef35f66ee') in 0.002181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.206420 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Hoe/Materials and Model/Dirty Old Hoe.png
+  artifactKey: Guid(40af5c0a14a886e45a144a2a9dce3977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Hoe/Materials and Model/Dirty Old Hoe.png using Guid(40af5c0a14a886e45a144a2a9dce3977) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7799ebee7694b031ef9e8a2d5abc489') in 0.074150 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005365 seconds.
+Registered in 0.006051 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.839 seconds
+- Completed reload, in  0.849 seconds
 Domain Reload Profiling:
-	ReloadAssembly (840ms)
+	ReloadAssembly (849ms)
 		BeginReloadAssembly (119ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		EndReloadAssembly (646ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (651ms)
+			LoadAssemblies (77ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (196ms)
+			SetupTypeCache (206ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (314ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3309 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (154.2 KB). Loaded Objects now: 3855.
+Memory consumption went from 224.0 MB to 223.8 MB.
+Total: 2.534100 ms (FindLiveObjects: 0.260800 ms CreateObjectMapping: 0.120300 ms MarkObjects: 2.032700 ms  DeleteObjects: 0.119500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 196.073596 seconds.
+  path: Assets/Game/Weapons/Hoe/Hoe.prefab
+  artifactKey: Guid(d26cd7ec5f750fe42b4cbed342719d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapons/Hoe/Hoe.prefab using Guid(d26cd7ec5f750fe42b4cbed342719d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '967293d53a939a3443d9b3ed4445aa0d') in 0.062728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 51.387268 seconds.
+  path: Assets/Game/Weapons/Hoe/Hoe.prefab
+  artifactKey: Guid(d26cd7ec5f750fe42b4cbed342719d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapons/Hoe/Hoe.prefab using Guid(d26cd7ec5f750fe42b4cbed342719d60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84debc5b47b003beed4aca1c207b22ea') in 0.007886 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005498 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.822 seconds
+Domain Reload Profiling:
+	ReloadAssembly (823ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (634ms)
+			LoadAssemblies (77ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (191ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
 			SetupLoadedEditorAssemblies (312ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (224ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3309 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3870.
+Memory consumption went from 223.9 MB to 223.7 MB.
+Total: 2.206400 ms (FindLiveObjects: 0.221400 ms CreateObjectMapping: 0.110200 ms MarkObjects: 1.739600 ms  DeleteObjects: 0.134200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007083 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.814 seconds
+Domain Reload Profiling:
+	ReloadAssembly (815ms)
+		BeginReloadAssembly (120ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (620ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (185ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (59ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3309 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.8 KB). Loaded Objects now: 3885.
+Memory consumption went from 224.0 MB to 223.9 MB.
+Total: 2.521500 ms (FindLiveObjects: 0.251900 ms CreateObjectMapping: 0.176900 ms MarkObjects: 1.908800 ms  DeleteObjects: 0.183100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005668 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.821 seconds
+Domain Reload Profiling:
+	ReloadAssembly (822ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (634ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (312ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
 				ProcessInitializeOnLoadAttributes (221ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.29 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3309 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3900.
+Memory consumption went from 224.0 MB to 223.9 MB.
+Total: 2.307500 ms (FindLiveObjects: 0.247200 ms CreateObjectMapping: 0.134700 ms MarkObjects: 1.814600 ms  DeleteObjects: 0.110000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006411 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Domain Reload Profiling:
+	ReloadAssembly (836ms)
+		BeginReloadAssembly (118ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (635ms)
+			LoadAssemblies (85ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (316ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (225ms)
 				ProcessInitializeOnLoadMethodAttributes (15ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.63 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3309 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (152.7 KB). Loaded Objects now: 3850.
-Memory consumption went from 211.1 MB to 211.0 MB.
-Total: 2.079900 ms (FindLiveObjects: 0.230300 ms CreateObjectMapping: 0.090100 ms MarkObjects: 1.656600 ms  DeleteObjects: 0.102100 ms)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3915.
+Memory consumption went from 223.9 MB to 223.8 MB.
+Total: 2.737000 ms (FindLiveObjects: 0.213600 ms CreateObjectMapping: 0.107200 ms MarkObjects: 2.311400 ms  DeleteObjects: 0.103800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -251,169 +497,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 288.945169 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2dc5ebb8f73ce059a4b5beb73ff0398') in 0.074178 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.957363 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59588c9149c300b0fe13480fcd8586d7') in 0.018912 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.717570 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e93003dc403037a983aebadcf3ff4ac0') in 0.015437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.636466 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8170c2b627601daa3701549c9cb5bdd') in 0.015558 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.006925 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219a5497f9568710a1f9a0e3f6038a76') in 0.016605 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.660703 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb53d1d3fa88f3d362bc35bc4e703a1') in 0.016338 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.049892 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d88fc274c1d87eb9be404c8c7949367') in 0.016379 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.917563 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86d10becd0b105ed9079e5ffb3245f81') in 0.020969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.844890 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32fe1fd8605cee60f2c039450fdf026') in 0.015287 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.863677 seconds.
-  path: Assets/Game/Props/Bonfire.prefab
-  artifactKey: Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Props/Bonfire.prefab using Guid(88523b82a6ab5b141b41dc6e748f15c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bc1e90febd208b4b2532ba6e0a381b4') in 0.016532 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 127.263981 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_001.prefab
-  artifactKey: Guid(08183bb2c5c52cc4c9e4c46a92b604f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_001.prefab using Guid(08183bb2c5c52cc4c9e4c46a92b604f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66be461911bba736ddedc176b9bd003c') in 0.015414 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_004_AmbienceFX.prefab
-  artifactKey: Guid(194b466341f67e04596e227afc37c90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_004_AmbienceFX.prefab using Guid(194b466341f67e04596e227afc37c90b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba62eb578b03bcb3c7e8cfda4f6491ab') in 0.023587 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_003_AmbienceFX.prefab
-  artifactKey: Guid(e216627273e5b3e488e02c547ae35664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_003_AmbienceFX.prefab using Guid(e216627273e5b3e488e02c547ae35664) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '002cff06996d0ae72ef627edf0034a74') in 0.022280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_irontorch_002.prefab
-  artifactKey: Guid(416e0e1b577ff304d8f4d0c354c0dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_irontorch_002.prefab using Guid(416e0e1b577ff304d8f4d0c354c0dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '453b3935b0159dabfc9007d01649cefb') in 0.022437 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_trashcan_001.prefab
-  artifactKey: Guid(96c186cabf0e2f94ba02d320a5b7acea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_trashcan_001.prefab using Guid(96c186cabf0e2f94ba02d320a5b7acea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39146093c556d69f554bfabd88781d16') in 0.013466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_002.prefab
-  artifactKey: Guid(ea841482b40ca984ba1d9813f5bae5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_002.prefab using Guid(ea841482b40ca984ba1d9813f5bae5d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2aef5151cb6c2de0fb230e4cb097573') in 0.014115 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_001_AmbienceFX.prefab
-  artifactKey: Guid(25c73e10777eb9b4d9a653b3c61d4f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_001_AmbienceFX.prefab using Guid(25c73e10777eb9b4d9a653b3c61d4f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08ecfe2c05f53ac955ee0ef1556bc61d') in 0.023708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_props_candle_01.prefab
-  artifactKey: Guid(8bd8d6e75647b574bb81b82c3d1177f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_props_candle_01.prefab using Guid(8bd8d6e75647b574bb81b82c3d1177f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ac390622b24c8dbdbc9a509be966d96') in 0.015728 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_props_candle_01_AmbienceFX.prefab
-  artifactKey: Guid(fcdfd52848ea62e419f1dc9237325b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_props_candle_01_AmbienceFX.prefab using Guid(fcdfd52848ea62e419f1dc9237325b1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1fc1283753bde730e2defafdb40d63a') in 0.022365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_001.prefab
-  artifactKey: Guid(1d84de93a8b64684da6efb66f64e7623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_001.prefab using Guid(1d84de93a8b64684da6efb66f64e7623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e14ab98f64f4953d469275bb32a5c70') in 0.018986 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_002_AmbienceFX.prefab
-  artifactKey: Guid(e5b22139feccdc04f9a225d2a41c0a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_002_AmbienceFX.prefab using Guid(e5b22139feccdc04f9a225d2a41c0a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '259460483a2a864bb8242a4a243c183b') in 0.024789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_irontorch_002_AmbienceFX.prefab
-  artifactKey: Guid(2071281887c6f514388923e0ee4bae72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_irontorch_002_AmbienceFX.prefab using Guid(2071281887c6f514388923e0ee4bae72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc876f985f1175ef73cadc944b500974') in 0.023080 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_001_AmbienceFX.prefab
-  artifactKey: Guid(9a8a745f10692fd4b82039a679ffcaf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_001_AmbienceFX.prefab using Guid(9a8a745f10692fd4b82039a679ffcaf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd59189415027a336838498790de3b61f') in 0.022049 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_002_AmbienceFX.prefab
-  artifactKey: Guid(e9e2e298b79622140b4b0ef76ef5463b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_002_AmbienceFX.prefab using Guid(e9e2e298b79622140b4b0ef76ef5463b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3eb5c64bb6a8ed2807cb7995804de0') in 0.022457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_002_AmbienceFX.prefab
-  artifactKey: Guid(2c0a332f670b7bb49959bfe016210ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_planks_002_AmbienceFX.prefab using Guid(2c0a332f670b7bb49959bfe016210ada) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46d39be20edcd2cfab56ad9123ac2c02') in 0.025752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_005_AmbienceFX.prefab
-  artifactKey: Guid(b46cb4402bf10164fa134e16a26fb167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_campfire_005_AmbienceFX.prefab using Guid(b46cb4402bf10164fa134e16a26fb167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9efa5cba28e7de9981a17e8c8de5b3c4') in 0.026089 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_003_AmbienceFX.prefab
-  artifactKey: Guid(78a5713850a5cdb4786fa0fed25cdbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/Piloto Studio/Campfire And Torches Pack/Prefabs/SM_torch_003_AmbienceFX.prefab using Guid(78a5713850a5cdb4786fa0fed25cdbd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ed2cabd23230da00f187034e19be17') in 0.024608 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

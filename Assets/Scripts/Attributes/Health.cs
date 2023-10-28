@@ -117,10 +117,20 @@ namespace RPG.Attributes
 
         private void AwardExperience(GameObject instigator)
         {
+            Experience[] experiences = FindObjectsOfType<Experience>();
+            foreach (Experience experience in experiences)
+            {
+                experience.GainExperience(baseStats.GetStat(Stat.ExperienceReward));
+            }
+
+        }
+
+        /* private void AwardExperience(GameObject instigator)
+        {
             Experience experience = instigator.GetComponent<Experience>();
             if (experience == null) return;
             experience.GainExperience(baseStats.GetStat(Stat.ExperienceReward));
-        }
+        } */
 
         // SAVE DATA
 

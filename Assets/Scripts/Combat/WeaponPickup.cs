@@ -11,6 +11,7 @@ namespace RPG.Combat
     public class WeaponPickup : MonoBehaviour, IRaycastable
     {
         [SerializeField] WeaponConfig weapon = null;
+        [SerializeField] WeaponConfig companionWeapon = null;
         [SerializeField] float healtToRestore = 0;
         [SerializeField] float respawnTime = 10;
 
@@ -31,6 +32,11 @@ namespace RPG.Combat
             if (healtToRestore > 0)
             {
                 subject.GetComponent<Health>().Heal(healtToRestore);
+            }
+            if (companionWeapon != null)
+            {
+                AICompanion companion = FindObjectOfType<AICompanion>();
+                companion.GetComponent<Fighter>().EquipWeapon(companionWeapon);
             }
             StartCoroutine(HideForSeconds(respawnTime));
         }
