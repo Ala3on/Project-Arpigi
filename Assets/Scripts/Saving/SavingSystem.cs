@@ -36,10 +36,16 @@ namespace RPG.Saving
             SaveFileAsJSon(saveFile, state);
         }
 
-        public void Load(string saveFile)
+        public IEnumerator Load(string saveFile)
         {
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            yield return SceneManager.LoadSceneAsync(buildIndex);
             RestoreState(LoadJsonFromFile(saveFile));
         }
+        /*  public void Load(string saveFile)
+         {
+             RestoreState(LoadJsonFromFile(saveFile));
+         } */
 
         public void Delete(string saveFile)
         {
