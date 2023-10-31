@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7023af588f67dc45a7a151f639c86d6, type: 3}
   m_Name: Hoe
   m_EditorClassIdentifier: 
+  itemID: 2a181d48-7744-4eed-9859-4af8cd226e51
+  displayName: Hoe
+  description: 
+  icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
+  pickup: {fileID: 974431437160126952, guid: aa89c3c829948df45bb003d59a1a397b, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 07e799bc410541649a349135477def69, type: 2}
   weaponPrefab: {fileID: 8880960824410708891, guid: d26cd7ec5f750fe42b4cbed342719d60, type: 3}
   shieldPrefab: {fileID: 0}

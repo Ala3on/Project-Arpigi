@@ -15,7 +15,7 @@ C:/Users/Francesco/Project/unity/RPG - demo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62997
+51389
 Successfully changed project path to: C:/Users/Francesco/Project/unity/RPG - demo
 C:/Users/Francesco/Project/unity/RPG - demo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Francesco/Project/unity/RPG - demo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [19604] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 2966951661 [EditorId] 2966951661 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [28624] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 190932921 [EditorId] 190932921 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [19604] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 2966951661 [EditorId] 2966951661 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [28624] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 190932921 [EditorId] 190932921 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 73.74 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 84.38 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56600
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56216
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008780 seconds.
+Registered in 0.007987 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 77.99 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 79.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.517 seconds
+- Completed reload, in  0.567 seconds
 Domain Reload Profiling:
-	ReloadAssembly (518ms)
-		BeginReloadAssembly (69ms)
+	ReloadAssembly (568ms)
+		BeginReloadAssembly (76ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (366ms)
-			LoadAssemblies (67ms)
+		EndReloadAssembly (404ms)
+			LoadAssemblies (73ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (74ms)
+			SetupTypeCache (90ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (21ms)
-			SetupLoadedEditorAssemblies (231ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (244ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
+				RefreshPlugins (80ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (36ms)
+				ProcessInitializeOnLoadAttributes (116ms)
+				ProcessInitializeOnLoadMethodAttributes (37ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005908 seconds.
+Registered in 0.006698 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.817 seconds
+- Completed reload, in  0.967 seconds
 Domain Reload Profiling:
-	ReloadAssembly (818ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (967ms)
+		BeginReloadAssembly (105ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (638ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (754ms)
+			LoadAssemblies (81ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (201ms)
+			SetupTypeCache (239ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (307ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (364ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (216ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (256ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3335 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (185.7 KB). Loaded Objects now: 3828.
-Memory consumption went from 209.5 MB to 209.3 MB.
-Total: 2.239700 ms (FindLiveObjects: 0.220100 ms CreateObjectMapping: 0.115100 ms MarkObjects: 1.782000 ms  DeleteObjects: 0.121800 ms)
+Unloading 3362 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (185.6 KB). Loaded Objects now: 3855.
+Memory consumption went from 210.1 MB to 209.9 MB.
+Total: 2.270300 ms (FindLiveObjects: 0.206900 ms CreateObjectMapping: 0.110100 ms MarkObjects: 1.834300 ms  DeleteObjects: 0.118200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,14 +166,99 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 195841.279657 seconds.
-  path: Assets/Game/Caracters/Companion/Companion.controller
-  artifactKey: Guid(622f5b4f773c3b34db1969910a11f1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Game/Caracters/Companion/Companion.controller using Guid(622f5b4f773c3b34db1969910a11f1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc17395ebf6356e5e0af6291bb31c44') in 0.128138 seconds 
+  Time since last request: 219427.124135 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '4a4b1383c5e61b59f80633756c1145d0') in 0.076666 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.013605 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c5dd69130dc6b5c314d3c3a2b66a2f68') in 0.033503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.800741 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '7db0560d21c0f0df8daf531f3f0bb2bb') in 0.031667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.232286 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'a192e2277dd5fdeddd507c7cb6b92cb8') in 0.029369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.280102 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'be34df33f27628957c82f63e917744f2') in 0.028557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.524734 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'a264ac4c737ff6f4092b298585608d77') in 0.028600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.067027 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '75a37ae7f569593adf7907242c992e75') in 0.033301 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.021120 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '6d696473be35839ca1a55a8b9af67f31') in 0.028597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.667768 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '8cf294fd11e0f741ca0931ebd8ae1a5a') in 0.037686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.412956 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'b5ed8cb65055f6dd28f3f287eaca7b14') in 0.028744 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.636826 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '724eb4e149bfdf6a12ab845d0adef8fc') in 0.028766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.259740 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '78832d0b92cbf2ee96202bebbad69bfa') in 0.030664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.049340 seconds.
+  path: Assets/Game/UI/Inventory Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'f8898a47754fd8a6dcaae82f910819e3') in 0.033008 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006254 seconds.
+Registered in 0.005510 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -182,40 +267,874 @@ Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.836 seconds
+- Completed reload, in  0.789 seconds
 Domain Reload Profiling:
-	ReloadAssembly (837ms)
-		BeginReloadAssembly (111ms)
+	ReloadAssembly (790ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (646ms)
-			LoadAssemblies (72ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (602ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (187ms)
+			SetupTypeCache (189ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (320ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (282ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (61ms)
-				ProcessInitializeOnLoadAttributes (227ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (154.7 KB). Loaded Objects now: 3871.
+Memory consumption went from 208.0 MB to 207.8 MB.
+Total: 2.326900 ms (FindLiveObjects: 0.228400 ms CreateObjectMapping: 0.127200 ms MarkObjects: 1.859900 ms  DeleteObjects: 0.110500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 70.724552 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c3560c6bc3459e5b09a63210aa859d59') in 0.055228 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.799311 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '838b6399a4f882bccc26626178aca3d5') in 0.020550 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.494044 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '3caa8c996b67bb2a46e81f12193a9913') in 0.019130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.417933 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'b4948d5eb743ff6fdeccd1be4e984d5f') in 0.019108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.384134 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'b3f824839df1178c3d17f492e510c24f') in 0.017878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.588584 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'cabfeb7beb61c16fe25286ce7c2afa9c') in 0.017888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.088594 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'abf6edc4ed3cf2fa26eae87e0e317d9d') in 0.019185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.666184 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '395a29800708fbe8324fe02ea0245629') in 0.019208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.392304 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '796c6aba26f004522b4cd07a2620fe72') in 0.018765 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.630770 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '5d03bd9c1aebee050954dee6780b8310') in 0.019807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.281698 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '302bb33735fa8dfbd791b0c5b9ddf6f3') in 0.021037 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.648868 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '8db020acf74a317e82d256e55448f41c') in 0.018881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.025049 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '8f786c34afd58a5a917dc2c75bb42ae8') in 0.018829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.484822 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'ef7324248758d9482726daa8a504467f') in 0.018525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.025736 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '2753b8fb60d2db9061f4b0e113b965a3') in 0.019239 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005633 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.788 seconds
+Domain Reload Profiling:
+	ReloadAssembly (789ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (602ms)
+			LoadAssemblies (71ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (195ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3886.
+Memory consumption went from 208.0 MB to 207.9 MB.
+Total: 2.521000 ms (FindLiveObjects: 0.206800 ms CreateObjectMapping: 0.108700 ms MarkObjects: 2.087500 ms  DeleteObjects: 0.117200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 49.633109 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '302bb33735fa8dfbd791b0c5b9ddf6f3') in 0.052629 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.694262 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '11f36980430f4b0d406afe74d72edda4') in 0.018716 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.091020 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '31bda6ddf74beee1286ccce936341ec4') in 0.018849 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006117 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.793 seconds
+Domain Reload Profiling:
+	ReloadAssembly (794ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (601ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (184ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.68 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3310 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (152.8 KB). Loaded Objects now: 3844.
-Memory consumption went from 206.9 MB to 206.8 MB.
-Total: 2.212600 ms (FindLiveObjects: 0.252200 ms CreateObjectMapping: 0.122200 ms MarkObjects: 1.740100 ms  DeleteObjects: 0.097300 ms)
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3901.
+Memory consumption went from 208.1 MB to 207.9 MB.
+Total: 2.499400 ms (FindLiveObjects: 0.257200 ms CreateObjectMapping: 0.143700 ms MarkObjects: 1.955900 ms  DeleteObjects: 0.141800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 37.467014 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '31bda6ddf74beee1286ccce936341ec4') in 0.051516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.565092 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '05125e7dc65150773599ef13dae85a2d') in 0.019416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.968240 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54046f6d82c92256dbbdb6bd725eea97') in 0.008963 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.717866 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67bc94ee68c497ecb92ccca2947201ab') in 0.004023 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006368 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.815 seconds
+Domain Reload Profiling:
+	ReloadAssembly (815ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (629ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (188ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (313ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (153.0 KB). Loaded Objects now: 3916.
+Memory consumption went from 208.1 MB to 207.9 MB.
+Total: 2.257500 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.174600 ms MarkObjects: 1.732800 ms  DeleteObjects: 0.111800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 36.348647 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaecf57bdb64309d2381ec407cdb3d04') in 0.023656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.822394 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17997b713baeaf93e13f8b918a24bb6f') in 0.003734 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005387 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.811 seconds
+Domain Reload Profiling:
+	ReloadAssembly (811ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (25ms)
+		EndReloadAssembly (619ms)
+			LoadAssemblies (82ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (189ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (291ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (54ms)
+				ProcessInitializeOnLoadAttributes (205ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (153.1 KB). Loaded Objects now: 3931.
+Memory consumption went from 208.1 MB to 208.0 MB.
+Total: 2.362300 ms (FindLiveObjects: 0.240000 ms CreateObjectMapping: 0.132100 ms MarkObjects: 1.876900 ms  DeleteObjects: 0.112500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 58.034855 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '31bda6ddf74beee1286ccce936341ec4') in 0.052538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.774795 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'f304273a69de21e239794a43e40e0730') in 0.020864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.518770 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'e2ac784a1f9e362a9488beccb82fff38') in 0.018544 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.264302 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '5ef7ef82e45ba9698aa6dc9decf75a7b') in 0.018455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.666477 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '51fbc33262f1aa99211eefcb4e463654') in 0.021192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.187439 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c4bc886693a2fd167ce996abac93670c') in 0.019012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.419039 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '4d4295c0cd94fcfbdc0edadff318f4e3') in 0.018659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.031986 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'be1d63c25b02ecf3ef1ae1fa29e93359') in 0.019472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.421864 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c7f4a9072777c3b4874d78f3dfd64864') in 0.020555 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.581834 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'be8a9b42b4d6a1c3f15c224dea6f068a') in 0.018472 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.224443 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'fd14678dbb6d00b7cac2974d4b08ad67') in 0.022349 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.856196 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c978026e23de21f3ca51b4a0c3c089e3') in 0.019901 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.419223 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '803dcafb9891a22d1b4633efb016feae') in 0.020409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.147872 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6aeb0ef27dd1c691c88ad5f6be66d5') in 0.003489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.677829 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de4eae2ba6e4985041785c46dbc3876') in 0.003448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.055995 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7afeffd1b6eb900f4b9d1ce58d380f1b') in 0.003254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.281981 seconds.
+  path: Assets/Game/UI/In Game/Health Bar.prefab
+  artifactKey: Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/In Game/Health Bar.prefab using Guid(32ce429073ec1324595249448e5e917b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c12a2a0f687101c6144a23083abb9aa0') in 0.003508 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006010 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.796 seconds
+Domain Reload Profiling:
+	ReloadAssembly (797ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (602ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (277ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (156.1 KB). Loaded Objects now: 3946.
+Memory consumption went from 208.3 MB to 208.1 MB.
+Total: 2.237600 ms (FindLiveObjects: 0.214300 ms CreateObjectMapping: 0.137900 ms MarkObjects: 1.771700 ms  DeleteObjects: 0.113000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 25.307247 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'c978026e23de21f3ca51b4a0c3c089e3') in 0.052925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.864603 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '75289974ea8b68113d006566260e7353') in 0.020050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.074767 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'acf7f7e5f91399ad49e67cf2191ae072') in 0.019824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.061838 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '0b5d0061542a5647d2d89da2b1927020') in 0.018912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.433899 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'f34cdb15d45922ee6cde1b0566d17a15') in 0.019310 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.848232 seconds.
+  path: Assets/Game/UI/HUD.prefab
+  artifactKey: Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/HUD.prefab using Guid(aecccb9ac8a146d428829c48d6be51e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '772b85b8e166763ad5d6c9f111ea6a15') in 0.019654 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006921 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.835 seconds
+Domain Reload Profiling:
+	ReloadAssembly (836ms)
+		BeginReloadAssembly (113ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (643ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (310ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (223ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (154.4 KB). Loaded Objects now: 3961.
+Memory consumption went from 208.3 MB to 208.1 MB.
+Total: 2.451700 ms (FindLiveObjects: 0.209700 ms CreateObjectMapping: 0.100200 ms MarkObjects: 2.001600 ms  DeleteObjects: 0.139000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005545 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.842 seconds
+Domain Reload Profiling:
+	ReloadAssembly (842ms)
+		BeginReloadAssembly (124ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (640ms)
+			LoadAssemblies (81ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (217ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (287ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (153.0 KB). Loaded Objects now: 3976.
+Memory consumption went from 208.3 MB to 208.2 MB.
+Total: 2.360700 ms (FindLiveObjects: 0.229200 ms CreateObjectMapping: 0.107600 ms MarkObjects: 1.929500 ms  DeleteObjects: 0.093600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005949 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.817 seconds
+Domain Reload Profiling:
+	ReloadAssembly (817ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (621ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (307ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (53ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 3991.
+Memory consumption went from 208.3 MB to 208.2 MB.
+Total: 2.425300 ms (FindLiveObjects: 0.229800 ms CreateObjectMapping: 0.127000 ms MarkObjects: 1.945200 ms  DeleteObjects: 0.122100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006415 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.845 seconds
+Domain Reload Profiling:
+	ReloadAssembly (845ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (26ms)
+		EndReloadAssembly (653ms)
+			LoadAssemblies (73ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (321ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (226ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.79 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3337 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (152.9 KB). Loaded Objects now: 4006.
+Memory consumption went from 208.3 MB to 208.2 MB.
+Total: 2.903200 ms (FindLiveObjects: 0.239600 ms CreateObjectMapping: 0.208900 ms MarkObjects: 2.277700 ms  DeleteObjects: 0.175900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 

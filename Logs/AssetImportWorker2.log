@@ -15,7 +15,7 @@ C:/Users/Francesco/Project/unity/RPG - demo
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-64869
+52134
 Successfully changed project path to: C:/Users/Francesco/Project/unity/RPG - demo
 C:/Users/Francesco/Project/unity/RPG - demo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Francesco/Project/unity/RPG - demo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10688] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 888974015 [EditorId] 888974015 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [10480] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 441267333 [EditorId] 441267333 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10688] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 888974015 [EditorId] 888974015 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [10480] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 441267333 [EditorId] 441267333 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 71.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 109.69 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56964
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007799 seconds.
+Registered in 0.007817 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 77.62 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 72.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.743 seconds
+- Completed reload, in  0.518 seconds
 Domain Reload Profiling:
-	ReloadAssembly (743ms)
-		BeginReloadAssembly (64ms)
+	ReloadAssembly (519ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (490ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (369ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (207ms)
+			SetupTypeCache (80ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
+			RebuildScriptCaches (21ms)
 			SetupLoadedEditorAssemblies (224ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (78ms)
+				RefreshPlugins (72ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (103ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
+				ProcessInitializeOnLoadAttributes (106ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006171 seconds.
+Registered in 0.006306 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.874 seconds
+- Completed reload, in  0.844 seconds
 Domain Reload Profiling:
-	ReloadAssembly (875ms)
-		BeginReloadAssembly (92ms)
+	ReloadAssembly (845ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (700ms)
-			LoadAssemblies (71ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (669ms)
+			LoadAssemblies (74ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (252ms)
+			SetupTypeCache (199ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (319ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (225ms)
+				BeforeProcessingInitializeOnLoad (69ms)
+				ProcessInitializeOnLoadAttributes (230ms)
 				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3361 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 40 unused Assets / (185.7 KB). Loaded Objects now: 3854.
-Memory consumption went from 210.0 MB to 209.9 MB.
-Total: 2.229200 ms (FindLiveObjects: 0.242400 ms CreateObjectMapping: 0.130300 ms MarkObjects: 1.732900 ms  DeleteObjects: 0.122800 ms)
+Unloading 3362 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (185.8 KB). Loaded Objects now: 3855.
+Memory consumption went from 210.2 MB to 210.0 MB.
+Total: 2.170300 ms (FindLiveObjects: 0.220800 ms CreateObjectMapping: 0.116700 ms MarkObjects: 1.708000 ms  DeleteObjects: 0.123700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -166,227 +166,101 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 203811.666041 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/UI/Inventory Canvas.prefab
-  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Upgrading font asset [LiberationSans SDF] to version 1.1.0.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:Log (object,UnityEngine.Object)
-TMPro.TMP_FontAsset:UpgradeFontAsset () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:2865)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:569)
-TMPro.TMP_FontAsset:OnValidate () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:555)
-
-(Filename: Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs Line: 2865)
-
-Upgrading font asset [LiberationSans SDF] Glyph Adjustment Table.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:Log (object,UnityEngine.Object)
-TMPro.TMP_FontAsset:UpgradeGlyphAdjustmentTableToFontFeatureTable () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:3035)
-TMPro.TMP_FontAsset:InitializeGlyphPaidAdjustmentRecordsLookupDictionary () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:697)
-TMPro.TMP_FontAsset:InitializeDictionaryLookupTables () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:619)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:572)
-TMPro.TMP_FontAsset:UpgradeFontAsset () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:3018)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:569)
-TMPro.TMP_FontAsset:OnValidate () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:555)
-
-(Filename: Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs Line: 3035)
-
- -> (artifact id: 'de558f7866464476e49e1770ff0850ef') in 0.075407 seconds 
+  Time since last request: 265825.076598 seconds.
+  path: Assets/Game/Weapons/Resources/Companion Fireball.asset
+  artifactKey: Guid(749de21743cf2ac47abe1aa6f8c0cd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Weapons/Resources/Companion Fireball.asset using Guid(749de21743cf2ac47abe1aa6f8c0cd05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e6cf680c7d48a2c467bfd6497bacbd') in 0.160224 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.188672 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/UI/Inventory Canvas.prefab
-  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/UI/Inventory Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Upgrading font asset [LiberationSans SDF] to version 1.1.0.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:Log (object,UnityEngine.Object)
-TMPro.TMP_FontAsset:UpgradeFontAsset () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:2865)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:569)
-TMPro.TMP_FontAsset:OnValidate () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:555)
-
-(Filename: Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs Line: 2865)
-
-Upgrading font asset [LiberationSans SDF] Glyph Adjustment Table.
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object,UnityEngine.Object)
-UnityEngine.Debug:Log (object,UnityEngine.Object)
-TMPro.TMP_FontAsset:UpgradeGlyphAdjustmentTableToFontFeatureTable () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:3035)
-TMPro.TMP_FontAsset:InitializeGlyphPaidAdjustmentRecordsLookupDictionary () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:697)
-TMPro.TMP_FontAsset:InitializeDictionaryLookupTables () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:619)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:572)
-TMPro.TMP_FontAsset:UpgradeFontAsset () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:3018)
-TMPro.TMP_FontAsset:ReadFontAssetDefinition () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:569)
-TMPro.TMP_FontAsset:OnValidate () (at Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs:555)
-
-(Filename: Library/PackageCache/com.unity.textmeshpro@3.0.6/Scripts/Runtime/TMP_FontAsset.cs Line: 3035)
-
- -> (artifact id: '6db1a3daecef65be1e09876cb20e21fb') in 0.026376 seconds 
+  Time since last request: 296.917279 seconds.
+  path: Assets/Game/Pickups/Base Weapon Pickup.prefab
+  artifactKey: Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Base Weapon Pickup.prefab using Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f80b5ddabe77c8d5316134b249c5f8c7') in 0.022205 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.398969 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/A.png
-  artifactKey: Guid(7c4272045db356d4191801bf4343dbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/A.png using Guid(7c4272045db356d4191801bf4343dbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afb2ee0c2484b18de8a83c7cba142743') in 0.077143 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game/Pickups/Heal Pickup.prefab
+  artifactKey: Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Heal Pickup.prefab using Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda7532ca1dd8a0c653d2a73789ad804') in 0.089279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Game/Pickups/Companion Fireball Pickup.prefab
+  artifactKey: Guid(513e4d52156c2e645a2f62d8887bc0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Companion Fireball Pickup.prefab using Guid(513e4d52156c2e645a2f62d8887bc0a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef2d61b61c26f252b51a17faeb1055f') in 0.151528 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.598420 seconds.
+  path: Assets/Game/Pickups/Base Weapon Pickup.prefab
+  artifactKey: Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Base Weapon Pickup.prefab using Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1c898a5b4cae380131a98a4f1fbf8f6') in 0.003515 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotH.png
-  artifactKey: Guid(6d6e2da30734bb74cb2de456bb56b0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotH.png using Guid(6d6e2da30734bb74cb2de456bb56b0fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ade9653a0799762b1debd903a755163d') in 0.020203 seconds 
+  path: Assets/Game/Pickups/Heal Pickup.prefab
+  artifactKey: Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Heal Pickup.prefab using Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2072a69d054b9be7fef9e853b90e108') in 0.010359 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotC.png
-  artifactKey: Guid(34e63a70424c1ee4e80ce4ff0757859c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotC.png using Guid(34e63a70424c1ee4e80ce4ff0757859c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '661048529a72bee585fc63c5ceedcabb') in 0.022616 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game/Pickups/Great Sword Pickup.prefab
+  artifactKey: Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Great Sword Pickup.prefab using Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ccf2d63995bf167888ecd21590e3dd') in 0.025542 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotD.png
-  artifactKey: Guid(68d5c73fd6d8d094ea9f0150f27aaf68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotD.png using Guid(68d5c73fd6d8d094ea9f0150f27aaf68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cddd71b68608c973d66ceec9a234f213') in 0.023858 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game/Pickups/Fireball Pickup.prefab
+  artifactKey: Guid(dd0a947a487ceac48b98373399332971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Fireball Pickup.prefab using Guid(dd0a947a487ceac48b98373399332971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4656a0cb7a740451c0018e17e1c11319') in 0.027085 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000052 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotA.png
-  artifactKey: Guid(b47431e0d918eeb4eb1dc79bd8e8fb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotA.png using Guid(b47431e0d918eeb4eb1dc79bd8e8fb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'caa3a73d461b38dfffd91c86fb54f285') in 0.020324 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Malbers Animations/Dragons/Common/Eyes/Textures/Dilated/Drago-Sprite_Eye_D_01.png
-  artifactKey: Guid(84c5ffdff53f1f247857c56cc451b497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Malbers Animations/Dragons/Common/Eyes/Textures/Dilated/Drago-Sprite_Eye_D_01.png using Guid(84c5ffdff53f1f247857c56cc451b497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2f91364ba4cdc0a22b51fd25149ec89') in 0.043611 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotE.png
-  artifactKey: Guid(7f5ea285fc81c194eb780e1f2908f0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/slotE.png using Guid(7f5ea285fc81c194eb780e1f2908f0ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e205ad043a27626681e67d051418aaf4') in 0.021371 seconds 
+  Time since last request: 8.357462 seconds.
+  path: Assets/Game/Pickups/Base Weapon Pickup.prefab
+  artifactKey: Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Base Weapon Pickup.prefab using Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7910cd5261c0cbb937ec5a1961fb04ca') in 0.004120 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000023 seconds.
-  path: Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/H.png
-  artifactKey: Guid(d90fb267ee4e64245b86c677bd935db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asset Packs/GameDev.tv Assets/Sprites/Placeholders/H.png using Guid(d90fb267ee4e64245b86c677bd935db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269d7c2ba36d51a6d1c9638abb5a9e13') in 0.029353 seconds 
+  path: Assets/Game/Pickups/Heal Pickup.prefab
+  artifactKey: Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Heal Pickup.prefab using Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a7edf74d5a162795873f28379d77771') in 0.010069 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005459 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.965 seconds
-Domain Reload Profiling:
-	ReloadAssembly (966ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (758ms)
-			LoadAssemblies (83ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (281ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (48ms)
-			SetupLoadedEditorAssemblies (315ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (56ms)
-				ProcessInitializeOnLoadAttributes (228ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.76 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3336 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 23 unused Assets / (154.7 KB). Loaded Objects now: 3883.
-Memory consumption went from 212.0 MB to 211.9 MB.
-Total: 2.920300 ms (FindLiveObjects: 0.195100 ms CreateObjectMapping: 0.091600 ms MarkObjects: 2.524400 ms  DeleteObjects: 0.108400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game/Pickups/Great Sword Pickup.prefab
+  artifactKey: Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Great Sword Pickup.prefab using Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '172e1f311cf05f9780d73c93362c7ead') in 0.018744 seconds 
 ========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005610 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.828 seconds
-Domain Reload Profiling:
-	ReloadAssembly (829ms)
-		BeginReloadAssembly (114ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (640ms)
-			LoadAssemblies (75ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (215ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (292ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (209ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3336 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (153.1 KB). Loaded Objects now: 3898.
-Memory consumption went from 212.0 MB to 211.9 MB.
-Total: 2.246200 ms (FindLiveObjects: 0.199400 ms CreateObjectMapping: 0.109000 ms MarkObjects: 1.822800 ms  DeleteObjects: 0.114400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game/Pickups/Sword Pickup.prefab
+  artifactKey: Guid(a58aa92e878889b40b8ee683d97b0452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Sword Pickup.prefab using Guid(a58aa92e878889b40b8ee683d97b0452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38c421692d8a42f6be42bd16c245cb4') in 0.019706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.574850 seconds.
+  path: Assets/Game/Pickups/Base Weapon Pickup.prefab
+  artifactKey: Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Base Weapon Pickup.prefab using Guid(fd7352324f84d93458746a00f7062b7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18129a6829df21b2d76f8e77cdfc124e') in 0.004015 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Pickups/Heal Pickup.prefab
+  artifactKey: Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Heal Pickup.prefab using Guid(8b4acbff57b516442b2fd62a1937d25e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4793c8c543821a5d29fa93776a570d24') in 0.010636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game/Pickups/Great Sword Pickup.prefab
+  artifactKey: Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Great Sword Pickup.prefab using Guid(9664c8286e1ac6c4e8651b8444056636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140f8861964a3f6fe4b5eba425102260') in 0.017955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game/Pickups/Sword Pickup.prefab
+  artifactKey: Guid(a58aa92e878889b40b8ee683d97b0452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Pickups/Sword Pickup.prefab using Guid(a58aa92e878889b40b8ee683d97b0452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1471ae91cbc47eaed22beabd5c2c559') in 0.018225 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

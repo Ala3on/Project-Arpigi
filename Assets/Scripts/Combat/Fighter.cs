@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using GameDevTV.Utils;
 using Newtonsoft.Json.Linq;
 using RPG.Attributes;
@@ -21,6 +22,7 @@ namespace RPG.Combat
         [SerializeField] WeaponConfig defaultWeapon = null;
         // [SerializeField] string defaultWeaponName = "Unarmed";
 
+        Equipment equipment;
         Health target;
         Mover mover;
         float timeSinceLastAttack = 0;
@@ -30,6 +32,11 @@ namespace RPG.Combat
         private void Awake()
         {
             currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
+            equipment = GetComponent<Equipment>();
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+            }
         }
 
         private WeaponConfig SetupDefaultWeapon()
@@ -161,7 +168,19 @@ namespace RPG.Combat
             currentWeaponConfig.value = weapon;
             if (weapon == null) return;
             currentWeapon = AttachWeapon(weapon);
+        }
 
+        private void UpdateWeapon()
+        {
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            if (weapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                EquipWeapon(weapon);
+            }
         }
 
         private Weapon AttachWeapon(WeaponConfig weapon)

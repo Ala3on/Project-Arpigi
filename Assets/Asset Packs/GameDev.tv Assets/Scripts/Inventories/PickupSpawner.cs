@@ -44,7 +44,7 @@ namespace GameDevTV.Inventories
 
         private void SpawnPickup()
         {
-            var spawnedPickup = item.SpawnPickup(transform.position, number);
+            var spawnedPickup = item.SpawnPickup(transform.position, transform.rotation, number);
             spawnedPickup.transform.SetParent(transform);
         }
 

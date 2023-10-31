@@ -48,12 +48,20 @@ namespace GameDevTV.Inventories
         {
             return transform.position;
         }
+        /// <summary>
+        /// Override to set a custom method for locating a drop.
+        /// </summary>
+        /// <returns>The location the drop should be spawned.</returns>
+        protected virtual Quaternion GetDropRotation()
+        {
+            return transform.rotation;
+        }
 
         // PRIVATE
-
+        // TODO: sistemare rotation del drop 
         public void SpawnPickup(InventoryItem item, Vector3 spawnLocation, int number)
         {
-            var pickup = item.SpawnPickup(spawnLocation, number);
+            var pickup = item.SpawnPickup(spawnLocation, GetDropRotation(), number);
             droppedItems.Add(pickup);
         }
 
