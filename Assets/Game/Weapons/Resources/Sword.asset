@@ -14,16 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemID: e0f15c92-5298-4493-ae64-fa25da4f0618
   displayName: Sword
-  description: 
+  description: Spada comune
   icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
   pickup: {fileID: 8881924856086964810, guid: a58aa92e878889b40b8ee683d97b0452, type: 3}
   stackable: 0
   allowedEquipLocation: 5
+  additiveModifiers:
+  - stat: 0
+    value: 40
+  percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: f7e06fc9023f20142be7a6bbe7614703, type: 2}
   weaponPrefab: {fileID: -3777239625201516217, guid: 4aa4898a4dcd00c4eaf31097d47821ed, type: 3}
   shieldPrefab: {fileID: 0}
   range: 2
   damage: 10
-  percentageDamageBonus: 0
+  percentageDamageBonus: 100
   isRightHanded: 1
   projectile: {fileID: 0}

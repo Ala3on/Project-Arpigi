@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction, ISaveable/* , IModifierProvider */
     {
         [SerializeField] float timeBetweenAttacks = 2f;
 
@@ -115,21 +115,21 @@ namespace RPG.Combat
             mover.Cancel();
         }
 
-        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
-        {
-            if (stat == Stat.Attack)
-            {
-                yield return currentWeaponConfig.value.GetWeaponDamage();
-            }
-        }
+        /*   public IEnumerable<float> GetAdditiveModifiers(Stat stat)
+          {
+              if (stat == Stat.Attack)
+              {
+                  yield return currentWeaponConfig.value.GetWeaponDamage();
+              }
+          }
 
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            if (stat == Stat.Attack)
-            {
-                yield return currentWeaponConfig.value.GetPercentageDamageBonus();
-            }
-        }
+          public IEnumerable<float> GetPercentageModifiers(Stat stat)
+          {
+              if (stat == Stat.Attack)
+              {
+                  yield return currentWeaponConfig.value.GetPercentageDamageBonus();
+              }
+          } */
 
         // Animation Event
         public void Hit()

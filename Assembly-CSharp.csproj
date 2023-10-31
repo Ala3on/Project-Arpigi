@@ -110,6 +110,8 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
+     <Compile Include="Assets\Scripts\Inventories\StatsEquipableItem.cs" />
+     <Compile Include="Assets\Scripts\Inventories\StatsEquipment.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
