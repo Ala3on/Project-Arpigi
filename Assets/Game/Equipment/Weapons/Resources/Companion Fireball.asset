@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: Globo Fiammante
   description: Indossa l'accessorio per ricordare al tuo amico come attacca un vero
     drago
-  icon: {fileID: 21300000, guid: 84c5ffdff53f1f247857c56cc451b497, type: 3}
+  icon: {fileID: 21300000, guid: 2982efa463537a5418694bfddc718514, type: 3}
   pickup: {fileID: 7000365342606377431, guid: 513e4d52156c2e645a2f62d8887bc0a1, type: 3}
   stackable: 0
   allowedEquipLocation: 1

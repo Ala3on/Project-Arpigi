@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 8bee349c-28b8-411c-8ed1-dfedae748282
   displayName: Arco Lungo
   description: Un semplice arco di legno
-  icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
+  icon: {fileID: 21300000, guid: 5d7061fc7da05ce44add317708ec7215, type: 3}
   pickup: {fileID: 64393605260639308, guid: 42379a278ce8589489c87a5936c155e7, type: 3}
   stackable: 0
   allowedEquipLocation: 5

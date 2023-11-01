@@ -15,7 +15,7 @@ MonoBehaviour:
   itemID: 78de4be0-deb9-4c5e-8485-37832cbaa72d
   displayName: Spadone Figo
   description: "Uno spadone pesante, non ha nulla di particolare ma \xE8 molto figo"
-  icon: {fileID: 21300000, guid: d19901b0ee3c38743a7d383bd484b0b5, type: 3}
+  icon: {fileID: 21300000, guid: 6f0fcac1a2d944f4eac88f84491405d5, type: 3}
   pickup: {fileID: 5288741660709411295, guid: 9664c8286e1ac6c4e8651b8444056636, type: 3}
   stackable: 0
   allowedEquipLocation: 5

@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: Bastone di fuoco
   description: Uno scettro che consente di lanciare sfere infuocate anche a chi non
     ha nozioni base di magia
-  icon: {fileID: 21300000, guid: a1ec2c0ddc0da634b85f0f465fec2d0d, type: 3}
+  icon: {fileID: 21300000, guid: d7a3e9e7a85aa9c4794f9b6de5e22685, type: 3}
   pickup: {fileID: 4364244822194919810, guid: dd0a947a487ceac48b98373399332971, type: 3}
   stackable: 0
   allowedEquipLocation: 5
