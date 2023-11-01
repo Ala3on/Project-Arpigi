@@ -1,12 +1,16 @@
 using System;
+using System.Collections.Generic;
+using GameDevTV.Inventories;
 using RPG.Attributes;
 using RPG.Core;
+using RPG.Inventories;
+using RPG.Stats;
 using UnityEngine;
 
 namespace RPG.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/Make New Weapon", order = 0)]
-    public class WeaponConfig : ScriptableObject
+    [CreateAssetMenu(fileName = "Weapon", menuName = "RPG/Inventory/Equipment/New Weapon")]
+    public class WeaponConfig : StatsEquipableItem, IModifierProvider
     {
         [SerializeField] AnimatorOverrideController weaponAnimatorOverrideController = null;
         [SerializeField] Weapon weaponPrefab = null;
@@ -108,6 +112,36 @@ namespace RPG.Combat
         public bool HasProjectile()
         {
             return projectile != null;
+        }
+
+        public new IEnumerable<float> GetAdditiveModifiers(Stat stat)
+        {
+            if (stat == Stat.Attack)
+            {
+                yield return GetWeaponDamage();
+            }
+            else
+            {
+                foreach (var modifier in base.GetAdditiveModifiers(stat))
+                {
+                    yield return modifier;
+                }
+            }
+        }
+
+        public new IEnumerable<float> GetPercentageModifiers(Stat stat)
+        {
+            if (stat == Stat.Attack)
+            {
+                yield return GetPercentageDamageBonus();
+            }
+            else
+            {
+                foreach (var modifier in base.GetPercentageModifiers(stat))
+                {
+                    yield return modifier;
+                }
+            }
         }
 
 

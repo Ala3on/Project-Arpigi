@@ -1,0 +1,302 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.23f1 (213b516bf396) revision 2177873'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'it' Physical Memory: 16265 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Francesco/Project/unity/RPG - demo
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+60076
+Successfully changed project path to: C:/Users/Francesco/Project/unity/RPG - demo
+C:/Users/Francesco/Project/unity/RPG - demo
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1716] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 214726073 [EditorId] 214726073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1716] Host "[IP] 172.26.160.1 [Port] 0 [Flags] 2 [Guid] 214726073 [EditorId] 214726073 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 77.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.23f1 (213b516bf396)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Francesco/Project/unity/RPG - demo/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon RX 6700 XT (ID=0x73df)
+    Vendor:   ATI
+    VRAM:     12243 MB
+    Driver:   31.0.21023.2010
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007528 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 74.94 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.518 seconds
+Domain Reload Profiling:
+	ReloadAssembly (519ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (366ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (84ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (217ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005968 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.905 seconds
+Domain Reload Profiling:
+	ReloadAssembly (906ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (14ms)
+		EndReloadAssembly (680ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (200ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (337ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (229ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3368 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (185.8 KB). Loaded Objects now: 3861.
+Memory consumption went from 210.3 MB to 210.1 MB.
+Total: 2.294900 ms (FindLiveObjects: 0.247600 ms CreateObjectMapping: 0.143600 ms MarkObjects: 1.785400 ms  DeleteObjects: 0.117700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 363202.917357 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Paper.png
+  artifactKey: Guid(21c4a8515a327db4a89489131daee51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Paper.png using Guid(21c4a8515a327db4a89489131daee51d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f8e7b1158631d8727319807a2ba92bb') in 0.104961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Potion_NOBG.png
+  artifactKey: Guid(d318988fe7a598842b25a3a91f320d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Potion_NOBG.png using Guid(d318988fe7a598842b25a3a91f320d67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa5d8a91b22e7600b5f94fa8d125e8c') in 0.019519 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Hammer_01_Nobg.png
+  artifactKey: Guid(513882470557cef41922eb8a9002562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Hammer_01_Nobg.png using Guid(513882470557cef41922eb8a9002562a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a833ec73d04a1046d53303855bce6ba0') in 0.023316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_gray/Shield_02_gray.png
+  artifactKey: Guid(d0a35722f9d973f47b5cab51eee42ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_gray/Shield_02_gray.png using Guid(d0a35722f9d973f47b5cab51eee42ef2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12f46f1e82953303801b1a1af9b22b9b') in 0.023163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Weapon_Spell_01.png
+  artifactKey: Guid(28a02df1369b7fd4eab040459b0cc450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Weapon_Spell_01.png using Guid(28a02df1369b7fd4eab040459b0cc450) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e2af03f317d81986fe1863dc9d1c271') in 0.028814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Sword_02_Nobg.png
+  artifactKey: Guid(a6644683ae5d09344953539d5a5724ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Sword_02_Nobg.png using Guid(a6644683ae5d09344953539d5a5724ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f8578b5e63467c0f193b6115a55633') in 0.018001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Shield_02_Nobg.png
+  artifactKey: Guid(db56b57fa88deb34e8a1b904bd86e96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Shield_02_Nobg.png using Guid(db56b57fa88deb34e8a1b904bd86e96c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029ef65ba3ef82467836ea57c3726c12') in 0.017560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_gray/Holly_Spell_02_gray.png
+  artifactKey: Guid(69cda455329362941bb98fd7f8327f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_gray/Holly_Spell_02_gray.png using Guid(69cda455329362941bb98fd7f8327f31) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cffbdcb1731858dd462e09c49879216') in 0.020628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Gold_Parts_NOBG.png
+  artifactKey: Guid(01e6d7164764a4744b90cc0b24f7d548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Gold_Parts_NOBG.png using Guid(01e6d7164764a4744b90cc0b24f7d548) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59aa47e1bd196cd010661f4516e6c121') in 0.019750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Potion.png
+  artifactKey: Guid(51e90e2f352d93d49b72bebce22d5c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Potion.png using Guid(51e90e2f352d93d49b72bebce22d5c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1af6078d0b849c59c7e8c9693b9a55') in 0.017778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.800572 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Gloves_01.png
+  artifactKey: Guid(ab2c0effa4522104dbdb381ab0b16a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Gloves_01.png using Guid(ab2c0effa4522104dbdb381ab0b16a7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd5630343fcc7d59451a3dd9da334a83') in 0.019174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_gray/Frost_Spell_01_gray.png
+  artifactKey: Guid(9a6f7e34ac0beda45b5e6b1668ed479e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_gray/Frost_Spell_01_gray.png using Guid(9a6f7e34ac0beda45b5e6b1668ed479e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f4d4ea571c495bf7d9543f0ce5b45e') in 0.018288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012068 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Fantasy_Spell_06_no_BG.png
+  artifactKey: Guid(32d521d57b496f74bbd28290847f8e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Fantasy_Spell_06_no_BG.png using Guid(32d521d57b496f74bbd28290847f8e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f611c86c9f93cb6c0061c95a137ff32f') in 0.020384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.015005 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Fantasy_Spell_06.png
+  artifactKey: Guid(dbe6f37e950b2db4599be80d656b8985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Fantasy_Spell_06.png using Guid(dbe6f37e950b2db4599be80d656b8985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffaeb16ac5e417b61b2a5f4d878878c5') in 0.019179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005908 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Chest_01_Nobg.png
+  artifactKey: Guid(e767bc37b5b12a84c852f2914f35936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Chest_01_Nobg.png using Guid(e767bc37b5b12a84c852f2914f35936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffc522c19f910da6aca9c6ce750eab65') in 0.014923 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012767 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Chest_01.png
+  artifactKey: Guid(0010e352a9b1abc4ebab3f3235c95e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Chest_01.png using Guid(0010e352a9b1abc4ebab3f3235c95e0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4fe6763f75526029b60d973ad54a8b') in 0.018487 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012548 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Book_03.png
+  artifactKey: Guid(f1ec4da94f3fce84887017bd602a7b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Book_03.png using Guid(f1ec4da94f3fce84887017bd602a7b98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd3fd220bce4992e1fa319a51fbd327') in 0.016928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008254 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons/Belt_01.png
+  artifactKey: Guid(ef2aada22ec60b14ab1a3e234ab5dc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons/Belt_01.png using Guid(ef2aada22ec60b14ab1a3e234ab5dc8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b948046a77ec51b84da15568956756') in 0.016821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Book_02_NOBG.png
+  artifactKey: Guid(06af42288a94891409db7d0c08d2e30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Book_02_NOBG.png using Guid(06af42288a94891409db7d0c08d2e30d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668fdcf3e968d25ba3a40e77fdfdfeae') in 0.020442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.037601 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_nobg/Arrow_01_Nobg.png
+  artifactKey: Guid(bbb100f31597d7f47960b5f524871608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_nobg/Arrow_01_Nobg.png using Guid(bbb100f31597d7f47960b5f524871608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50ccf08a66b326f76a7c6e71d0120f1') in 0.017864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_gray/Axe_01_gray.png
+  artifactKey: Guid(eaa2018e64390f64a827835b2937a31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_gray/Axe_01_gray.png using Guid(eaa2018e64390f64a827835b2937a31e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7543bacbff866f052889ba8590f4371') in 0.018530 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/UniversalIconBronze/Textures/Icons_gray/Arrow_01_gray.png
+  artifactKey: Guid(ea97180bae5acd74eadc533c4a31ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalIconBronze/Textures/Icons_gray/Arrow_01_gray.png using Guid(ea97180bae5acd74eadc533c4a31ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48a6eb7185b790b27d0c03198f943a86') in 0.019898 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

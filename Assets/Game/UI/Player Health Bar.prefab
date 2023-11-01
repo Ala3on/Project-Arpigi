@@ -321,12 +321,12 @@ RectTransform:
   m_Children:
   - {fileID: 2609191344123760782}
   - {fileID: 220645401396589544}
-  m_Father: {fileID: 6910654847263194332}
+  m_Father: {fileID: 2492608577118686086}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.027, y: 0.035}
+  m_AnchoredPosition: {x: -0.027000427, y: 0.034999847}
   m_SizeDelta: {x: 100, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &171185813304030747
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &4217835250669569204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,7 +398,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6910654847263194332}
+  - component: {fileID: 2492608577118686086}
   - component: {fileID: 3620538530630005368}
   m_Layer: 0
   m_Name: Player Health Bar
@@ -407,7 +407,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6910654847263194332
+--- !u!4 &2492608577118686086
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -415,8 +415,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7266892923170894615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -310, y: 199, z: 0}
-  m_LocalScale: {x: 150, y: 150, z: 150}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8311541328957642977}

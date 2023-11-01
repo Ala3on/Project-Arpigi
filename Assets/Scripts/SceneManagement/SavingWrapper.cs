@@ -34,7 +34,7 @@ namespace RPG.SceneManagement
             }
             if (Input.GetKeyDown(KeyCode.L))
             {
-                Load();
+                StartCoroutine(Load());
             }
             if (Input.GetKeyDown(KeyCode.D))
             {
@@ -42,10 +42,14 @@ namespace RPG.SceneManagement
             }
         }
 
-        public void Load()
+        public IEnumerator Load()
+        {
+            yield return GetComponent<SavingSystem>().Load(defaultSaveFile);
+        }
+        /* public void Load()
         {
             GetComponent<SavingSystem>().Load(defaultSaveFile);
-        }
+        } */
 
         public void Save()
         {

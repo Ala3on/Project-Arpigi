@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using RPG.Attributes;
 using RPG.Combat;
 using RPG.Core;
@@ -18,6 +19,7 @@ namespace RPG.Control
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float raycastRadius = 1f;
 
+        bool isDraggingUI = false;
 
         Health health;
 
@@ -36,6 +38,7 @@ namespace RPG.Control
 
         void Update()
         {
+            CheckActionBarShortcutKeys();
             if (InteractWithUI()) return;
             if (health.IsDead)
             {
@@ -122,9 +125,22 @@ namespace RPG.Control
 
         private bool InteractWithUI()
         {
+            if (Input.GetMouseButtonUp(0))
+            {
+                isDraggingUI = false;
+            }
+
             if (EventSystem.current.IsPointerOverGameObject())// ritorna true se il cursore è sopra un elemento UI
             {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    isDraggingUI = true;
+                }
                 SetCursor(CursorType.UI);
+                return true;
+            }
+            if (isDraggingUI)
+            {
                 return true;
             }
             return false;
@@ -155,6 +171,17 @@ namespace RPG.Control
                 }
             }
             return cursorMappings[0];
+        }
+
+        private void CheckActionBarShortcutKeys()
+        {
+            for (int i = 1; i <= 6; i++)
+            {
+                if (Input.GetKeyDown(i.ToString()))
+                {
+                    GetComponent<ActionStore>().Use(i - 1, gameObject);
+                }
+            }
         }
 
 

@@ -11,6 +11,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Companion
       objectReference: {fileID: 0}
+    - target: {fileID: 3223946598333083461, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: m_TagString
+      value: Companion
+      objectReference: {fileID: 0}
     - target: {fileID: 3320981778744503930, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: uniqueIdetifier
       value: 4fd5ba87-57dc-44c6-b6be-ab3388960e05

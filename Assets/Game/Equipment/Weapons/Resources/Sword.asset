@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7023af588f67dc45a7a151f639c86d6, type: 3}
+  m_Name: Sword
+  m_EditorClassIdentifier: 
+  itemID: e0f15c92-5298-4493-ae64-fa25da4f0618
+  displayName: Spada Anonima
+  description: Spada comune forgiata principalmente per gli NPC
+  icon: {fileID: 21300000, guid: 5fd50594014b70e48bd6993443d46b32, type: 3}
+  pickup: {fileID: 8881924856086964810, guid: a58aa92e878889b40b8ee683d97b0452, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
+  additiveModifiers:
+  - stat: 0
+    value: 40
+  percentageModifiers: []
+  weaponAnimatorOverrideController: {fileID: 22100000, guid: f7e06fc9023f20142be7a6bbe7614703, type: 2}
+  weaponPrefab: {fileID: -3777239625201516217, guid: 4aa4898a4dcd00c4eaf31097d47821ed, type: 3}
+  shieldPrefab: {fileID: 0}
+  range: 2
+  damage: 10
+  percentageDamageBonus: 100
+  isRightHanded: 1
+  projectile: {fileID: 0}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7023af588f67dc45a7a151f639c86d6, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: 
+  itemID: 91617089-ed5d-48cb-a13c-22ee0d9bbcc3
+  displayName: Bastone di fuoco
+  description: Uno scettro che consente di lanciare sfere infuocate anche a chi non
+    ha nozioni base di magia
+  icon: {fileID: 21300000, guid: d7a3e9e7a85aa9c4794f9b6de5e22685, type: 3}
+  pickup: {fileID: 4364244822194919810, guid: dd0a947a487ceac48b98373399332971, type: 3}
+  stackable: 0
+  allowedEquipLocation: 5
+  additiveModifiers: []
+  percentageModifiers: []
+  weaponAnimatorOverrideController: {fileID: 22100000, guid: 71a53f863038ec04eb12b45cd2a3e004, type: 2}
+  weaponPrefab: {fileID: 4923756163035047119, guid: 0d680f7af27d2df4c8b65c6c1975a3c9, type: 3}
+  shieldPrefab: {fileID: 0}
+  range: 20
+  damage: 5
+  percentageDamageBonus: 0
+  isRightHanded: 0
+  projectile: {fileID: 6461232815919109560, guid: cfa7176e1a141dd4b942e1a528aa025a, type: 3}

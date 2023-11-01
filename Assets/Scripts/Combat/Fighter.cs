@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using GameDevTV.Utils;
 using Newtonsoft.Json.Linq;
 using RPG.Attributes;
@@ -12,7 +13,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    public class Fighter : MonoBehaviour, IAction, ISaveable, IModifierProvider
+    public class Fighter : MonoBehaviour, IAction, ISaveable/* , IModifierProvider */
     {
         [SerializeField] float timeBetweenAttacks = 2f;
 
@@ -21,6 +22,7 @@ namespace RPG.Combat
         [SerializeField] WeaponConfig defaultWeapon = null;
         // [SerializeField] string defaultWeaponName = "Unarmed";
 
+        Equipment equipment;
         Health target;
         Mover mover;
         float timeSinceLastAttack = 0;
@@ -30,6 +32,12 @@ namespace RPG.Combat
         private void Awake()
         {
             currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
+            equipment = GetComponent<Equipment>();
+            if (equipment)
+            {
+                equipment.equipmentUpdated += UpdateWeapon;
+                equipment.equipmentUpdated += UpdateCompanionWeapon;
+            }
         }
 
         private WeaponConfig SetupDefaultWeapon()
@@ -108,21 +116,21 @@ namespace RPG.Combat
             mover.Cancel();
         }
 
-        public IEnumerable<float> GetAdditiveModifiers(Stat stat)
-        {
-            if (stat == Stat.Attack)
-            {
-                yield return currentWeaponConfig.value.GetWeaponDamage();
-            }
-        }
+        /*   public IEnumerable<float> GetAdditiveModifiers(Stat stat)
+          {
+              if (stat == Stat.Attack)
+              {
+                  yield return currentWeaponConfig.value.GetWeaponDamage();
+              }
+          }
 
-        public IEnumerable<float> GetPercentageModifiers(Stat stat)
-        {
-            if (stat == Stat.Attack)
-            {
-                yield return currentWeaponConfig.value.GetPercentageDamageBonus();
-            }
-        }
+          public IEnumerable<float> GetPercentageModifiers(Stat stat)
+          {
+              if (stat == Stat.Attack)
+              {
+                  yield return currentWeaponConfig.value.GetPercentageDamageBonus();
+              }
+          } */
 
         // Animation Event
         public void Hit()
@@ -161,7 +169,33 @@ namespace RPG.Combat
             currentWeaponConfig.value = weapon;
             if (weapon == null) return;
             currentWeapon = AttachWeapon(weapon);
+        }
 
+        private void UpdateWeapon()
+        {
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Weapon) as WeaponConfig;
+            if (weapon == null)
+            {
+                EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                EquipWeapon(weapon);
+            }
+        }
+        // TODO: Refactor this
+        private void UpdateCompanionWeapon()
+        {
+            Fighter companion = GameObject.FindGameObjectWithTag("Companion").GetComponent<Fighter>();
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Necklace) as WeaponConfig;
+            if (weapon == null)
+            {
+                companion.EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                companion.EquipWeapon(weapon);
+            }
         }
 
         private Weapon AttachWeapon(WeaponConfig weapon)

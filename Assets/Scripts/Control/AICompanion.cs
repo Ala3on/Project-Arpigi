@@ -6,6 +6,7 @@ using RPG.Movement;
 using UnityEngine;
 using UnityEngine.AI;
 
+// remove this comment
 namespace RPG.Control
 {
     public class AICompanion : MonoBehaviour

@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using GameDevTV.Utils;
 using Newtonsoft.Json.Linq;
 using RPG.Core;
@@ -28,6 +30,8 @@ namespace RPG.Attributes
 
         bool isDead = false;
         BaseStats baseStats;
+        Equipment equipment;
+        float damageTakenPercentage = 0;
 
         LazyValue<float> healthPoints;
 
@@ -35,6 +39,7 @@ namespace RPG.Attributes
         private void Awake()
         {
             baseStats = GetComponent<BaseStats>();
+            equipment = GetComponent<Equipment>();
             healthPoints = new LazyValue<float>(GetInitialHealth);
         }
 
@@ -52,10 +57,19 @@ namespace RPG.Attributes
         private void OnEnable()
         {
             baseStats.onLevelUp += RestoreHp;
+            if (equipment) equipment.equipmentUpdated += HandleEquipmentUpdate;
         }
         private void OnDisable()
         {
             baseStats.onLevelUp -= RestoreHp;
+            if (equipment) equipment.equipmentUpdated -= HandleEquipmentUpdate;
+        }
+
+        private void HandleEquipmentUpdate()
+        {
+            float maxHp = GetMaxHp();
+            float currentHp = maxHp - (maxHp * damageTakenPercentage / 100);
+            healthPoints.value = Mathf.Min(currentHp, maxHp);
         }
 
         public bool IsDead { get { return isDead; } }
@@ -63,10 +77,14 @@ namespace RPG.Attributes
         public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints.value = Mathf.Max(healthPoints.value - damage, 0);
+            UpdateDamagePercentage();
             if (healthPoints.value <= 0)
             {
                 onDie.Invoke(damage);
-                AwardExperience(instigator);
+                if (gameObject.tag != "Player")
+                {
+                    AwardExperience(instigator);
+                }
                 Die();
             }
             else
@@ -85,6 +103,12 @@ namespace RPG.Attributes
         {
             return 100 * healthPoints.value / GetMaxHp();
         }
+
+        public void UpdateDamagePercentage()
+        {
+            damageTakenPercentage = MathF.Min(100 * ((GetMaxHp() - healthPoints.value) / GetMaxHp()), 100);
+        }
+
         public float GetHpFraction()
         {
             return healthPoints.value / GetMaxHp();
@@ -95,14 +119,24 @@ namespace RPG.Attributes
             return healthPoints.value;
         }
 
-        public void Heal(float healtToRestore)
+        public void Heal(float healtToRestore, bool isPercentage = false)
         {
-            healthPoints.value = Mathf.Min(healthPoints.value + healtToRestore, GetMaxHp());
+            if (isPercentage)
+            {
+                healthPoints.value = Mathf.Min(healthPoints.value + GetMaxHp() * healtToRestore / 100, GetMaxHp());
+            }
+            else
+            {
+                healthPoints.value = Mathf.Min(healthPoints.value + healtToRestore, GetMaxHp());
+            }
+            UpdateDamagePercentage();
         }
 
         private void RestoreHp()
         {
             healthPoints.value = GetMaxHp();
+            UpdateDamagePercentage();
+
         }
 
 
@@ -133,15 +167,27 @@ namespace RPG.Attributes
         } */
 
         // SAVE DATA
+        struct HealthSaveData
+        {
+            public float healthPoints;
+            public float damageTakenPercentage;
+        }
 
         public JToken CaptureState()
         {
-            return JToken.FromObject(healthPoints.value);
+            HealthSaveData data = new HealthSaveData
+            {
+                healthPoints = healthPoints.value,
+                damageTakenPercentage = damageTakenPercentage
+            };
+            return JToken.FromObject(data);
         }
 
         public void RestoreState(JToken state)
         {
-            healthPoints.value = state.ToObject<float>();
+            var data = state.ToObject<HealthSaveData>();
+            healthPoints.value = data.healthPoints;
+            damageTakenPercentage = data.damageTakenPercentage;
 
             if (healthPoints.value <= 0)
             {
@@ -149,6 +195,6 @@ namespace RPG.Attributes
             }
 
         }
-
     }
 }
+
