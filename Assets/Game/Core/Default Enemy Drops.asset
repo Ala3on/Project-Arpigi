@@ -31,6 +31,12 @@ MonoBehaviour:
     - 4
     minNumber: 0100000001000000
     maxNumber: 0100000001000000
+  - item: {fileID: 11400000, guid: ae54bfbc5d35ceb4aaf67c06ba2a598b, type: 2}
+    relativeChance:
+    - 5
+    - 6
+    minNumber: 0100000001000000
+    maxNumber: 0100000002000000
   dropChancePercentage:
   - 40
   - 60

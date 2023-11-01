@@ -65,6 +65,12 @@ namespace GameDevTV.UI.Inventories
                 RemoveItems(1);
                 if (equippedItem != null) AddItems(equippedItem, 1);
             }
+            if (GetItem() is ActionItem actionItem)
+            {
+                ActionStore actionStore = inventory.GetComponent<ActionStore>();
+                actionStore.AddAction(actionItem, GetNumber());
+                RemoveItems(GetNumber());
+            }
 
         }
     }

@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace RPG.Combat
 {
-    [CreateAssetMenu(fileName = "Weapon", menuName = "Weapons/Make New Weapon", order = 0)]
+    [CreateAssetMenu(fileName = "Weapon", menuName = "RPG/Inventory/Equipment/New Weapon")]
     public class WeaponConfig : StatsEquipableItem, IModifierProvider
     {
         [SerializeField] AnimatorOverrideController weaponAnimatorOverrideController = null;

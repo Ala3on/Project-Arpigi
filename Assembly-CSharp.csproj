@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Core\DestroyAfterEffect.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\IItemHolder.cs" />
+     <Compile Include="Assets\Scripts\Inventories\DropLibrary.cs" />
      <Compile Include="Assets\Scripts\Saving\SavingSystem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipableItem.cs" />
      <Compile Include="Assets\Asset Packs\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryItemIcon.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\Pickup.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\UIClickHandler.cs" />
+     <Compile Include="Assets\Scripts\Inventories\RandomDropper.cs" />
      <Compile Include="Assets\Scripts\Control\IRaycastable.cs" />
      <Compile Include="Assets\Scripts\Core\CameraFacing.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\SavingWrapper.cs" />
@@ -113,8 +115,7 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
-     <Compile Include="Assets\Scripts\Inventories\RandomDropper.cs" />
-     <Compile Include="Assets\Scripts\Inventories\DropLibrary.cs" />
+     <Compile Include="Assets\Scripts\Inventories\Consumable\HealthPotion.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

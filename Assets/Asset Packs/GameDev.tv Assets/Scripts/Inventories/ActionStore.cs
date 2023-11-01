@@ -86,6 +86,52 @@ namespace GameDevTV.Inventories
         }
 
         /// <summary>
+        /// Add an item to the first available slot.
+        /// </summary>
+        /// <param name="item">What item should be added.</param>
+        /// <param name="number">How many items to add.</param>
+        /// <returns>Whether or not the item could be added.</returns>
+        /// <remarks>
+        /// This method is used by the inventory UI to add items by clicking on
+        /// them.
+        /// </remarks>
+        public void AddAction(InventoryItem item, int number)
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                if (dockedItems.ContainsKey(i))
+                {
+                    if (object.ReferenceEquals(item, dockedItems[i].item))
+                    {
+                        dockedItems[i].number += number;
+                        if (storeUpdated != null)
+                        {
+                            storeUpdated();
+                        }
+                        return;
+                    }
+                }
+            }
+
+            // If the item is not found in any of the slots, add it to a new slot
+            for (int i = 0; i < 6; i++)
+            {
+                if (!dockedItems.ContainsKey(i))
+                {
+                    var slot = new DockedItemSlot();
+                    slot.item = item as ActionItem;
+                    slot.number = number;
+                    dockedItems[i] = slot;
+                    if (storeUpdated != null)
+                    {
+                        storeUpdated();
+                    }
+                    return;
+                }
+            }
+        }
+
+        /// <summary>
         /// Use the item at the given slot. If the item is consumable one
         /// instance will be destroyed until the item is removed completely.
         /// </summary>

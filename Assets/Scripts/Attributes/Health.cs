@@ -119,9 +119,16 @@ namespace RPG.Attributes
             return healthPoints.value;
         }
 
-        public void Heal(float healtToRestore)
+        public void Heal(float healtToRestore, bool isPercentage = false)
         {
-            healthPoints.value = Mathf.Min(healthPoints.value + healtToRestore, GetMaxHp());
+            if (isPercentage)
+            {
+                healthPoints.value = Mathf.Min(healthPoints.value + GetMaxHp() * healtToRestore / 100, GetMaxHp());
+            }
+            else
+            {
+                healthPoints.value = Mathf.Min(healthPoints.value + healtToRestore, GetMaxHp());
+            }
             UpdateDamagePercentage();
         }
 

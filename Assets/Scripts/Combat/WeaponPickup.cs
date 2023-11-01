@@ -6,6 +6,8 @@ using RPG.Control;
 using RPG.Movement;
 using UnityEngine;
 
+// TODO: Da rimuovere non più usato
+
 namespace RPG.Combat
 {
     public class WeaponPickup : MonoBehaviour, IRaycastable

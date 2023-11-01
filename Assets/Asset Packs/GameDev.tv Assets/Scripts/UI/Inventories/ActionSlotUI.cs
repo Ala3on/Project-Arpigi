@@ -52,6 +52,15 @@ namespace GameDevTV.UI.Inventories
             store.RemoveItems(index, number);
         }
 
+        public void OnRightClickItem()
+        {
+            if (GetItem() == null || GetNumber() < 1) return;
+            if (GetItem() is ActionItem)
+            {
+                store.Use(index, GameObject.FindWithTag("Player"));
+            }
+        }
+
         // PRIVATE
 
         void UpdateIcon()

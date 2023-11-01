@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameDevTV.Inventories;
 using RPG.Attributes;
 using RPG.Combat;
 using RPG.Core;
@@ -37,6 +38,7 @@ namespace RPG.Control
 
         void Update()
         {
+            CheckActionBarShortcutKeys();
             if (InteractWithUI()) return;
             if (health.IsDead)
             {
@@ -169,6 +171,17 @@ namespace RPG.Control
                 }
             }
             return cursorMappings[0];
+        }
+
+        private void CheckActionBarShortcutKeys()
+        {
+            for (int i = 1; i <= 6; i++)
+            {
+                if (Input.GetKeyDown(i.ToString()))
+                {
+                    GetComponent<ActionStore>().Use(i - 1, gameObject);
+                }
+            }
         }
 
 
