@@ -58,11 +58,13 @@
      <Compile Include="Assets\Scripts\Saving\SavingSystem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipableItem.cs" />
      <Compile Include="Assets\Asset Packs\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
+     <Compile Include="Assets\Scripts\Inventories\StatsEquipableItem.cs" />
      <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\LazyValue.cs" />
      <Compile Include="Assets\Scripts\Movement\Spinner.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryItemIcon.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\Pickup.cs" />
+     <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\UIClickHandler.cs" />
      <Compile Include="Assets\Scripts\Control\IRaycastable.cs" />
      <Compile Include="Assets\Scripts\Core\CameraFacing.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\SavingWrapper.cs" />
@@ -94,6 +96,7 @@
      <Compile Include="Assets\Scripts\Attributes\Health.cs" />
      <Compile Include="Assets\Scripts\Stats\BaseStats.cs" />
      <Compile Include="Assets\Scripts\Combat\FighterBackup.cs" />
+     <Compile Include="Assets\Scripts\Inventories\StatsEquipment.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipLocation.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltip.cs" />
@@ -110,8 +113,8 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
-     <Compile Include="Assets\Scripts\Inventories\StatsEquipableItem.cs" />
-     <Compile Include="Assets\Scripts\Inventories\StatsEquipment.cs" />
+     <Compile Include="Assets\Scripts\Inventories\RandomDropper.cs" />
+     <Compile Include="Assets\Scripts\Inventories\DropLibrary.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

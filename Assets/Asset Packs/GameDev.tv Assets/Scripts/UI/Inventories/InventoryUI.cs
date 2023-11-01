@@ -19,7 +19,7 @@ namespace GameDevTV.UI.Inventories
 
         // LIFECYCLE METHODS
 
-        private void Awake() 
+        private void Awake()
         {
             playerInventory = Inventory.GetPlayerInventory();
             playerInventory.inventoryUpdated += Redraw;

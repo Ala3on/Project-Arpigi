@@ -52,6 +52,11 @@ namespace GameDevTV.Inventories
 
         public void PickupItem()
         {
+            if (item == null)
+            {
+                Debug.LogWarning("No item set for pickup");
+                return;
+            }
             bool foundSlot = inventory.AddToFirstEmptySlot(item, number);
             if (foundSlot)
             {

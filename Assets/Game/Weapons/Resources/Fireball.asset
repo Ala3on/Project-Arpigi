@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Fireball
   m_EditorClassIdentifier: 
   itemID: 91617089-ed5d-48cb-a13c-22ee0d9bbcc3
-  displayName: Fireball
-  description: 
+  displayName: Bastone di fuoco
+  description: Uno scettro che consente di lanciare sfere infuocate anche a chi non
+    ha nozioni base di magia
   icon: {fileID: 21300000, guid: a1ec2c0ddc0da634b85f0f465fec2d0d, type: 3}
   pickup: {fileID: 4364244822194919810, guid: dd0a947a487ceac48b98373399332971, type: 3}
   stackable: 0
   allowedEquipLocation: 5
+  additiveModifiers: []
+  percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 71a53f863038ec04eb12b45cd2a3e004, type: 2}
   weaponPrefab: {fileID: 4923756163035047119, guid: 0d680f7af27d2df4c8b65c6c1975a3c9, type: 3}
   shieldPrefab: {fileID: 0}

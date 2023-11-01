@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: Hammer
   m_EditorClassIdentifier: 
   itemID: ac85dc2c-29f0-4cb2-b929-78340ef7620b
-  displayName: Hammer
-  description: 
+  displayName: Martello Ent
+  description: "Si dice che il manico sia stato fatto con un ramo di Ent. Ma la cosa
+    pi\xF9 strana \xE8 che dal nulla compare uno scudo sull'altro braccio quando
+    lo equipaggi"
   icon: {fileID: 21300000, guid: ec22508be0cdfba4abbaeb770bef08aa, type: 3}
   pickup: {fileID: 1152551384949469333, guid: 13ab03e9e519afe448348a66ff07432d, type: 3}
   stackable: 0
   allowedEquipLocation: 5
+  additiveModifiers: []
+  percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 18b127311278add48bd1a190e96fcbf3, type: 2}
   weaponPrefab: {fileID: 5933815167799815557, guid: 27df9ba70eaf20b4c8ac2ce0a070b64c, type: 3}
   shieldPrefab: {fileID: -7383318772397265134, guid: 5bf5124ea955c854c8012a7d6e880dc9, type: 3}

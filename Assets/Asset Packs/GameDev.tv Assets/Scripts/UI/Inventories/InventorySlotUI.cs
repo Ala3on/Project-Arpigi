@@ -53,5 +53,19 @@ namespace GameDevTV.UI.Inventories
         {
             inventory.RemoveFromSlot(index, number);
         }
+
+        public void OnRightClickItem()
+        {
+            if (GetItem() == null || GetNumber() < 1) return;
+            if (GetItem() is EquipableItem equipableItem)
+            {
+                Equipment equipment = inventory.GetComponent<Equipment>();
+                EquipableItem equippedItem = equipment.GetItemInSlot(equipableItem.GetAllowedEquipLocation());
+                equipment.AddItem(equipableItem.GetAllowedEquipLocation(), equipableItem);
+                RemoveItems(1);
+                if (equippedItem != null) AddItems(equippedItem, 1);
+            }
+
+        }
     }
 }

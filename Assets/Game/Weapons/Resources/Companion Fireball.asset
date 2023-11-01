@@ -13,12 +13,15 @@ MonoBehaviour:
   m_Name: Companion Fireball
   m_EditorClassIdentifier: 
   itemID: 88b39ce1-835c-45d3-a189-6f2a4a809615
-  displayName: Companion Fireball
-  description: 
+  displayName: Globo Fiammante
+  description: Indossa l'accessorio per ricordare al tuo amico come attacca un vero
+    drago
   icon: {fileID: 21300000, guid: 84c5ffdff53f1f247857c56cc451b497, type: 3}
   pickup: {fileID: 7000365342606377431, guid: 513e4d52156c2e645a2f62d8887bc0a1, type: 3}
   stackable: 0
-  allowedEquipLocation: 5
+  allowedEquipLocation: 1
+  additiveModifiers: []
+  percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: f58515504e6dc6641a0848dbaf2cef75, type: 2}
   weaponPrefab: {fileID: -8585219728834802968, guid: d24dc24a7bae4bc4692eeb912f3c3542, type: 3}
   shieldPrefab: {fileID: 0}

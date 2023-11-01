@@ -2,6 +2,7 @@
 using UnityEngine;
 using RPG.Saving;
 using Newtonsoft.Json.Linq;
+using UnityEngine.SceneManagement;
 
 namespace GameDevTV.Inventories
 {
@@ -13,6 +14,8 @@ namespace GameDevTV.Inventories
     {
         // STATE
         private List<Pickup> droppedItems = new List<Pickup>();
+        private List<DropRecord> otherSceneDroppedItems = new List<DropRecord>();
+
 
         // PUBLIC
 
@@ -68,30 +71,44 @@ namespace GameDevTV.Inventories
         private struct DropRecord
         {
             public string itemID;
-            public Vector3 position;
+            public JToken position;
             public int number;
+            public int sceneBuildIndex;
         }
 
         public JToken CaptureState()
         {
             RemoveDestroyedDrops();
-            var droppedItemsList = new DropRecord[droppedItems.Count];
-            for (int i = 0; i < droppedItemsList.Length; i++)
+            // var droppedItemsList = new DropRecord[droppedItems.Count];
+            var droppedItemsList = new List<DropRecord>();
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            foreach (Pickup pickup in droppedItems)
             {
-                droppedItemsList[i].itemID = droppedItems[i].GetItem().GetItemID();
-                droppedItemsList[i].position = droppedItems[i].transform.position;
-                droppedItemsList[i].number = droppedItems[i].GetNumber();
+                var droppedItem = new DropRecord();
+                droppedItem.itemID = pickup.GetItem().GetItemID();
+                droppedItem.position = pickup.transform.position.ToToken();
+                droppedItem.number = pickup.GetNumber();
+                droppedItem.sceneBuildIndex = buildIndex;
+                droppedItemsList.Add(droppedItem);
             }
+            droppedItemsList.AddRange(otherSceneDroppedItems);
             return JToken.FromObject(droppedItemsList);
         }
 
         public void RestoreState(JToken state)
         {
-            var droppedItemsList = state.ToObject<DropRecord[]>();
+            var droppedItemsList = state.ToObject<List<DropRecord>>();
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            otherSceneDroppedItems.Clear();
             foreach (var item in droppedItemsList)
             {
+                if (item.sceneBuildIndex != buildIndex)
+                {
+                    otherSceneDroppedItems.Add(item);
+                    continue;
+                }
                 var pickupItem = InventoryItem.GetFromID(item.itemID);
-                Vector3 position = item.position;
+                Vector3 position = item.position.ToVector3();
                 int number = item.number;
                 SpawnPickup(pickupItem, position, number);
             }

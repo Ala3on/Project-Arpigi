@@ -36,6 +36,7 @@ namespace RPG.Combat
             if (equipment)
             {
                 equipment.equipmentUpdated += UpdateWeapon;
+                equipment.equipmentUpdated += UpdateCompanionWeapon;
             }
         }
 
@@ -180,6 +181,20 @@ namespace RPG.Combat
             else
             {
                 EquipWeapon(weapon);
+            }
+        }
+        // TODO: Refactor this
+        private void UpdateCompanionWeapon()
+        {
+            Fighter companion = GameObject.FindGameObjectWithTag("Companion").GetComponent<Fighter>();
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Necklace) as WeaponConfig;
+            if (weapon == null)
+            {
+                companion.EquipWeapon(defaultWeapon);
+            }
+            else
+            {
+                companion.EquipWeapon(weapon);
             }
         }
 
