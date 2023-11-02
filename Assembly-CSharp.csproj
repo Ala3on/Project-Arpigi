@@ -81,6 +81,7 @@
      <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
      <Compile Include="Assets\Scripts\Inventories\Consumable\HealthPotion.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
+     <Compile Include="Assets\Scripts\GetAssetOfType.cs" />
      <Compile Include="Assets\Scripts\Stats\IModifierProvider.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltipSpawner.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />

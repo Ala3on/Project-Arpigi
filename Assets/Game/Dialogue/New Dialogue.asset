@@ -1,5 +1,87 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6164370548623416399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 7912d381-e2d7-4eb5-bc6f-e7ec070aa7ad
+  m_EditorClassIdentifier: 
+  text: 
+  children:
+  - 6c50dd92-7805-4d44-ad9b-d1ff9a02ae8a
+  rect:
+    serializedVersion: 2
+    x: 833
+    y: 73
+    width: 300
+    height: 100
+--- !u!114 &-4312205018364190789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 6c50dd92-7805-4d44-ad9b-d1ff9a02ae8a
+  m_EditorClassIdentifier: 
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 1178
+    y: 233
+    width: 300
+    height: 100
+--- !u!114 &-3823247680606376119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d53b2120-0498-422c-9510-24ce15bdf1f6
+  m_EditorClassIdentifier: 
+  text: 
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 460
+    y: 307
+    width: 300
+    height: 100
+--- !u!114 &-2718007700804941439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: f80608c8-a112-408a-aa0d-c6a110c2190b
+  m_EditorClassIdentifier: 
+  text: 
+  children:
+  - 7912d381-e2d7-4eb5-bc6f-e7ec070aa7ad
+  rect:
+    serializedVersion: 2
+    x: 454
+    y: 51
+    width: 300
+    height: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,53 +95,30 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - uniqueID: 39982e0f-324d-49a8-88f7-92303d6a56e3
-    text: 'Ciao '
-    children:
-    - 09490676-c3b4-4d97-9e76-3042fef96bbe
-    - c5644eb4-f5ca-413a-9aa3-5727fab28b92
-    rectPosition:
-      serializedVersion: 2
-      x: 15
-      y: 111
-      width: 300
-      height: 100
-  - uniqueID: c5644eb4-f5ca-413a-9aa3-5727fab28b92
-    text: Ciao un cazzo
-    children:
-    - 06cb8ed8-0d81-4432-89a5-e57bbb56f937
-    rectPosition:
-      serializedVersion: 2
-      x: 363.99994
-      y: 20.000011
-      width: 300
-      height: 100
-  - uniqueID: 09490676-c3b4-4d97-9e76-3042fef96bbe
-    text: Ciao a te
-    children:
-    - 973042fe-fc74-4ba3-bb06-93eae8504a0a
-    rectPosition:
-      serializedVersion: 2
-      x: 437
-      y: 259
-      width: 300
-      height: 100
-  - uniqueID: 06cb8ed8-0d81-4432-89a5-e57bbb56f937
-    text: 
-    children:
-    - 973042fe-fc74-4ba3-bb06-93eae8504a0a
-    rectPosition:
-      serializedVersion: 2
-      x: 687.99994
-      y: 107.000015
-      width: 300
-      height: 100
-  - uniqueID: 973042fe-fc74-4ba3-bb06-93eae8504a0a
-    text: 
-    children: []
-    rectPosition:
-      serializedVersion: 2
-      x: 1056
-      y: 186.00002
-      width: 300
-      height: 100
+  - {fileID: 1209585204196390165}
+  - {fileID: -2718007700804941439}
+  - {fileID: -6164370548623416399}
+  - {fileID: -4312205018364190789}
+  - {fileID: -3823247680606376119}
+--- !u!114 &1209585204196390165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d70631dc-93af-49c5-b9c9-4f466ef95c0d
+  m_EditorClassIdentifier: 
+  text: 
+  children:
+  - f80608c8-a112-408a-aa0d-c6a110c2190b
+  - d53b2120-0498-422c-9510-24ce15bdf1f6
+  rect:
+    serializedVersion: 2
+    x: 18.000015
+    y: 222
+    width: 300
+    height: 100
