@@ -44,6 +44,7 @@
      <Compile Include="Assets\Asset Packs\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\PickupSpawner.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\Fader.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Speaker.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryDropTarget.cs" />
      <Compile Include="Assets\Scripts\Control\CursorType.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ActionSlotUI.cs" />

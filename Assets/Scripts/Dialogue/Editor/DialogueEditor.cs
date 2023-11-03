@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using NUnit.Framework;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace RPG.Dialogue.Editor
 {
@@ -15,11 +17,13 @@ namespace RPG.Dialogue.Editor
         Vector2 windowSize = new Vector2(1000, 1000);
 
         [NonSerialized] GUIStyle nodeStyle;
+        [NonSerialized] GUIStyle playerNodeStyle;
         [NonSerialized] DialogueNode draggingNode = null;
         [NonSerialized] DialogueNode creatingNode = null;
         [NonSerialized] DialogueNode deletingNode = null;
         [NonSerialized] DialogueNode linkingParentNode = null;
         [NonSerialized] DialogueNode selectedNode = null;
+        [NonSerialized] Dictionary<Speaker, GUIStyle> speakerStyle = new Dictionary<Speaker, GUIStyle>();
 
         const float backgroundSize = 50f;
 
@@ -57,11 +61,40 @@ namespace RPG.Dialogue.Editor
         private void OnEnable()
         {
             Selection.selectionChanged += OnSelectionChanged;
+
+            SetupNodeStyles();
+
+        }
+
+        private void SetupNodeStyles()
+        {
+            // GLOBAL STYLE
             nodeStyle = new GUIStyle();
             nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+            nodeStyle.active.background = EditorGUIUtility.Load("node0 on") as Texture2D;
             nodeStyle.padding = new RectOffset(20, 20, 20, 20);
             nodeStyle.border = new RectOffset(12, 12, 12, 12);
+            nodeStyle.fixedWidth = 300;
+            //nodeStyle.fixedHeight = 150;
+            // speakerStyle.Add(Speaker.Speaker2, nodeStyle);
 
+            // PLAYER STYLE
+            playerNodeStyle = new GUIStyle(nodeStyle);
+            playerNodeStyle.normal.background = EditorGUIUtility.Load("node1") as Texture2D;
+            playerNodeStyle.active.background = EditorGUIUtility.Load("node1 on") as Texture2D;
+            speakerStyle.Add(Speaker.Player, playerNodeStyle);
+
+            // COMPANION STYLE
+            GUIStyle companionStyle = new GUIStyle(nodeStyle);
+            companionStyle.normal.background = EditorGUIUtility.Load("node6") as Texture2D;
+            companionStyle.active.background = EditorGUIUtility.Load("node6 on") as Texture2D;
+            speakerStyle.Add(Speaker.Companion, companionStyle);
+
+            // GUIStyle speaker1Style = new GUIStyle(nodeStyle);
+            // speaker1Style.normal.background = EditorGUIUtility.Load("node5") as Texture2D;
+            // speaker1Style.active.background = EditorGUIUtility.Load("node5 on") as Texture2D;
+
+            // speakerStyle.Add(Speaker.Speaker1, speaker1Style);
         }
 
         private void OnSelectionChanged()
@@ -183,19 +216,24 @@ namespace RPG.Dialogue.Editor
 
         private void DrawNode(DialogueNode node)
         {
+            GUIStyle style = nodeStyle;
+            if (speakerStyle.ContainsKey(node.GetSpeaker()))
+            {
+                style = speakerStyle[node.GetSpeaker()];
+            }
+            // GUIStyle style = SetNodeStyle(node);
+            Texture2D normalTexture = style.normal.background;
             if (node == selectedNode)
             {
-                nodeStyle.normal.background = EditorGUIUtility.Load("node1 on") as Texture2D;
-            }
-            else
-            {
-                nodeStyle.normal.background = EditorGUIUtility.Load("node0") as Texture2D;
+                style.normal.background = style.active.background;
             }
             // Trick per cambiare colore a un elemento GUI
             // basta cambiare colore prima della sua creazione e poi ripristinare il colore di default
             // Color defaultColor = GUI.color;
             // GUI.color = Color.cyan;
-            GUILayout.BeginArea(node.GetRect(), nodeStyle);
+            GUI.Label(new Rect(node.GetRect().xMin + 10, node.GetRect().yMin - 15, 100, 15), node.GetSpeaker().ToString(), EditorStyles.boldLabel);
+            GUILayout.BeginArea(node.GetRect(), style);
+
 
             GUILayout.BeginHorizontal();
             // ripristina il colore di default
@@ -206,24 +244,41 @@ namespace RPG.Dialogue.Editor
             node.SetText(EditorGUILayout.TextField(node.GetText()));
 
             // BUTTONS
-            GUILayout.Space(15);
+            //GUILayout.Space(15);
             GUILayout.BeginHorizontal();
             if (GUILayout.Button("x"))
             {
                 deletingNode = node;
             }
-            DrawLinkButtons(node);
+            // if (node.IsPlayerSpeaking())
+            // {
+            //     if (GUILayout.Button("Player"))
+            //     {
+            //         node.SetSpeaker(Speaker.Speaker1);
+            //         //style = nodeStyle;
+            //     }
+            // }
+            // else
+            // {
+            //     if (GUILayout.Button("NPC"))
+            //     {
+            //         node.SetSpeaker(Speaker.Player);
+            //         //style = playerNodeStyle;
+            //     }
+            // }
             if (GUILayout.Button("+"))
             {
                 creatingNode = node;
             }
+
             GUILayout.EndHorizontal();
+            DrawLinkButtons(node);
             GUILayout.EndVertical();
             GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
+            style.normal.background = normalTexture;
         }
-
 
         private void DrawLinkButtons(DialogueNode node)
         {

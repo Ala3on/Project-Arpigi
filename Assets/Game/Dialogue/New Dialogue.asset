@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6164370548623416399
+--- !u!114 &-9055138814359803695
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,38 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 7912d381-e2d7-4eb5-bc6f-e7ec070aa7ad
+  m_Name: 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
   m_EditorClassIdentifier: 
-  text: 
-  children:
-  - 6c50dd92-7805-4d44-ad9b-d1ff9a02ae8a
-  rect:
-    serializedVersion: 2
-    x: 833
-    y: 73
-    width: 300
-    height: 100
---- !u!114 &-4312205018364190789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 6c50dd92-7805-4d44-ad9b-d1ff9a02ae8a
-  m_EditorClassIdentifier: 
-  text: 
+  speaker: 0
+  text: "Amun\xEC!"
   children: []
   rect:
     serializedVersion: 2
-    x: 1178
-    y: 233
+    x: 3683
+    y: 247
     width: 300
     height: 100
---- !u!114 &-3823247680606376119
+--- !u!114 &-8605655590123858430
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,35 +31,106 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: d53b2120-0498-422c-9510-24ce15bdf1f6
+  m_Name: 68157bcc-c48b-41b6-880d-6e5612d9bc4e
   m_EditorClassIdentifier: 
-  text: 
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 460
-    y: 307
-    width: 300
-    height: 100
---- !u!114 &-2718007700804941439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: f80608c8-a112-408a-aa0d-c6a110c2190b
-  m_EditorClassIdentifier: 
-  text: 
+  speaker: 2
+  text: I Bastardi hanno invaso il villaggio!
   children:
-  - 7912d381-e2d7-4eb5-bc6f-e7ec070aa7ad
+  - 14fc61e5-f405-4917-ae7f-1c8abd62e450
   rect:
     serializedVersion: 2
-    x: 454
-    y: 51
+    x: 362
+    y: 241
+    width: 300
+    height: 100
+--- !u!114 &-6703783088176636952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 10e561ab-6007-4c2a-b11b-38dd364148bf
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Di qua possiamo proseguire verso quel ponte o fare il giro lungo passando
+    per il bosco e coglierli alle spalle. Che dici?
+  children:
+  - 9a0a7e25-7937-4483-8112-282f1ec9adcb
+  - a9a86fd9-b02b-40b6-afab-1e1fc0c8edff
+  rect:
+    serializedVersion: 2
+    x: 2562
+    y: 249
+    width: 300
+    height: 100
+--- !u!114 &-5252714467558973789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 0ffd7cce-6f06-4be8-b696-c960c93bb977
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Non posso pagare per i tuoi servigi
+  children:
+  - 05fdfce7-1233-4ffa-ba5e-b213ed63bcee
+  rect:
+    serializedVersion: 2
+    x: 1076
+    y: 240.99998
+    width: 300
+    height: 100
+--- !u!114 &-3999410216288857241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: b9d4ee33-6371-44ae-9128-3d966ff3ecfe
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Rimani qui e non farti scoprire!
+  children:
+  - a0327dd0-5ccf-4e16-8db2-34e469a7bae4
+  rect:
+    serializedVersion: 2
+    x: 1826
+    y: 250
+    width: 300
+    height: 100
+--- !u!114 &-1542610997157928778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: a0327dd0-5ccf-4e16-8db2-34e469a7bae4
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: "State attenti, \xE8 gente pericolosa!"
+  children:
+  - 10e561ab-6007-4c2a-b11b-38dd364148bf
+  rect:
+    serializedVersion: 2
+    x: 2204
+    y: 251
     width: 300
     height: 100
 --- !u!114 &11400000
@@ -95,12 +146,20 @@ MonoBehaviour:
   m_Name: New Dialogue
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 1209585204196390165}
-  - {fileID: -2718007700804941439}
-  - {fileID: -6164370548623416399}
-  - {fileID: -4312205018364190789}
-  - {fileID: -3823247680606376119}
---- !u!114 &1209585204196390165
+  - {fileID: 1413869825543611434}
+  - {fileID: -8605655590123858430}
+  - {fileID: 1040034061811282621}
+  - {fileID: -5252714467558973789}
+  - {fileID: 3217390925698872426}
+  - {fileID: -3999410216288857241}
+  - {fileID: -1542610997157928778}
+  - {fileID: -6703783088176636952}
+  - {fileID: 5054323444839272269}
+  - {fileID: 5224722750687921246}
+  - {fileID: 6309037451676517473}
+  - {fileID: 140140586089935567}
+  - {fileID: -9055138814359803695}
+--- !u!114 &140140586089935567
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,15 +169,147 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: d70631dc-93af-49c5-b9c9-4f466ef95c0d
+  m_Name: 49e5172a-c8e5-4c6a-ba23-45d6347d1eb7
   m_EditorClassIdentifier: 
-  text: 
+  speaker: 1
+  text: "Cos\xEC mi piaci, facciamogli vedere di che pasta siamo fatti!"
   children:
-  - f80608c8-a112-408a-aa0d-c6a110c2190b
-  - d53b2120-0498-422c-9510-24ce15bdf1f6
+  - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
   rect:
     serializedVersion: 2
-    x: 18.000015
-    y: 222
+    x: 3285
+    y: 339
+    width: 300
+    height: 100
+--- !u!114 &1040034061811282621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 14fc61e5-f405-4917-ae7f-1c8abd62e450
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Capisco, ci pensiamo noi.
+  children:
+  - 0ffd7cce-6f06-4be8-b696-c960c93bb977
+  rect:
+    serializedVersion: 2
+    x: 717
+    y: 242
+    width: 300
+    height: 100
+--- !u!114 &1413869825543611434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 982f28d2-6739-444f-91a6-12a7f35763bc
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Che succede qui?
+  children:
+  - 68157bcc-c48b-41b6-880d-6e5612d9bc4e
+  rect:
+    serializedVersion: 2
+    x: 32
+    y: 240.00002
+    width: 300
+    height: 100
+--- !u!114 &3217390925698872426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 05fdfce7-1233-4ffa-ba5e-b213ed63bcee
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: 'Tranquillo, ci basta arrostire qualche culo per sentirci soddisfatti '
+  children:
+  - b9d4ee33-6371-44ae-9128-3d966ff3ecfe
+  rect:
+    serializedVersion: 2
+    x: 1440
+    y: 238.99998
+    width: 300
+    height: 100
+--- !u!114 &5054323444839272269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 9a0a7e25-7937-4483-8112-282f1ec9adcb
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Non possiamo perdere tempo, tenteremo un attacco frontale!
+  children:
+  - 49e5172a-c8e5-4c6a-ba23-45d6347d1eb7
+  rect:
+    serializedVersion: 2
+    x: 2935
+    y: 342
+    width: 300
+    height: 100
+--- !u!114 &5224722750687921246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: a9a86fd9-b02b-40b6-afab-1e1fc0c8edff
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: "Forse \xE8 meglio aggirarli e coglierli di sorpresa"
+  children:
+  - b9e60a44-a156-4c9b-8e48-9fb7cf59e9c9
+  rect:
+    serializedVersion: 2
+    x: 2932
+    y: 183.00002
+    width: 300
+    height: 100
+--- !u!114 &6309037451676517473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: b9e60a44-a156-4c9b-8e48-9fb7cf59e9c9
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: "Va bene, la prudenza non \xE8 mai troppa!"
+  children:
+  - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
+  rect:
+    serializedVersion: 2
+    x: 3279
+    y: 181.00003
     width: 300
     height: 100
