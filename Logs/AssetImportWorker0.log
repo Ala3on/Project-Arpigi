@@ -15,7 +15,7 @@ C:/Users/Francesco/Project/unity/RPG - demo
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59207
+58386
 Successfully changed project path to: C:/Users/Francesco/Project/unity/RPG - demo
 C:/Users/Francesco/Project/unity/RPG - demo
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/Francesco/Project/unity/RPG - demo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16352] Host "[IP] 172.23.128.1 [Port] 0 [Flags] 2 [Guid] 575118895 [EditorId] 575118895 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [20320] Host "[IP] 172.23.128.1 [Port] 0 [Flags] 2 [Guid] 2472170110 [EditorId] 2472170110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [16352] Host "[IP] 172.23.128.1 [Port] 0 [Flags] 2 [Guid] 575118895 [EditorId] 575118895 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [20320] Host "[IP] 172.23.128.1 [Port] 0 [Flags] 2 [Guid] 2472170110 [EditorId] 2472170110 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-FM72HVD) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 75.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 85.83 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.23f1 (213b516bf396)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Resources/UnitySubsystems
@@ -67,92 +67,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56620
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.23f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007177 seconds.
+Registered in 0.008271 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 81.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 76.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.512 seconds
+- Completed reload, in  0.516 seconds
 Domain Reload Profiling:
-	ReloadAssembly (513ms)
-		BeginReloadAssembly (65ms)
+	ReloadAssembly (517ms)
+		BeginReloadAssembly (70ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (370ms)
-			LoadAssemblies (62ms)
+		EndReloadAssembly (365ms)
+			LoadAssemblies (68ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (78ms)
+			SetupTypeCache (83ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (232ms)
+			SetupLoadedEditorAssemblies (221ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (81ms)
+				RefreshPlugins (77ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (106ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005996 seconds.
+Registered in 0.007287 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.829 seconds
+- Completed reload, in  0.854 seconds
 Domain Reload Profiling:
-	ReloadAssembly (830ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (855ms)
+		BeginReloadAssembly (112ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (16ms)
-		EndReloadAssembly (651ms)
-			LoadAssemblies (69ms)
+		EndReloadAssembly (659ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (191ms)
+			SetupTypeCache (203ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (324ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (322ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (68ms)
-				ProcessInitializeOnLoadAttributes (226ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (222ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3373 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 40 unused Assets / (185.9 KB). Loaded Objects now: 3866.
 Memory consumption went from 210.4 MB to 210.3 MB.
-Total: 2.054800 ms (FindLiveObjects: 0.210800 ms CreateObjectMapping: 0.084300 ms MarkObjects: 1.640800 ms  DeleteObjects: 0.118000 ms)
+Total: 2.152600 ms (FindLiveObjects: 0.201800 ms CreateObjectMapping: 0.101800 ms MarkObjects: 1.728900 ms  DeleteObjects: 0.119000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -164,3 +164,743 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 85790.491988 seconds.
+  path: Assets/Game/Dialogue/New Dialogue.asset
+  artifactKey: Guid(cc68e27bde207a04b8495900eb6361ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Dialogue/New Dialogue.asset using Guid(cc68e27bde207a04b8495900eb6361ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b4d074ce065decfb6989d8bafad0c21') in 0.030981 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 633.916549 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '459af8e6d138d1e1215067fb1fb21759') in 0.077415 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 46.866365 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b157db530cc3d14a891da34ee0ce9a7c') in 0.006781 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.223831 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'e961888145633bcea45ef8d69a0c913f') in 0.041820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.012124 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '039fb2eed271cc73d7c07eab96a27939') in 0.003214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.086631 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b622814e8aff7226c27e2bcb8c829a1') in 0.003234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.272162 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b558a80b388aee368dd867304f8fc590') in 0.003076 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.111381 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '78d4bc182c547a20eddd06719b9a57fd') in 0.020077 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.692544 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '6b754e57b54a34a292622d70def6e3f2') in 0.022700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.283723 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '49fe9d67b1948aa24995f5bd677b54a0') in 0.018498 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.179346 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '7bfe17c960cd6be486a6eac2dd860836') in 0.018724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.624904 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'a21876a57ff091302a42518c75ffd7ae') in 0.021169 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.099919 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'e50596ed83f227eb176eadbc3c811c95') in 0.018667 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 96.922189 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '4ecde69001523a8ab947f395c95a2d6f') in 0.018279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.494876 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'fa0f95f107d923abdef7085667b09b7b') in 0.020242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.288875 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'ca5895def863cea04b90b229f9fdbeba') in 0.020649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.033702 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'dbe1e8b356085d187a822c37a8f8ff4c') in 0.020131 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.698600 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '66a2fb767b7a4ab8834583a63037b28a') in 0.017694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.422418 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '92d49fe6b43040bca03c1ef90a1a287a') in 0.028258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.515084 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '4a11c95fc346b03495143f143b6c3363') in 0.028577 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.820108 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69d5eb353df69212a4e0802db24e8a4') in 0.012925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.592362 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a426b1c9b2a268cb8eddad069e92d5') in 0.014817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.797804 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '767f61b7307cc46da026f304698af853') in 0.013614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.830430 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd681bad8ac643e8db3dbec84d0cd21') in 0.012946 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.137787 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b1e62a73f102a10b4e592296436511a') in 0.014245 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 40.369026 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac321f9883cea62f75398c84379b2ae9') in 0.014010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.151835 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '774e9d20eade9f1009ce703fff4c410f') in 0.031735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.673591 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '808b6d27d96e13706d1fa63aaac7b988') in 0.028711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.478238 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfb1c9dbba78cc50a846f23d90c5a2b') in 0.013387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.512232 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5cb64787206bcfe8f17f7e10c75b23a') in 0.013340 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.375923 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56ecab7537440f69bb038d4db917447e') in 0.013995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.285323 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06dac6bf2d15d0fda4b53fec703cb9ec') in 0.014284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.186556 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788447ae34a101f3a308e0cfc84ce019') in 0.013557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.067611 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e1d1caf8474ffbc164e6be11b448f34') in 0.012354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 110.045974 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e63dc9b28694f3202dcf810755cc8129') in 0.014355 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.558015 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bdc44fda2d9175aa8d463b526c365cd') in 0.013643 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.293829 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0ac35cb0ebcae9fcc4caaaf3dfb2128') in 0.013158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.399714 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9cd995b1078b76089768c1f3eeeb0c') in 0.012635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.085481 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99edc213b2b08e90078bea48e93fbd78') in 0.013997 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.392811 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '3ad0fc60c09c83a72be843be40e7ba97') in 0.042994 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.207745 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'd0a851696335dceb1ccaa52e8f77b933') in 0.041696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.689341 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9655975a1a621311fb2d91f9fd15c45e') in 0.012888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.502421 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657656a20d974382b8f29773eca0728b') in 0.012623 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.378647 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '5df2a8ad72e4eb4bdd449127c0abbc9c') in 0.043293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 91.481332 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fcb7b68d52d80e1ea96f9e915c1ddd7') in 0.012688 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.590208 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '8fc5e1eb07ac19c5b9215d7c59ea77d2') in 0.042500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.774402 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89a15a49d64c1e00ea331cf9866e4d5') in 0.015708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.628532 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'fcc061f68002325ed4da39c2c6fece6b') in 0.043818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.816306 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7f628e5190e1edf9a0a7a8e6ecad614') in 0.013440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.570611 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '91e6f2f26736f8f1931182bac87bf9e5') in 0.039872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.705081 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb574060996c65b5115c14b1446c44d9') in 0.013401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.889598 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3bcbb733da732b3e13f1584be318ac1') in 0.014752 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 123.581997 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d048032d84dd0a07752ba91e29f64a2') in 0.013413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.443808 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c00e1ed15acaac3fb80f8374dade578a') in 0.014182 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.687404 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60f64529ba623d8612df575421a3f32d') in 0.013592 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.388615 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '825e237c31a2064d6bf6e379b0bafbde') in 0.013009 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.503540 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843b5adc0bad84d067ff51219f064d6f') in 0.012900 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.126409 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af187e76c34a006b52d199bcfd56b3dd') in 0.013369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.683559 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57aa9ca51976ecd71e955113593842f') in 0.013564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.736021 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aeedfbbb0b303f670bdb696a830df47') in 0.012493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.486370 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '956c6a16b92bacb54094e02b9faa1279') in 0.012657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.299022 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1aa267b873f890bd46a7f7aeac49517') in 0.013730 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.114872 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3724207a5330ac75105cedd13e66ca93') in 0.012748 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.663832 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70ffa67c8c488c94b9b665785edcdca5') in 0.013828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.336841 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b90cbd6caaaad733c670277673d9453') in 0.012647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.496607 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8133c031c550c98b1bd5285b4a06b04') in 0.014146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.594694 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2e6415065dd2deb40878c60d6fa933') in 0.013257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.871744 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf3eb385286f8f15e2d68fb7a995322c') in 0.013827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.633575 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '4bbce050059d41bec58b2d56a96122e6') in 0.043149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.869000 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee8395eb42a9e16db16483f922e57e05') in 0.013888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.265877 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84456d9f76baa4d6b4f12daf8fa9ccfa') in 0.013289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.526808 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f53fb9bb48fbcc111b87541e247eeef') in 0.013485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.676439 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8971999eed4419d6b83251669c012921') in 0.013788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.569889 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: 'ab735ffe1929f0eebcdd0e178ca3747c') in 0.044134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.851597 seconds.
+  path: Assets/Game/UI/Ui Canvas.prefab
+  artifactKey: Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Ui Canvas.prefab using Guid(07dc30b6f1bbb4147acd5fd5555a18f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Broken text PPtr in file(Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset). Local file identifier (28684132378477856) doesn't exist!
+ -> (artifact id: '6fa5a92cc8926b40d55138f44a21d0bd') in 0.044391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.372287 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355322aba134f9f9029a018073f35ac2') in 0.014079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.548197 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06dd837198797b20744bac26081829c') in 0.013768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.074710 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67e2dbb15e091f02c5330926f4d56ed6') in 0.012768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.779285 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76228631bfb6e75bba23d8b105022599') in 0.013778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.521028 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '315f82d3c487a0bcc0b1e392eadacc8b') in 0.013254 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.586421 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869abdd5e61e1fa3ff0c4e333db4e18f') in 0.014616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 52.317617 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4745f5b8cdfea3d6169ae49a5ad90a77') in 0.014427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.802008 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a03b1309577a5b926fd89b2d19ea93ad') in 0.013626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 28.922613 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828d2a684d3c0c3c6b113563c7eb8b13') in 0.014019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.255737 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc2cd43c2f5c06f8e08bf617f5d48771') in 0.013682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.479782 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b28b98667e3cdea52edd4afea197d510') in 0.013195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.436419 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d29062cb76b4021a8e2fe69f750958') in 0.013842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.947025 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '629082da94e17db389f7166eba30aa14') in 0.013339 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.643165 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed29bbee5f6dacda55e2620280c44e4') in 0.013763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.260846 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceb53dd59d40917180d2e7f366620d5b') in 0.013578 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.644816 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcde4843024ea3d4a3a78d401d6bcf00') in 0.015704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.136097 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0741ec14ec560dead5d76aff356f8196') in 0.014925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.910665 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7527f5d90f7e96577b3db01e4b9157b8') in 0.014731 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.836179 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea1df5c55282f63308c55a3d654219f') in 0.013882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.320696 seconds.
+  path: Assets/Game/UI/Dialogue.prefab
+  artifactKey: Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/UI/Dialogue.prefab using Guid(4ef0afca33243294a8ad260df2868f5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca37fcc6f05c668de20d0815be3904ab') in 0.014055 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005628 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.837 seconds
+Domain Reload Profiling:
+	ReloadAssembly (837ms)
+		BeginReloadAssembly (135ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (620ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (204ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (32ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (194ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (156.3 KB). Loaded Objects now: 3919.
+Memory consumption went from 209.5 MB to 209.3 MB.
+Total: 2.401500 ms (FindLiveObjects: 0.193200 ms CreateObjectMapping: 0.097800 ms MarkObjects: 2.015900 ms  DeleteObjects: 0.093700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 311.973839 seconds.
+  path: Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.2/Menu_button_02_Little_On.png
+  artifactKey: Guid(cd8c12672dc367b48b437acbfee50ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.2/Menu_button_02_Little_On.png using Guid(cd8c12672dc367b48b437acbfee50ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e3f665d1611699e80ae59043ddbf80') in 0.081393 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 32.491364 seconds.
+  path: Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.2/Menu_button_02_Little_On.png
+  artifactKey: Guid(cd8c12672dc367b48b437acbfee50ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Fantasy RPG UI Sample/UI/Update 1.2/Menu_button_02_Little_On.png using Guid(cd8c12672dc367b48b437acbfee50ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fb4ea587c7b489b4fac95fc85a7786c') in 0.011096 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005426 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Francesco\Project\unity\RPG - demo\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.802 seconds
+Domain Reload Profiling:
+	ReloadAssembly (803ms)
+		BeginReloadAssembly (115ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (607ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (187ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (285ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (197ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.91 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 21 unused Assets / (153.3 KB). Loaded Objects now: 3940.
+Memory consumption went from 213.8 MB to 213.6 MB.
+Total: 2.536300 ms (FindLiveObjects: 0.208400 ms CreateObjectMapping: 0.113000 ms MarkObjects: 2.099400 ms  DeleteObjects: 0.114300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1768.945556 seconds.
+  path: Assets/LiberationSans-Regular SDF.asset
+  artifactKey: Guid(c11bbf5ae293a3a48b3c37350827cbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LiberationSans-Regular SDF.asset using Guid(c11bbf5ae293a3a48b3c37350827cbcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '517f9bb47e6ee3fdf0af41263112bea5') in 0.087031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.303527 seconds.
+  path: Assets/Icon_arrow.png
+  artifactKey: Guid(4df35cb88f8b9d148acd4702cdcb68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icon_arrow.png using Guid(4df35cb88f8b9d148acd4702cdcb68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6aaecda61222f38bdaca67fa45b139') in 0.008980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.910056 seconds.
+  path: Assets/Icon_arrow.png
+  artifactKey: Guid(4df35cb88f8b9d148acd4702cdcb68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Icon_arrow.png using Guid(4df35cb88f8b9d148acd4702cdcb68c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f07d1026b73f3726acb62843688749') in 0.020380 seconds 
