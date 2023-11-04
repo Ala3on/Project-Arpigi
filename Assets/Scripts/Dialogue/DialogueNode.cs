@@ -13,6 +13,8 @@ namespace RPG.Dialogue
         [SerializeField][TextArea] string text;
         [SerializeField] List<string> children = new List<string>();
         [SerializeField] Rect rect = new Rect(10, 30, 300, 100);
+        [SerializeField] DialogueAction onEnterAction;
+        [SerializeField] DialogueAction onExitAction;
 
         // construct a Dictionary to lookup the values in OnEnable, and then assign the style from the Dictionary.
         //Dictionary<Speaker, GUIStyle> speakerStyle = new Dictionary<Speaker, GUIStyle>();
@@ -41,6 +43,16 @@ namespace RPG.Dialogue
         public Speaker GetSpeaker()
         {
             return speaker;
+        }
+
+        public DialogueAction GetOnEnterAction()
+        {
+            return onEnterAction;
+        }
+
+        public DialogueAction GetOnExitAction()
+        {
+            return onExitAction;
         }
 
 

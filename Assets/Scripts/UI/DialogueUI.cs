@@ -11,6 +11,7 @@ namespace RPG.UI
     {
         PlayerConversant playerConversant;
         [SerializeField] TextMeshProUGUI dialogueText;
+        [SerializeField] TextMeshProUGUI conversantName;
         [SerializeField] Button nextButton;
         [SerializeField] Button quitButton;
         [SerializeField] Transform choicesRoot;
@@ -47,6 +48,7 @@ namespace RPG.UI
             {
                 return;
             }
+            conversantName.text = playerConversant.GetCurrentConversantName();
             choicesRoot.gameObject.SetActive(playerConversant.IsChoosing());
             normalDialogueRoot.gameObject.SetActive(!playerConversant.IsChoosing());
 

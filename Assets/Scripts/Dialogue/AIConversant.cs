@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Attributes;
 using RPG.Control;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace RPG.Dialogue
     {
         [SerializeField] Dialogue dialogue = null;
         [SerializeField] float startingDistance = 3.0f;
+        [SerializeField] string conversantName = "NPC";
 
         public float GetStartingDistance()
         {
@@ -22,7 +24,8 @@ namespace RPG.Dialogue
 
         public bool HandleRaycast(PlayerController callingController)
         {
-            if (dialogue == null)
+            Health health = GetComponent<Health>();
+            if (dialogue == null || health.IsDead)
             {
                 return false;
             }
@@ -31,6 +34,11 @@ namespace RPG.Dialogue
                 callingController.GetComponent<PlayerConversant>().StartDialogueAction(this, dialogue);
             }
             return true;
+        }
+
+        public string GetName()
+        {
+            return conversantName;
         }
     }
 

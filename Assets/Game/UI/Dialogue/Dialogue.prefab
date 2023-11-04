@@ -692,6 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 3960998646503247149}
+  conversantName: {fileID: 8517792903583761024}
   nextButton: {fileID: 8403059876413480009}
   quitButton: {fileID: 7075449331395709798}
   choicesRoot: {fileID: 8098236011533689203}

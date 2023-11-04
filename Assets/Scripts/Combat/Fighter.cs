@@ -33,6 +33,7 @@ namespace RPG.Combat
         {
             currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
             equipment = GetComponent<Equipment>();
+            mover = GetComponent<Mover>();
             if (equipment)
             {
                 equipment.equipmentUpdated += UpdateWeapon;
@@ -51,7 +52,7 @@ namespace RPG.Combat
             currentWeaponConfig.ForceInit();
 
             timeSinceLastAttack = timeBetweenAttacks;
-            mover = GetComponent<Mover>();
+
         }
 
 
@@ -93,6 +94,7 @@ namespace RPG.Combat
         public bool CanAttackTaget(GameObject combatTarget)
         {
             if (combatTarget == null) return false;
+            if (mover == null) return false;
             if (!mover.CanMoveTo(combatTarget.transform.position) && !GetIsInRange(combatTarget.transform))
             {
                 return false;

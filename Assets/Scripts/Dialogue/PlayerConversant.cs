@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using RPG.Control;
 using RPG.Core;
 using RPG.Movement;
 using UnityEngine;
@@ -11,6 +12,8 @@ namespace RPG.Dialogue
 
     public class PlayerConversant : MonoBehaviour, IAction
     {
+        [SerializeField] string playerName;
+        [SerializeField] string companionName;
         Dialogue currentDialogue = null;
         DialogueNode currentNode = null;
         bool isChoosing = false;
@@ -52,14 +55,29 @@ namespace RPG.Dialogue
             //targetConversant.transform.LookAt(transform);
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
+            TriggerEnterAction();
             onConversationUpdated();
 
-            StartCoroutine(RotatePlayer(targetConversant.transform));
+            Transform companion = GameObject.FindWithTag("Companion").transform;
+            StartCoroutine(RotateCharacter(transform, targetConversant.transform));
+            StartCoroutine(RotateCharacter(companion, targetConversant.transform));
+            StartCoroutine(RotateCharacter(targetConversant.transform, transform));
         }
 
-        private IEnumerator RotatePlayer(Transform target)
+        public void Quit()
         {
-            Vector3 direction = target.position - transform.position;
+            currentDialogue = null;
+            TriggerExitAction();
+            currentNode = null;
+            isChoosing = false;
+            currentConversant = null;
+            onConversationUpdated();
+        }
+
+
+        private IEnumerator RotateCharacter(Transform character, Transform target)
+        {
+            Vector3 direction = target.position - character.position;
             direction.y = 0f;
             Quaternion targetRotation = Quaternion.LookRotation(direction);
             float duration = 1.0f;
@@ -67,13 +85,15 @@ namespace RPG.Dialogue
 
             while (time < duration)
             {
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, time / duration);
+                character.rotation = Quaternion.Lerp(character.rotation, targetRotation, time / duration);
                 time += Time.deltaTime;
                 yield return null;
             }
 
-            transform.rotation = targetRotation;
+            character.rotation = targetRotation;
         }
+
+
 
         public bool IsActive()
         {
@@ -103,6 +123,7 @@ namespace RPG.Dialogue
         public void SelectChoice(DialogueNode chosenNode)
         {
             currentNode = chosenNode;
+            TriggerEnterAction();
             isChoosing = false;
             Next();
         }
@@ -113,6 +134,7 @@ namespace RPG.Dialogue
             if (numPlayerResponses > 1)
             {
                 isChoosing = true;
+                TriggerExitAction();
                 onConversationUpdated();
                 return;
             }
@@ -121,7 +143,9 @@ namespace RPG.Dialogue
 
             DialogueNode[] children = currentDialogue.GetAllChildren(currentNode).ToArray();
             int index = UnityEngine.Random.Range(0, children.Count());
+            TriggerExitAction();
             currentNode = children[index];
+            TriggerEnterAction();
             onConversationUpdated();
         }
         public bool HasNext()
@@ -132,18 +156,60 @@ namespace RPG.Dialogue
             return currentDialogue.GetAllChildren(currentNode).Count() > 0;
         }
 
-        public void Quit()
+
+
+        private void TriggerEnterAction()
         {
-            currentDialogue = null;
-            currentNode = null;
-            isChoosing = false;
-            currentConversant = null;
-            onConversationUpdated();
+            if (currentNode != null)
+            {
+                Debug.Log("TriggerEnterAction " + currentNode.GetOnEnterAction());
+                TriggerAction(currentNode.GetOnEnterAction());
+            }
+        }
+
+        private void TriggerExitAction()
+        {
+            if (currentNode != null)
+            {
+                Debug.Log("TriggerExitAction " + currentNode.GetOnExitAction());
+                TriggerAction(currentNode.GetOnExitAction());
+            }
+        }
+
+        private void TriggerAction(DialogueAction dialogueAction)
+        {
+            if (dialogueAction == DialogueAction.None) return;
+            foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+            {
+                trigger.Trigger(dialogueAction);
+            }
+        }
+
+        public string GetCurrentConversantName()
+        {
+            if (currentNode == null)
+            {
+                return "No Conversation";
+            }
+            if (currentNode.IsPlayerSpeaking() || isChoosing)
+            {
+                return playerName;
+            }
+            if (currentNode.GetSpeaker() == Speaker.Companion)
+            {
+                return companionName;
+            }
+            else
+            {
+                return currentConversant.GetName();
+            }
         }
 
         public void Cancel()
         {
             Quit();
         }
+
+
     }
 }

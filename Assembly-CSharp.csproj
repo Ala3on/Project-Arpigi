@@ -54,6 +54,7 @@
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\ShowHideUI.cs" />
      <Compile Include="Assets\Scripts\Attributes\HealthBar.cs" />
      <Compile Include="Assets\Scripts\UI\DamageText\DamageTextSpawner.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\AIConversant.cs" />
      <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Core\DestroyAfterEffect.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\IItemHolder.cs" />
@@ -122,7 +123,9 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
-     <Compile Include="Assets\Scripts\Dialogue\AIConversant.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueAction.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
+     <Compile Include="Assets\Scripts\Combat\AggroGroup.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />

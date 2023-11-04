@@ -86,6 +86,7 @@ namespace RPG.Control
 
             foreach (CombatTarget target in targets)
             {
+                if (target.enabled == false) continue; // skip targets that are not enabled (e.g. friendly NPCs)
                 if (target.GetComponent<Health>().IsDead) continue;
 
                 float distance = Vector3.Distance(transform.position, target.transform.position);

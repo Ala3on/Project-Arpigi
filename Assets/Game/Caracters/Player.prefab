@@ -266,7 +266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351b788563fb2e74c9b78cdfa172bf0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testDialogue: {fileID: 11400000, guid: cc68e27bde207a04b8495900eb6361ea, type: 2}
+  playerName: Gian Falco
+  companionName: Droghetto
 --- !u!4 &9124345441045227121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775716971321579974, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
