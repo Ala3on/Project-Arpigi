@@ -17,7 +17,7 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 3683
+    x: 3923
     y: 247
     width: 300
     height: 100
@@ -39,8 +39,8 @@ MonoBehaviour:
   - 14fc61e5-f405-4917-ae7f-1c8abd62e450
   rect:
     serializedVersion: 2
-    x: 362
-    y: 241
+    x: 695
+    y: 166
     width: 300
     height: 100
 --- !u!114 &-6703783088176636952
@@ -57,14 +57,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speaker: 1
   text: Di qua possiamo proseguire verso quel ponte o fare il giro lungo passando
-    per il bosco e coglierli alle spalle. Che dici?
+    per il bosco e coglierli di sorpresa. Che dici?
   children:
   - 9a0a7e25-7937-4483-8112-282f1ec9adcb
   - a9a86fd9-b02b-40b6-afab-1e1fc0c8edff
   rect:
     serializedVersion: 2
-    x: 2562
-    y: 249
+    x: 2782
+    y: 248
     width: 300
     height: 100
 --- !u!114 &-5252714467558973789
@@ -85,8 +85,30 @@ MonoBehaviour:
   - 05fdfce7-1233-4ffa-ba5e-b213ed63bcee
   rect:
     serializedVersion: 2
-    x: 1076
-    y: 240.99998
+    x: 1371
+    y: 238.99997
+    width: 300
+    height: 100
+--- !u!114 &-4234848161560789347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 730d2d64-cea1-4a5f-be8b-da4576f19587
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Che succede?
+  children:
+  - 68157bcc-c48b-41b6-880d-6e5612d9bc4e
+  rect:
+    serializedVersion: 2
+    x: 340
+    y: 104.000015
     width: 300
     height: 100
 --- !u!114 &-3999410216288857241
@@ -107,8 +129,8 @@ MonoBehaviour:
   - a0327dd0-5ccf-4e16-8db2-34e469a7bae4
   rect:
     serializedVersion: 2
-    x: 1826
-    y: 250
+    x: 2058
+    y: 247
     width: 300
     height: 100
 --- !u!114 &-1542610997157928778
@@ -129,8 +151,8 @@ MonoBehaviour:
   - 10e561ab-6007-4c2a-b11b-38dd364148bf
   rect:
     serializedVersion: 2
-    x: 2204
-    y: 251
+    x: 2419
+    y: 247
     width: 300
     height: 100
 --- !u!114 &11400000
@@ -143,7 +165,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd71b9e0effd55644a82f38395218e9b, type: 3}
-  m_Name: New Dialogue
+  m_Name: Test Dialogue
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 1413869825543611434}
@@ -159,6 +181,9 @@ MonoBehaviour:
   - {fileID: 6309037451676517473}
   - {fileID: 140140586089935567}
   - {fileID: -9055138814359803695}
+  - {fileID: -4234848161560789347}
+  - {fileID: 1120847798953850598}
+  - {fileID: 3497672337956690476}
 --- !u!114 &140140586089935567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -177,8 +202,8 @@ MonoBehaviour:
   - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
   rect:
     serializedVersion: 2
-    x: 3285
-    y: 339
+    x: 3496
+    y: 344
     width: 300
     height: 100
 --- !u!114 &1040034061811282621
@@ -199,8 +224,30 @@ MonoBehaviour:
   - 0ffd7cce-6f06-4be8-b696-c960c93bb977
   rect:
     serializedVersion: 2
-    x: 717
-    y: 242
+    x: 1035
+    y: 246.99998
+    width: 300
+    height: 100
+--- !u!114 &1120847798953850598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 9f4d801f-7bd8-46b9-a9ed-ec1af56874ec
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Stanno devastando il villaggio!
+  children:
+  - 14fc61e5-f405-4917-ae7f-1c8abd62e450
+  rect:
+    serializedVersion: 2
+    x: 698
+    y: 328
     width: 300
     height: 100
 --- !u!114 &1413869825543611434
@@ -215,14 +262,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
   m_Name: 982f28d2-6739-444f-91a6-12a7f35763bc
   m_EditorClassIdentifier: 
-  speaker: 0
-  text: Che succede qui?
+  speaker: 2
+  text: Oi Oi, che tragedia!
   children:
-  - 68157bcc-c48b-41b6-880d-6e5612d9bc4e
+  - 730d2d64-cea1-4a5f-be8b-da4576f19587
+  - d6fdf4d9-8aaa-49d5-aa69-5f27594177e3
   rect:
     serializedVersion: 2
-    x: 32
-    y: 240.00002
+    x: 20
+    y: 235.00002
     width: 300
     height: 100
 --- !u!114 &3217390925698872426
@@ -243,8 +291,30 @@ MonoBehaviour:
   - b9d4ee33-6371-44ae-9128-3d966ff3ecfe
   rect:
     serializedVersion: 2
-    x: 1440
-    y: 238.99998
+    x: 1705
+    y: 244.99998
+    width: 300
+    height: 100
+--- !u!114 &3497672337956690476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d6fdf4d9-8aaa-49d5-aa69-5f27594177e3
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Che vuoi?
+  children:
+  - 9f4d801f-7bd8-46b9-a9ed-ec1af56874ec
+  rect:
+    serializedVersion: 2
+    x: 338
+    y: 332
     width: 300
     height: 100
 --- !u!114 &5054323444839272269
@@ -265,8 +335,8 @@ MonoBehaviour:
   - 49e5172a-c8e5-4c6a-ba23-45d6347d1eb7
   rect:
     serializedVersion: 2
-    x: 2935
-    y: 342
+    x: 3137
+    y: 339
     width: 300
     height: 100
 --- !u!114 &5224722750687921246
@@ -287,8 +357,8 @@ MonoBehaviour:
   - b9e60a44-a156-4c9b-8e48-9fb7cf59e9c9
   rect:
     serializedVersion: 2
-    x: 2932
-    y: 183.00002
+    x: 3149
+    y: 182.00002
     width: 300
     height: 100
 --- !u!114 &6309037451676517473
@@ -309,7 +379,7 @@ MonoBehaviour:
   - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
   rect:
     serializedVersion: 2
-    x: 3279
-    y: 181.00003
+    x: 3505
+    y: 178.00003
     width: 300
     height: 100

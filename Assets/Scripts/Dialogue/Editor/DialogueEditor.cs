@@ -350,7 +350,7 @@ namespace RPG.Dialogue.Editor
                 maxSize.y = node.GetRect().yMax > maxSize.y ? Mathf.Max(node.GetRect().yMax, position.height) : Mathf.Max(maxSize.y, position.height);
                 // Debug.Log("maxSize.x: " + maxSize.x + " node.rectPosition.yMax: " + node.rectPosition.yMax + " position.height: " + position.height);
             }
-            windowSize = maxSize + new Vector2(100, 0);
+            windowSize = maxSize + new Vector2(100, 100);
             GUI.changed = true;
         }
 

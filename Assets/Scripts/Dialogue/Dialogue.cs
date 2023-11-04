@@ -62,6 +62,27 @@ namespace RPG.Dialogue
             // return result;
         }
 
+        public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(currentNode))
+            {
+                if (node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+        public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode node in GetAllChildren(currentNode))
+            {
+                if (!node.IsPlayerSpeaking())
+                {
+                    yield return node;
+                }
+            }
+        }
+
 #if UNITY_EDITOR
 
         public void CreateNode(DialogueNode parent)
@@ -71,7 +92,7 @@ namespace RPG.Dialogue
             Undo.RegisterCreatedObjectUndo(newNode, "Created Dialogue Node");
             if (parent != null)
             {
-                newNode.SetRect(new Rect(parent.GetRect().xMax + 20, parent.GetRect().center.y, 300, 150));
+                newNode.SetRect(new Rect(parent.GetRect().xMax + 20, parent.GetRect().center.y, 300, 100));
                 newNode.SetSpeaker(parent.IsPlayerSpeaking() ? Speaker.Speaker1 : Speaker.Player);
                 parent.AddChild(newNode.name);
             }
@@ -131,5 +152,7 @@ namespace RPG.Dialogue
         {
 
         }
+
+
     }
 }
