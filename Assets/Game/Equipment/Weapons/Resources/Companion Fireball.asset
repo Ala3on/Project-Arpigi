@@ -19,7 +19,7 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: 2982efa463537a5418694bfddc718514, type: 3}
   pickup: {fileID: 7000365342606377431, guid: 513e4d52156c2e645a2f62d8887bc0a1, type: 3}
   stackable: 0
-  allowedEquipLocation: 1
+  allowedEquipLocation: 8
   additiveModifiers: []
   percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: f58515504e6dc6641a0848dbaf2cef75, type: 2}

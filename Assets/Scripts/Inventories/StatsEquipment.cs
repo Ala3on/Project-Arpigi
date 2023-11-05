@@ -12,6 +12,7 @@ namespace RPG.Inventories
         {
             foreach (var slot in GetAllPopulatedSlots())
             {
+                if (slot == EquipLocation.DragonWeapon) continue;
                 var item = GetItemInSlot(slot) as IModifierProvider;
                 if (item == null) continue;
                 foreach (var modifier in item.GetAdditiveModifiers(stat))
@@ -25,6 +26,7 @@ namespace RPG.Inventories
         {
             foreach (var slot in GetAllPopulatedSlots())
             {
+                if (slot == EquipLocation.DragonWeapon) continue;
                 var item = GetItemInSlot(slot) as IModifierProvider;
                 if (item == null) continue;
                 foreach (var modifier in item.GetPercentageModifiers(stat))

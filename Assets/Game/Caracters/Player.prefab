@@ -123,6 +123,10 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 6813571455796595212, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3298d4d468badd044b2ca8930315e21d, type: 3}
     - target: {fileID: 7017083717505126365, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: levelUpEffect
       value: 
@@ -244,7 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 16
+  inventorySize: 20
 --- !u!114 &3922093634710137923
 MonoBehaviour:
   m_ObjectHideFlags: 0

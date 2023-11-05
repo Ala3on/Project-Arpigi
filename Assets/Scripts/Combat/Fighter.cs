@@ -189,7 +189,7 @@ namespace RPG.Combat
         private void UpdateCompanionWeapon()
         {
             Fighter companion = GameObject.FindGameObjectWithTag("Companion").GetComponent<Fighter>();
-            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.Necklace) as WeaponConfig;
+            WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.DragonWeapon) as WeaponConfig;
             if (weapon == null)
             {
                 companion.EquipWeapon(defaultWeapon);
@@ -220,6 +220,11 @@ namespace RPG.Combat
 
                 EquipWeapon(weapon);
             }
+        }
+
+        public WeaponConfig GetCurrentWeapon()
+        {
+            return currentWeaponConfig.value;
         }
 
 
