@@ -14,6 +14,8 @@ namespace RPG.Dialogue
     {
         [SerializeField] string playerName;
         [SerializeField] string companionName;
+        [SerializeField] Sprite playerSprite;
+        [SerializeField] Sprite companionSprite;
         Dialogue currentDialogue = null;
         DialogueNode currentNode = null;
         bool isChoosing = false;
@@ -179,6 +181,7 @@ namespace RPG.Dialogue
         private void TriggerAction(DialogueAction dialogueAction)
         {
             if (dialogueAction == DialogueAction.None) return;
+            if (currentConversant == null) return;
             foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
             {
                 trigger.Trigger(dialogueAction);
@@ -199,6 +202,10 @@ namespace RPG.Dialogue
             {
                 return companionName;
             }
+            if (currentConversant == null)
+            {
+                return "";
+            }
             else
             {
                 return currentConversant.GetName();
@@ -210,6 +217,23 @@ namespace RPG.Dialogue
             Quit();
         }
 
+        public Sprite GetCurrentConversantAvatar()
+        {
+            if (currentNode.IsPlayerSpeaking() || isChoosing)
+            {
+                return playerSprite;
+            }
+            if (currentNode.GetSpeaker() == Speaker.Companion)
+            {
+                return companionSprite;
 
+            }
+            if (currentConversant != null)
+            {
+                return currentConversant.GetAvatar();
+            }
+            return null;
+
+        }
     }
 }

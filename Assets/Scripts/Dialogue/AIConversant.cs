@@ -12,6 +12,8 @@ namespace RPG.Dialogue
         [SerializeField] Dialogue dialogue = null;
         [SerializeField] float startingDistance = 3.0f;
         [SerializeField] string conversantName = "NPC";
+        [SerializeField] Sprite conversantAvatar;
+
 
         public float GetStartingDistance()
         {
@@ -39,6 +41,11 @@ namespace RPG.Dialogue
         public string GetName()
         {
             return conversantName;
+        }
+
+        public Sprite GetAvatar()
+        {
+            return conversantAvatar;
         }
     }
 

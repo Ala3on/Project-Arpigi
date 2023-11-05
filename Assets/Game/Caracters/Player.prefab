@@ -266,8 +266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351b788563fb2e74c9b78cdfa172bf0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerName: Gian Falco
-  companionName: Droghetto
+  playerName: Silver
+  companionName: Sospiro
+  playerSprite: {fileID: 21300000, guid: 620aca556e659b54ea775dfac904be56, type: 3}
+  companionSprite: {fileID: 21300000, guid: a03be9f98b797bc4fa091a1dbfd39c66, type: 3}
 --- !u!4 &9124345441045227121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4775716971321579974, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}

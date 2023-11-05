@@ -4,6 +4,7 @@ using UnityEngine;
 using RPG.Dialogue;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 namespace RPG.UI
 {
@@ -17,19 +18,29 @@ namespace RPG.UI
         [SerializeField] Transform choicesRoot;
         [SerializeField] GameObject normalDialogueRoot;
         [SerializeField] GameObject choicePrefab;
+        [SerializeField] Image avatar;
 
+        bool showingText = false;
         // Start is called before the first frame update
         void Start()
         {
             playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
             playerConversant.onConversationUpdated += UpdateUi;
             nextButton.onClick.AddListener(Next);
+            GetComponent<Button>().onClick.AddListener(Next);
             quitButton.onClick.AddListener(() => playerConversant.Quit());
             UpdateUi();
         }
 
         void Next()
         {
+            if (showingText)
+            {
+                StopAllCoroutines();
+                dialogueText.text = playerConversant.GetText();
+                showingText = false;
+                return;
+            }
             if (playerConversant.HasNext())
             {
                 playerConversant.Next();
@@ -49,6 +60,18 @@ namespace RPG.UI
                 return;
             }
             conversantName.text = playerConversant.GetCurrentConversantName();
+            Sprite avatarSprite = playerConversant.GetCurrentConversantAvatar();
+
+            if (avatarSprite != null)
+            {
+                avatar.enabled = true;
+                avatar.sprite = avatarSprite;
+            }
+            else
+            {
+                avatar.enabled = false;
+            }
+
             choicesRoot.gameObject.SetActive(playerConversant.IsChoosing());
             normalDialogueRoot.gameObject.SetActive(!playerConversant.IsChoosing());
 
@@ -58,7 +81,8 @@ namespace RPG.UI
             }
             else
             {
-                dialogueText.text = playerConversant.GetText();
+                //dialogueText.text = playerConversant.GetText();
+                StartCoroutine(ShowTextSlowly(playerConversant.GetText()));
                 //nextButton.gameObject.SetActive(playerConversant.HasNext());
             }
         }
@@ -85,6 +109,19 @@ namespace RPG.UI
                     }
                 });
             }
+        }
+        IEnumerator ShowTextSlowly(string text)
+        {
+            showingText = true;
+            dialogueText.text = "";
+
+            foreach (char ch in playerConversant.GetText())
+            {
+                dialogueText.text += ch;
+                // wait between each letter
+                yield return new WaitForSeconds(0.02f);
+            }
+            showingText = false;
         }
     }
 }

@@ -48,6 +48,7 @@
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryDropTarget.cs" />
      <Compile Include="Assets\Scripts\Control\CursorType.cs" />
      <Compile Include="Assets\Scripts\UI\DialogueUI.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueAction.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ActionSlotUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\ActionStore.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\InventoryItem.cs" />
@@ -59,6 +60,7 @@
      <Compile Include="Assets\Scripts\Core\DestroyAfterEffect.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\IItemHolder.cs" />
      <Compile Include="Assets\Scripts\Inventories\DropLibrary.cs" />
+     <Compile Include="Assets\Scripts\Combat\AggroGroup.cs" />
      <Compile Include="Assets\Scripts\Saving\SavingSystem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipableItem.cs" />
      <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
@@ -112,6 +114,7 @@
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltip.cs" />
      <Compile Include="Assets\Scripts\UI\DamageText\DamageText.cs" />
      <Compile Include="Assets\Scripts\Saving\ISaveable.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\DragItem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\ItemDropper.cs" />
      <Compile Include="Assets\Scripts\Stats\Experience.cs" />
@@ -123,9 +126,6 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
-     <Compile Include="Assets\Scripts\Dialogue\DialogueAction.cs" />
-     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
-     <Compile Include="Assets\Scripts\Combat\AggroGroup.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
