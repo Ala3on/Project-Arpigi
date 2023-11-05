@@ -9,13 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f20eb1792e8048a46bf5c7c520a3ea3b, type: 3}
+  m_Script: {fileID: 11500000, guid: bbd24459de8f7c341b30e156f9ca953a, type: 3}
   m_Name: Hat
   m_EditorClassIdentifier: 
-  itemID: 774f69b3-9803-4637-82a4-a4b10c347561
-  displayName: Hat
-  description: A simple hat
+  itemID: 1b561f07-5468-40b8-929e-250f37eb52e9
+  displayName: Cappello di stoffa
+  description: Andava di moda sei anni fa
   icon: {fileID: 21300000, guid: c1b61b3a91732a747a8496fc75a13fe2, type: 3}
   pickup: {fileID: 974431437160126952, guid: aa89c3c829948df45bb003d59a1a397b, type: 3}
   stackable: 0
   allowedEquipLocation: 0
+  additiveModifiers: []
+  percentageModifiers: []

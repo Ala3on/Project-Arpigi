@@ -21,7 +21,9 @@ MonoBehaviour:
   pickup: {fileID: 1152551384949469333, guid: 13ab03e9e519afe448348a66ff07432d, type: 3}
   stackable: 0
   allowedEquipLocation: 5
-  additiveModifiers: []
+  additiveModifiers:
+  - stat: 0
+    value: 30
   percentageModifiers: []
   weaponAnimatorOverrideController: {fileID: 22100000, guid: 18b127311278add48bd1a190e96fcbf3, type: 2}
   weaponPrefab: {fileID: 5933815167799815557, guid: 27df9ba70eaf20b4c8ac2ce0a070b64c, type: 3}

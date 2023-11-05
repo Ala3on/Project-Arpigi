@@ -12,6 +12,7 @@ namespace RPG.Control
     public class AICompanion : MonoBehaviour
     {
         [SerializeField] float chaseDistance = 5f;
+        [SerializeField] float MaxFollowPlayerDistance = 8f;
 
         Fighter fighter;
         GameObject player;
@@ -34,7 +35,7 @@ namespace RPG.Control
             if (health.IsDead) return;
             if (fighter == null) return;
 
-            if (DistanceToPlayer() > 8)
+            if (DistanceToPlayer() > MaxFollowPlayerDistance)
             {
                 fighter.Cancel();
                 closestTarget = null;
@@ -47,7 +48,7 @@ namespace RPG.Control
                 closestTarget = GetTargetInChaseRange();
             }
 
-            if (closestTarget != null && DistanceToPlayer() <= 8)
+            if (closestTarget != null && DistanceToPlayer() <= MaxFollowPlayerDistance)
             {
                 fighter.Attack(closestTarget.gameObject);
             }

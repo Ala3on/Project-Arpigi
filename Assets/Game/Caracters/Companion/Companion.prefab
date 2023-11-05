@@ -86,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 4909525147030005130, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: defaultWeapon
       value: 
-      objectReference: {fileID: 11400000, guid: 48f47ab08c2ea314bae93c06f980c387, type: 2}
+      objectReference: {fileID: 11400000, guid: a6119b4f5fc562e4eaaa694abd589fe3, type: 2}
     - target: {fileID: 4909525147030005130, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: leftHandTransform
       value: 
@@ -100,8 +100,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7017083717505126365, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: levelUpEffect
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017083717505126365, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: characterClass
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017083717505126365, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: shouldUseModifier
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
@@ -123,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
+  MaxFollowPlayerDistance: 8
 --- !u!114 &8762931150363119891
 MonoBehaviour:
   m_ObjectHideFlags: 0

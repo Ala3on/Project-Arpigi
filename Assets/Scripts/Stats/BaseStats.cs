@@ -108,8 +108,10 @@ namespace RPG.Stats
         {
             if (levelUpEffect != null)
             {
-                Instantiate(levelUpEffect, transform);
+                GameObject levelUpFX = Instantiate(levelUpEffect, transform);
+                Destroy(levelUpFX, 3f);
             }
+
         }
 
     }

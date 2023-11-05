@@ -16,6 +16,7 @@ namespace RPG.Attributes
     {
         [SerializeField] TakeDamageEvent takeDamage;
         [SerializeField] DeathEvent onDie;
+        [SerializeField] GameObject healEffect = null;
 
         // workaround per usare un valore dinamico passato all'evento su Invoke()
         [System.Serializable]
@@ -121,6 +122,15 @@ namespace RPG.Attributes
 
         public void Heal(float healtToRestore, bool isPercentage = false)
         {
+            if (healtToRestore <= 0) return;
+            if (healEffect != null)
+            {
+                CapsuleCollider capsuleCollider = GetComponent<CapsuleCollider>();
+                Vector3 FXPosition = new Vector3(transform.position.x, transform.position.y + capsuleCollider.height / 2, transform.position.z);
+
+                GameObject healFX = Instantiate(healEffect, FXPosition, Quaternion.identity, transform);
+                Destroy(healFX, 1.5f);
+            }
             if (isPercentage)
             {
                 healthPoints.value = Mathf.Min(healthPoints.value + GetMaxHp() * healtToRestore / 100, GetMaxHp());

@@ -112,6 +112,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 22100000, guid: 07e799bc410541649a349135477def69, type: 2}
     - target: {fileID: 6605442488510806701, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
+      propertyPath: healEffect
+      value: 
+      objectReference: {fileID: 1042361525996828, guid: 0863a01f00ea56d40b14b3f023b33337, type: 3}
+    - target: {fileID: 6605442488510806701, guid: e8e51e87874d5f2438bcf2c7b766893a, type: 3}
       propertyPath: healtPoint
       value: 200
       objectReference: {fileID: 0}

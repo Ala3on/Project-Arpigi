@@ -25,7 +25,7 @@ MonoBehaviour:
   weaponPrefab: {fileID: -4291572105674133668, guid: e1311b7799c8d6545bb6532e9d36e18e, type: 3}
   shieldPrefab: {fileID: 0}
   range: 2
-  damage: 10
+  damage: 12
   percentageDamageBonus: 40
   isRightHanded: 1
   projectile: {fileID: 0}
