@@ -164,6 +164,28 @@ CapsuleCollider:
   m_Height: 1.88
   m_Direction: 1
   m_Center: {x: 0, y: 0.96, z: 0}
+--- !u!114 &704844777283928732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178584948792168690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd4229462bc14ab43895b30ab8245a24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statuses:
+  - quest: {fileID: 11400000, guid: 874de4955942db8468fa6215c7d845fc, type: 2}
+    completedObjectives:
+    - asd
+    - dsa
+  - quest: {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
+    completedObjectives:
+    - aaa
+    - sss
+    - ddd
 --- !u!114 &1334307425216391831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -248,7 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19fc28a888c18ce4a82d521912c49df1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 20
+  inventorySize: 28
 --- !u!114 &3922093634710137923
 MonoBehaviour:
   m_ObjectHideFlags: 0
