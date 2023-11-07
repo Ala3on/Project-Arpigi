@@ -58,12 +58,14 @@ namespace GameDevTV.Inventories
 
         public JToken CaptureState()
         {
+            bool collected = isCollected();
             return JToken.FromObject(isCollected());
         }
 
         public void RestoreState(JToken state)
         {
             bool shouldBeCollected = state.ToObject<bool>();
+            bool collected = isCollected();
 
             if (shouldBeCollected && !isCollected())
             {

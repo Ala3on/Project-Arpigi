@@ -12,5 +12,7 @@ namespace RPG.Dialogue
         TestEnterAction,
         TestSelectionAction,
         TestAIExitAction,
+        GiveQuest,
+        CompleteObjective,
     }
 }

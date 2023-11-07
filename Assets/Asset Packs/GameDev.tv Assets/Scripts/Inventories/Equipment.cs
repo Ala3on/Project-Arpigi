@@ -15,8 +15,19 @@ namespace GameDevTV.Inventories
     public class Equipment : MonoBehaviour, ISaveable
     {
         // STATE
+        [SerializeField] EquipableItem[] defaultEquipments = null;
         Dictionary<EquipLocation, EquipableItem> equippedItems = new Dictionary<EquipLocation, EquipableItem>();
 
+
+        // LIFECYCLE METHODS
+        private void Awake()
+        {
+            foreach (var item in defaultEquipments)
+            {
+                AddItem(item.GetAllowedEquipLocation(), item);
+                //equippedItems[item.GetAllowedEquipLocation()] = item;
+            }
+        }
         // PUBLIC
 
         /// <summary>
@@ -72,6 +83,7 @@ namespace GameDevTV.Inventories
         {
             return equippedItems.Keys;
         }
+
 
         // PRIVATE
 

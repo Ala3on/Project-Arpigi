@@ -449,7 +449,7 @@ MonoBehaviour:
     width: 300
     height: 100
   onEnterAction: 0
-  onExitAction: 0
+  onExitAction: 5
 --- !u!114 &7064853655751031322
 MonoBehaviour:
   m_ObjectHideFlags: 0

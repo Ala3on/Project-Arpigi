@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67add10874ac699468a51369f539d2a9, type: 3}
   m_Name: Vai a comprare il pane
   m_EditorClassIdentifier: 
-  objective:
-  - aaa
-  - sss
-  - ddd
+  objectives:
+  - Fatti dare il pane

@@ -1,28 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9055138814359803695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: "Amun\xEC!"
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 3923
-    y: 247
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
 --- !u!114 &-8605655590123858430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36,66 +13,15 @@ MonoBehaviour:
   m_Name: 68157bcc-c48b-41b6-880d-6e5612d9bc4e
   m_EditorClassIdentifier: 
   speaker: 2
-  text: I Bastardi hanno invaso il villaggio!
-  children:
-  - 14fc61e5-f405-4917-ae7f-1c8abd62e450
+  text: Ok
+  children: []
   rect:
     serializedVersion: 2
     x: 695
-    y: 166
+    y: 165
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 4
---- !u!114 &-6703783088176636952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 10e561ab-6007-4c2a-b11b-38dd364148bf
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: Di qua possiamo proseguire verso quel ponte o fare il giro lungo passando
-    per il bosco e coglierli di sorpresa. Che dici?
-  children:
-  - 9a0a7e25-7937-4483-8112-282f1ec9adcb
-  - a9a86fd9-b02b-40b6-afab-1e1fc0c8edff
-  rect:
-    serializedVersion: 2
-    x: 2782
-    y: 248
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &-5252714467558973789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 0ffd7cce-6f06-4be8-b696-c960c93bb977
-  m_EditorClassIdentifier: 
-  speaker: 2
-  text: Non posso pagare per i tuoi servigi
-  children:
-  - 05fdfce7-1233-4ffa-ba5e-b213ed63bcee
-  rect:
-    serializedVersion: 2
-    x: 1371
-    y: 238.99997
-    width: 300
-    height: 100
-  onEnterAction: 0
+  onEnterAction: 6
   onExitAction: 0
 --- !u!114 &-4234848161560789347
 MonoBehaviour:
@@ -110,64 +36,16 @@ MonoBehaviour:
   m_Name: 730d2d64-cea1-4a5f-be8b-da4576f19587
   m_EditorClassIdentifier: 
   speaker: 0
-  text: Che succede?
+  text: Dammi il pane
   children:
   - 68157bcc-c48b-41b6-880d-6e5612d9bc4e
   rect:
     serializedVersion: 2
-    x: 340
-    y: 104.000015
+    x: 380
+    y: 123.000015
     width: 300
     height: 100
   onEnterAction: 3
-  onExitAction: 0
---- !u!114 &-3999410216288857241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: b9d4ee33-6371-44ae-9128-3d966ff3ecfe
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: Rimani qui e non farti scoprire!
-  children:
-  - a0327dd0-5ccf-4e16-8db2-34e469a7bae4
-  rect:
-    serializedVersion: 2
-    x: 2058
-    y: 247
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &-1542610997157928778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: a0327dd0-5ccf-4e16-8db2-34e469a7bae4
-  m_EditorClassIdentifier: 
-  speaker: 2
-  text: "State attenti, \xE8 gente pericolosa!"
-  children:
-  - 10e561ab-6007-4c2a-b11b-38dd364148bf
-  rect:
-    serializedVersion: 2
-    x: 2419
-    y: 247
-    width: 300
-    height: 100
-  onEnterAction: 0
   onExitAction: 0
 --- !u!114 &11400000
 MonoBehaviour:
@@ -184,68 +62,9 @@ MonoBehaviour:
   nodes:
   - {fileID: 1413869825543611434}
   - {fileID: -8605655590123858430}
-  - {fileID: 1040034061811282621}
-  - {fileID: -5252714467558973789}
-  - {fileID: 3217390925698872426}
-  - {fileID: -3999410216288857241}
-  - {fileID: -1542610997157928778}
-  - {fileID: -6703783088176636952}
-  - {fileID: 5054323444839272269}
-  - {fileID: 5224722750687921246}
-  - {fileID: 6309037451676517473}
-  - {fileID: 140140586089935567}
-  - {fileID: -9055138814359803695}
   - {fileID: -4234848161560789347}
   - {fileID: 1120847798953850598}
   - {fileID: 3497672337956690476}
---- !u!114 &140140586089935567
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 49e5172a-c8e5-4c6a-ba23-45d6347d1eb7
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: "Cos\xEC mi piaci, facciamogli vedere di che pasta siamo fatti!"
-  children:
-  - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
-  rect:
-    serializedVersion: 2
-    x: 3496
-    y: 344
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &1040034061811282621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 14fc61e5-f405-4917-ae7f-1c8abd62e450
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: Capisco, ci pensiamo noi.
-  children:
-  - 0ffd7cce-6f06-4be8-b696-c960c93bb977
-  rect:
-    serializedVersion: 2
-    x: 1035
-    y: 124
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
 --- !u!114 &1120847798953850598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +82,7 @@ MonoBehaviour:
   children: []
   rect:
     serializedVersion: 2
-    x: 741.00006
+    x: 743.00006
     y: 394
     width: 300
     height: 100
@@ -294,30 +113,6 @@ MonoBehaviour:
     height: 100
   onEnterAction: 2
   onExitAction: 0
---- !u!114 &3217390925698872426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 05fdfce7-1233-4ffa-ba5e-b213ed63bcee
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: 'Tranquillo, ci basta arrostire qualche culo per sentirci soddisfatti '
-  children:
-  - b9d4ee33-6371-44ae-9128-3d966ff3ecfe
-  rect:
-    serializedVersion: 2
-    x: 1705
-    y: 244.99998
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
 --- !u!114 &3497672337956690476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,78 +133,6 @@ MonoBehaviour:
     serializedVersion: 2
     x: 338
     y: 332
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &5054323444839272269
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: 9a0a7e25-7937-4483-8112-282f1ec9adcb
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: Non possiamo perdere tempo, tenteremo un attacco frontale!
-  children:
-  - 49e5172a-c8e5-4c6a-ba23-45d6347d1eb7
-  rect:
-    serializedVersion: 2
-    x: 3137
-    y: 339
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &5224722750687921246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: a9a86fd9-b02b-40b6-afab-1e1fc0c8edff
-  m_EditorClassIdentifier: 
-  speaker: 0
-  text: "Forse \xE8 meglio aggirarli e coglierli di sorpresa"
-  children:
-  - b9e60a44-a156-4c9b-8e48-9fb7cf59e9c9
-  rect:
-    serializedVersion: 2
-    x: 3148
-    y: 182.00002
-    width: 300
-    height: 100
-  onEnterAction: 0
-  onExitAction: 0
---- !u!114 &6309037451676517473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: b9e60a44-a156-4c9b-8e48-9fb7cf59e9c9
-  m_EditorClassIdentifier: 
-  speaker: 1
-  text: "Va bene, la prudenza non \xE8 mai troppa!"
-  children:
-  - 614fb53a-bc41-43cd-8a2d-b6dca3296fc5
-  rect:
-    serializedVersion: 2
-    x: 3505
-    y: 178.00003
     width: 300
     height: 100
   onEnterAction: 0

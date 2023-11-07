@@ -3405,15 +3405,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.22577
+      value: 41.512
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.123404
+      value: 2.242
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 25.94286
+      value: 13.48
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6203,6 +6203,48 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &647633405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647633361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032d969fc997e954d99c3ace21ca689a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
+  objective: Fatti dare il pane
+--- !u!114 &647633406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647633361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: 6
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 647633405}
+        m_TargetAssemblyTypeName: RPG.Quests.QuestCompletion, Assembly-CSharp
+        m_MethodName: CompleteObjective
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &648488934
 PrefabInstance:
@@ -15613,6 +15655,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 416864, guid: d66c89601ce96d4419ce36a4dce3c401, type: 3}
   m_PrefabInstance: {fileID: 1690616924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1695650712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1056084591160872070, guid: 729b925ce85e17148b49e3b074ff681a, type: 3}
+  m_PrefabInstance: {fileID: 2056011046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1695650726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695650712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: 5
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1695650727}
+        m_TargetAssemblyTypeName: RPG.Quests.QuestGiver, Assembly-CSharp
+        m_MethodName: GiveQuest
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1695650727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695650712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6325b8c8336d4924b9eb7a0e926a3fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
 --- !u!1001 &1696278589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22143,6 +22232,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4309491605721246082, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: initialWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 749de21743cf2ac47abe1aa6f8c0cd05, type: 2}
     - target: {fileID: 4359872365013881843, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -22511,6 +22604,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 749de21743cf2ac47abe1aa6f8c0cd05, type: 2}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8edfcaf1c12f5e6479d4ca92c5a5f63a, type: 2}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 058669d3d873d884cb7e72c0baffca4b, type: 2}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 5046166a228d8734c9e25080f56413ed, type: 2}
     - target: {fileID: 6398674682038393332, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -22654,6 +22767,18 @@ PrefabInstance:
     - target: {fileID: 6862735766858657852, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultItems.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultItems.Array.data[0].item
+      value: 
+      objectReference: {fileID: 11400000, guid: ae54bfbc5d35ceb4aaf67c06ba2a598b, type: 2}
+    - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultItems.Array.data[0].number
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6928528856876019996, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y
@@ -22858,6 +22983,10 @@ PrefabInstance:
     - target: {fileID: 7485647834092172722, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7601766344802099654, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -30.699951
       objectReference: {fileID: 0}
     - target: {fileID: 7750472286539802583, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y

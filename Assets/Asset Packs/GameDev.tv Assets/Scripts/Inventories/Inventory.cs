@@ -16,10 +16,12 @@ namespace GameDevTV.Inventories
         // CONFIG DATA
         [Tooltip("Allowed size")]
         [SerializeField] int inventorySize = 16;
+        [SerializeField] private InventorySlot[] defaultItems;
 
         // STATE
         InventorySlot[] slots;
 
+        [System.Serializable]
         public struct InventorySlot
         {
             public InventoryItem item;
@@ -167,6 +169,11 @@ namespace GameDevTV.Inventories
         private void Awake()
         {
             slots = new InventorySlot[inventorySize];
+            foreach (InventorySlot inventorySlot in defaultItems)
+            {
+                AddToFirstEmptySlot(inventorySlot.item, inventorySlot.number);
+            }
+
         }
 
         /// <summary>

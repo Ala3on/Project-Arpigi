@@ -31,9 +31,10 @@ namespace RPG.Combat
 
         private void Awake()
         {
-            currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
             equipment = GetComponent<Equipment>();
             mover = GetComponent<Mover>();
+            currentWeaponConfig = new LazyValue<WeaponConfig>(SetupDefaultWeapon);
+
             if (equipment)
             {
                 equipment.equipmentUpdated += UpdateWeapon;
@@ -43,6 +44,13 @@ namespace RPG.Combat
 
         private WeaponConfig SetupDefaultWeapon()
         {
+            if (equipment != null)
+            {
+                UpdateWeapon();
+                UpdateCompanionWeapon();
+                return currentWeaponConfig.value;
+            }
+
             currentWeapon = AttachWeapon(defaultWeapon);
             return defaultWeapon;
         }

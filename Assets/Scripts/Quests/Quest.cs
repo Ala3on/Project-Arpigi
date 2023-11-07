@@ -10,7 +10,7 @@ namespace RPG.Quests
     [CreateAssetMenu(fileName = "New Quest", menuName = "RPG/New Quest", order = 0)]
     public class Quest : ScriptableObject
     {
-        [SerializeField] string[] objective;
+        [SerializeField] List<string> objectives = new List<string>();
 
         internal string GetTitle()
         {
@@ -19,12 +19,17 @@ namespace RPG.Quests
 
         public int GetObjectiveCount()
         {
-            return objective.Length;
+            return objectives.Count;
         }
 
         internal IEnumerable<string> GetObjectives()
         {
-            return objective;
+            return objectives;
+        }
+
+        internal bool HasObjective(string objective)
+        {
+            return objectives.Contains(objective);
         }
     }
 }
