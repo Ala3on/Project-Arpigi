@@ -5,7 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Scripts", "Boxophobic.Utils.Scripts.csproj", "{826b4015-a97e-c541-9ce7-03d03d885286}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{b968a483-6ad2-06ff-ff2f-0b9fc8e9f707}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.Utils.Editor", "Boxophobic.Utils.Editor.csproj", "{e76b3b1a-6f10-a08a-07b9-eb6516c0e7f2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFolderIcon", "SimpleFolderIcon.csproj", "{28a94a91-6f57-828a-da8e-e9cf13d6ad8a}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxophobic.SkyboxCubemapExtended.Editor", "Boxophobic.SkyboxCubemapExtended.Editor.csproj", "{5450a569-780b-1181-3cb6-e71669c520f4}"
 EndProject
@@ -18,8 +22,12 @@ Global
 		{df49b4ad-5148-0282-355e-55997e16c377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{826b4015-a97e-c541-9ce7-03d03d885286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{826b4015-a97e-c541-9ce7-03d03d885286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b968a483-6ad2-06ff-ff2f-0b9fc8e9f707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b968a483-6ad2-06ff-ff2f-0b9fc8e9f707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e76b3b1a-6f10-a08a-07b9-eb6516c0e7f2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e76b3b1a-6f10-a08a-07b9-eb6516c0e7f2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28a94a91-6f57-828a-da8e-e9cf13d6ad8a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28a94a91-6f57-828a-da8e-e9cf13d6ad8a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5450a569-780b-1181-3cb6-e71669c520f4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5450a569-780b-1181-3cb6-e71669c520f4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

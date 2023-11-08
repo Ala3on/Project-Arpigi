@@ -15,8 +15,19 @@ namespace GameDevTV.Inventories
     public class Equipment : MonoBehaviour, ISaveable
     {
         // STATE
+        [SerializeField] EquipableItem[] defaultEquipments = null;
         Dictionary<EquipLocation, EquipableItem> equippedItems = new Dictionary<EquipLocation, EquipableItem>();
 
+
+        // LIFECYCLE METHODS
+        private void Awake()
+        {
+            foreach (var item in defaultEquipments)
+            {
+                AddItem(item.GetAllowedEquipLocation(), item);
+                //equippedItems[item.GetAllowedEquipLocation()] = item;
+            }
+        }
         // PUBLIC
 
         /// <summary>
@@ -73,32 +84,63 @@ namespace GameDevTV.Inventories
             return equippedItems.Keys;
         }
 
+
         // PRIVATE
 
+        /*  public JToken CaptureState()
+         {
+             var equippedItemsForSerialization = new Dictionary<EquipLocation, string>();
+             foreach (var pair in equippedItems)
+             {
+                 equippedItemsForSerialization[pair.Key] = pair.Value.GetItemID();
+             }
+             return JToken.FromObject(equippedItemsForSerialization);
+         } */
         public JToken CaptureState()
         {
-            var equippedItemsForSerialization = new Dictionary<EquipLocation, string>();
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
             foreach (var pair in equippedItems)
             {
-                equippedItemsForSerialization[pair.Key] = pair.Value.GetItemID();
+                stateDict[pair.Key.ToString()] = JToken.FromObject(pair.Value.GetItemID());
             }
-            return JToken.FromObject(equippedItemsForSerialization);
+            return state;
+
         }
 
+        /*  public void RestoreState(JToken state)
+         {
+             equippedItems = new Dictionary<EquipLocation, EquipableItem>();
+
+             var equippedItemsForSerialization = state.ToObject<Dictionary<EquipLocation, string>>();
+
+             foreach (var pair in equippedItemsForSerialization)
+             {
+                 var item = (EquipableItem)InventoryItem.GetFromID(pair.Value);
+                 if (item != null)
+                 {
+                     equippedItems[pair.Key] = item;
+                 }
+             }
+         } */
         public void RestoreState(JToken state)
         {
-            equippedItems = new Dictionary<EquipLocation, EquipableItem>();
-
-            var equippedItemsForSerialization = state.ToObject<Dictionary<EquipLocation, string>>();
-
-            foreach (var pair in equippedItemsForSerialization)
+            if (state is JObject stateObject)
             {
-                var item = (EquipableItem)InventoryItem.GetFromID(pair.Value);
-                if (item != null)
+                equippedItems.Clear();
+                IDictionary<string, JToken> stateDict = stateObject;
+                foreach (var pair in stateObject)
                 {
-                    equippedItems[pair.Key] = item;
+                    if (Enum.TryParse(pair.Key, true, out EquipLocation key))
+                    {
+                        if (InventoryItem.GetFromID(pair.Value.ToObject<string>()) is EquipableItem item)
+                        {
+                            equippedItems[key] = item;
+                        }
+                    }
                 }
             }
+            equipmentUpdated?.Invoke();
         }
     }
 }

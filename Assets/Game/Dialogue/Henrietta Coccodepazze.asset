@@ -1,0 +1,714 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7101154157018453320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 07335df5-19dd-4c95-ab2a-be23209a0558
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: 'Ciao bellezza! stavi cercando me? '
+  children:
+  - 277bc672-99fe-45af-bfba-08005c27d3cb
+  rect:
+    serializedVersion: 2
+    x: 427
+    y: 38.999996
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-5184956600474165754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: dc0ca659-91b8-4e7e-86a7-57aacd38cbf5
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Ci pensiamo noi, rimani qui e nasconditi se senti arrivare qualcuno.
+  children:
+  - a06842c5-aa1c-4b18-b892-99bff0bcfe89
+  rect:
+    serializedVersion: 2
+    x: 4332
+    y: 259
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4713358991291212702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 943ceb72-4568-426a-b7d6-7a6930c301e9
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Non possiamo perdere tempo, tenteremo un attacco frontale!
+  children:
+  - 3a72c7df-21e4-40d9-9d0d-7a59b4bceae6
+  rect:
+    serializedVersion: 2
+    x: 5924
+    y: 250.00002
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3669805768149045405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: cab27858-2608-492d-8e78-2ded113c312b
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Suo marito potrebbe essere morto ormai, forse potrei...
+  children:
+  - 3f89684e-7dc4-41f6-84e3-1d270466ce2b
+  rect:
+    serializedVersion: 2
+    x: 4329
+    y: 89
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-3585640358283801470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 3a72c7df-21e4-40d9-9d0d-7a59b4bceae6
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: "Cos\xEC mi piaci, facciamogli vedere di che pasta siamo fatti!"
+  children:
+  - d754aaf4-7b18-4e2e-9e03-3c0e2823278b
+  rect:
+    serializedVersion: 2
+    x: 6259
+    y: 251
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-1510230082280859728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 8bfbc459-1276-40c6-8f60-37427e114de9
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: "Forse \xE8 meglio aggirarli e coglierli di sorpresa"
+  children:
+  - 4e3de575-a67d-42bb-9031-01acb3f0a3fc
+  rect:
+    serializedVersion: 2
+    x: 5926
+    y: 101.000015
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-101307075026359417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: c4f2ff9a-36c6-45fd-bbc5-95b22ca6d6c1
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: "Io sono Sospiro, il pi\xF9 grande drago che abbia mai solcato questi cieli."
+  children:
+  - 445d0a4d-d60e-4d5b-baf0-8aeea09fa5c7
+  rect:
+    serializedVersion: 2
+    x: 2499
+    y: 169
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd71b9e0effd55644a82f38395218e9b, type: 3}
+  m_Name: Henrietta Coccodepazze
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1183121614003275208}
+  - {fileID: -7101154157018453320}
+  - {fileID: 7064853655751031322}
+  - {fileID: 1905996407412813612}
+  - {fileID: 7184668025093520150}
+  - {fileID: -101307075026359417}
+  - {fileID: 8200864293610347540}
+  - {fileID: 4227138239304595708}
+  - {fileID: 8957907062474546817}
+  - {fileID: 1114215026612444401}
+  - {fileID: 7390705943986026890}
+  - {fileID: 1249641188497335927}
+  - {fileID: 4072852661686353483}
+  - {fileID: -3669805768149045405}
+  - {fileID: 1438415058976514413}
+  - {fileID: -5184956600474165754}
+  - {fileID: 5445239121384985770}
+  - {fileID: 1349047310758812575}
+  - {fileID: -1510230082280859728}
+  - {fileID: -4713358991291212702}
+  - {fileID: 7173948702812556995}
+  - {fileID: -3585640358283801470}
+  - {fileID: 964278143134903504}
+  - {fileID: 7787070033061061934}
+  - {fileID: 2368535932684233559}
+--- !u!114 &964278143134903504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d754aaf4-7b18-4e2e-9e03-3c0e2823278b
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: "Amun\xEC!"
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 6690
+    y: 180.00002
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1114215026612444401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 277bc672-99fe-45af-bfba-08005c27d3cb
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Un cavaliere e... una lucertola? Si in effetti ho un disperato bisogno di
+    aiuto.
+  children:
+  - 47ad689b-4411-4ad7-8b69-7f15457ba4a4
+  rect:
+    serializedVersion: 2
+    x: 771
+    y: 37.999996
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1183121614003275208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 79f60fc9-6252-4a75-987f-f51bf14799ce
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: 'Oh cielo, e adesso che faccio? '
+  children:
+  - 07335df5-19dd-4c95-ab2a-be23209a0558
+  - d290fc2b-16b8-4e5f-826e-c870051ef2c8
+  - c787d5d0-7241-4711-9dee-d2ea426d0191
+  rect:
+    serializedVersion: 2
+    x: 31.999985
+    y: 144.00002
+    width: 300
+    height: 100
+  onEnterAction: 05000000
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1249641188497335927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: b84b41dc-0c35-4b12-b9df-746f6efafbe6
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: "Calmati, non ci si rivolge cos\xEC a una signorina"
+  children:
+  - 9bcd5e23-e3aa-486c-80bc-aec60a9c1dfd
+  rect:
+    serializedVersion: 2
+    x: 1450
+    y: 38.999996
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1349047310758812575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 75ee35b7-1e5c-4e48-ba22-e01621027951
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Di qua possiamo proseguire verso quel ponte o fare il giro lungo passando
+    per il bosco e coglierli di sorpresa. Che dici?
+  children:
+  - 8bfbc459-1276-40c6-8f60-37427e114de9
+  - 943ceb72-4568-426a-b7d6-7a6930c301e9
+  rect:
+    serializedVersion: 2
+    x: 5462
+    y: 165.00002
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1438415058976514413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 3f89684e-7dc4-41f6-84e3-1d270466ce2b
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Piantala idiota! Tranquilla signora ci pensiamo noi.
+  children:
+  - a06842c5-aa1c-4b18-b892-99bff0bcfe89
+  rect:
+    serializedVersion: 2
+    x: 4685
+    y: 89
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1905996407412813612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 9bcd5e23-e3aa-486c-80bc-aec60a9c1dfd
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: 'Signora a dire il vero... '
+  children:
+  - cb6a7f90-bf20-4f32-ad10-459433a4975d
+  rect:
+    serializedVersion: 2
+    x: 1792
+    y: 169
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2368535932684233559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: e3fd34e9-c51b-4b1f-aeba-dda949035f36
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Grazie
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 749
+    y: 465
+    width: 300
+    height: 100
+  onEnterAction: 06000000
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4072852661686353483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 29e57342-fa3d-4503-82c1-89481f9daa47
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: "Il Villaggio \xE8 stato invaso una settimana fa, hanno raziato e distrutto
+    tutto. Io mi sono nascosta ma mio marito \xE8 stato catturato e portato all'accampamento
+    come schiavo insieme ad altri abitanti. Vi prego dovete aiutarlo!"
+  children:
+  - cab27858-2608-492d-8e78-2ded113c312b
+  - dc0ca659-91b8-4e7e-86a7-57aacd38cbf5
+  rect:
+    serializedVersion: 2
+    x: 3969
+    y: 170
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &4227138239304595708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 48b2eb15-f172-4ae4-a698-201595d59690
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: Sta zitto, ho planato per quasi dieci metri l'altro ieri!
+  children:
+  - 2cbbafbb-2f23-4bca-a030-98f3b939bc53
+  rect:
+    serializedVersion: 2
+    x: 3243
+    y: 168
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &5445239121384985770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: a06842c5-aa1c-4b18-b892-99bff0bcfe89
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Grazie mille. Fate attenzione vi prego.
+  children:
+  - 75ee35b7-1e5c-4e48-ba22-e01621027951
+  rect:
+    serializedVersion: 2
+    x: 5086
+    y: 160.00002
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7064853655751031322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d290fc2b-16b8-4e5f-826e-c870051ef2c8
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Qualcosa non va, signorina?
+  children:
+  - 9bcd5e23-e3aa-486c-80bc-aec60a9c1dfd
+  rect:
+    serializedVersion: 2
+    x: 778
+    y: 276
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7173948702812556995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 4e3de575-a67d-42bb-9031-01acb3f0a3fc
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: "Va bene, la prudenza non \xE8 mai troppa!"
+  children:
+  - d754aaf4-7b18-4e2e-9e03-3c0e2823278b
+  rect:
+    serializedVersion: 2
+    x: 6252
+    y: 101.000015
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7184668025093520150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: cb6a7f90-bf20-4f32-ad10-459433a4975d
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Sono Henrietta Coccodepazze, e voi due siete?
+  children:
+  - c4f2ff9a-36c6-45fd-bbc5-95b22ca6d6c1
+  rect:
+    serializedVersion: 2
+    x: 2137
+    y: 169
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7390705943986026890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 47ad689b-4411-4ad7-8b69-7f15457ba4a4
+  m_EditorClassIdentifier: 
+  speaker: 1
+  text: A chi hai dato della lucertola?!
+  children:
+  - b84b41dc-0c35-4b12-b9df-746f6efafbe6
+  rect:
+    serializedVersion: 2
+    x: 1116
+    y: 37.999996
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7787070033061061934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: c787d5d0-7241-4711-9dee-d2ea426d0191
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Ho il pane
+  children:
+  - e3fd34e9-c51b-4b1f-aeba-dda949035f36
+  rect:
+    serializedVersion: 2
+    x: 430
+    y: 415
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Vai a comprare il pane
+        - Vai a comprare il pane
+        negate: 0
+    - or:
+      - predicate: 7
+        parameters:
+        - 412f016a-e3a3-45d7-8c65-6d84a6bdc961
+        - 3
+        negate: 0
+    - or:
+      - predicate: 3
+        parameters:
+        - Vai a comprare il pane
+        - 
+        negate: 1
+--- !u!114 &8200864293610347540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 445d0a4d-d60e-4d5b-baf0-8aeea09fa5c7
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Ma se non sai neanche volare!
+  children:
+  - 48b2eb15-f172-4ae4-a698-201595d59690
+  rect:
+    serializedVersion: 2
+    x: 2868
+    y: 170
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &8957907062474546817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 2cbbafbb-2f23-4bca-a030-98f3b939bc53
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Io sono Silver. Come possiamo aiutarti?
+  children:
+  - 29e57342-fa3d-4503-82c1-89481f9daa47
+  rect:
+    serializedVersion: 2
+    x: 3616
+    y: 169
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

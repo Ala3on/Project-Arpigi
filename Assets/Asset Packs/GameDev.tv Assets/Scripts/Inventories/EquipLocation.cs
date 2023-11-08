@@ -15,5 +15,6 @@ namespace GameDevTV.Inventories
         Weapon,
         Shield,
         Gloves,
+        DragonWeapon
     }
 }

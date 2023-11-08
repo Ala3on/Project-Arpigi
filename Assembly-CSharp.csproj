@@ -44,21 +44,33 @@
      <Compile Include="Assets\Asset Packs\AQUAS-Lite\Scripts\AQUAS_Lite_Reflection.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\PickupSpawner.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\Fader.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Speaker.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryDropTarget.cs" />
      <Compile Include="Assets\Scripts\Control\CursorType.cs" />
+     <Compile Include="Assets\Scripts\UI\DialogueUI.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueAction.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ActionSlotUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\ActionStore.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\InventoryItem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\ShowHideUI.cs" />
      <Compile Include="Assets\Scripts\Attributes\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Quests\QuestStatus.cs" />
+     <Compile Include="Assets\Asset Packs\Hovl Studio\HSFiles\Scripts\HS_ParticleCollisionInstance.cs" />
      <Compile Include="Assets\Scripts\UI\DamageText\DamageTextSpawner.cs" />
+     <Compile Include="Assets\Scripts\Quests\QuestGiver.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\AIConversant.cs" />
      <Compile Include="Assets\Scripts\Control\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Core\DestroyAfterEffect.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\IItemHolder.cs" />
+     <Compile Include="Assets\Scripts\Combat\AIStatsEquipment.cs" />
      <Compile Include="Assets\Scripts\Inventories\DropLibrary.cs" />
+     <Compile Include="Assets\Scripts\Combat\AggroGroup.cs" />
      <Compile Include="Assets\Scripts\Saving\SavingSystem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipableItem.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\Dialogue.cs" />
+     <Compile Include="Assets\Asset Packs\Hovl Studio\HSFiles\Scripts\For demo scenes\HS_DemoToonVFX.cs" />
      <Compile Include="Assets\Asset Packs\AQUAS-Lite\Scripts\AQUAS_Lite_Camera.cs" />
+     <Compile Include="Assets\Scripts\UI\Quests\QuestItemUI.cs" />
      <Compile Include="Assets\Scripts\Inventories\StatsEquipableItem.cs" />
      <Compile Include="Assets\Scripts\Core\ActionScheduler.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\LazyValue.cs" />
@@ -66,20 +78,25 @@
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryItemIcon.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\Pickup.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\UIClickHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\Quests\QuestListUI.cs" />
      <Compile Include="Assets\Scripts\Inventories\RandomDropper.cs" />
      <Compile Include="Assets\Scripts\Control\IRaycastable.cs" />
      <Compile Include="Assets\Scripts\Core\CameraFacing.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\SavingWrapper.cs" />
+     <Compile Include="Assets\Scripts\Quests\QuestList.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\IDragSource.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\PlayerConversant.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventorySlotUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Tooltips\TooltipSpawner.cs" />
      <Compile Include="Assets\Scripts\SceneManagement\Portal.cs" />
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\IDragDestination.cs" />
      <Compile Include="Assets\Scripts\Combat\WeaponConfig.cs" />
+     <Compile Include="Assets\Scripts\Core\Condition.cs" />
      <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
      <Compile Include="Assets\Scripts\Inventories\Consumable\HealthPotion.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
+     <Compile Include="Assets\Scripts\GetAssetOfType.cs" />
      <Compile Include="Assets\Scripts\Stats\IModifierProvider.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltipSpawner.cs" />
      <Compile Include="Assets\Scripts\Combat\Fighter.cs" />
@@ -87,6 +104,7 @@
      <Compile Include="Assets\Scripts\Control\AICompanion.cs" />
      <Compile Include="Assets\Scripts\Combat\Projectile.cs" />
      <Compile Include="Assets\Scripts\Stats\Progression.cs" />
+     <Compile Include="Assets\Scripts\Quests\Quest.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicTrigger.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\Inventory.cs" />
      <Compile Include="Assets\Scripts\Control\PatrolPath.cs" />
@@ -95,60 +113,76 @@
      <Compile Include="Assets\Scripts\Control\ClickablePickup.cs" />
      <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Stats\ExpDisplay.cs" />
+     <Compile Include="Assets\Scripts\UI\Quests\QuestTooltipSpawner.cs" />
      <Compile Include="Assets\Scripts\Cinematics\CinematicControlRemover.cs" />
      <Compile Include="Assets\Scripts\Attributes\Health.cs" />
      <Compile Include="Assets\Scripts\Stats\BaseStats.cs" />
      <Compile Include="Assets\Scripts\Combat\FighterBackup.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueNode.cs" />
      <Compile Include="Assets\Scripts\Inventories\StatsEquipment.cs" />
+     <Compile Include="Assets\Scripts\Quests\QuestCompletion.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipLocation.cs" />
+     <Compile Include="Assets\Scripts\Core\IPredicateEvaluator.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltip.cs" />
      <Compile Include="Assets\Scripts\UI\DamageText\DamageText.cs" />
      <Compile Include="Assets\Scripts\Saving\ISaveable.cs" />
+     <Compile Include="Assets\Scripts\Dialogue\DialogueTrigger.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\DragItem.cs" />
+     <Compile Include="Assets\Asset Packs\Hovl Studio\HSFiles\Scripts\HS_FrontMover.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\ItemDropper.cs" />
      <Compile Include="Assets\Scripts\Stats\Experience.cs" />
      <Compile Include="Assets\Scripts\Core\PersistentObjectSpawner.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\IDragContainer.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\ActionItem.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\EquipmentSlotUI.cs" />
+     <Compile Include="Assets\Asset Packs\Hovl Studio\HSFiles\Scripts\HS_EffectSound.cs" />
+     <Compile Include="Assets\Scripts\UI\Quests\QuestTooltipUI.cs" />
      <Compile Include="Assets\Scripts\Combat\WeaponPickup.cs" />
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Asset Packs\Piloto Studio\Campfire And Torches Pack\ReadMe.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Asset Packs\SimpleFX\Materials\UnlitVertexColour_Alpha.shader" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\Epic toon VFX 2\Prefabs\Punches\Readme.txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\Asset Packs\Animations by Explosive\README - Usage Rights for these assets 1.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\HSFiles\Shaders\Add_Fresnel.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Asset Packs\AQUAS-Lite\Shaders\AQUAS-Lite_Frontface.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\HSFiles\Shaders\Blend_TwoSides.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\Epic toon VFX 2\Demo scene\Readme.txt" />
+     <None Include="Assets\Asset Packs\Hovl Studio\HSFiles\Shaders\Blend_CenterGlow.shader" />
      <None Include="Assets\Asset Packs\Piloto Studio\Shaders\ToonyShader\Toony Prop.shader" />
      <None Include="Assets\Asset Packs\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
      <None Include="Assets\Asset Packs\AQUAS-Lite\Readme.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\UrbanNightSky\Readme.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\HSFiles\Shaders\Lightning.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\Asset Packs\UrbanNightSky\Readme.txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
      <None Include="Assets\Asset Packs\Piloto Studio\Shaders\UberFX.shader" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Asset Packs\AQUAS-Lite\Shaders\AQUAS-Lite_Backface.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\HSFiles\Shaders\Add_CenterGlow.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\Asset Packs\Hovl Studio\Epic toon VFX 2\Demo scene\HDRP and URP(LWRP).txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <None Include="Assets\Asset Packs\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -803,6 +837,9 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>C:\Users\Francesco\Project\unity\RPG - demo\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
@@ -858,6 +895,10 @@
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
       <Project>{826b4015-a97e-c541-9ce7-03d03d885286}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleFolderIcon.csproj">
+      <Project>{28a94a91-6f57-828a-da8e-e9cf13d6ad8a}</Project>
+      <Name>SimpleFolderIcon</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

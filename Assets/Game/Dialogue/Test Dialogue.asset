@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8605655590123858430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 68157bcc-c48b-41b6-880d-6e5612d9bc4e
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Ok
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 695
+    y: 165
+    width: 300
+    height: 100
+  onEnterAction: 06000000
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-7778785693788378034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: f1534e95-b8a1-4754-b190-36902df8f1ae
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Sono a casa
+  children:
+  - d14f5524-3a1e-4a82-8b9c-df0d73441222
+  rect:
+    serializedVersion: 2
+    x: 392
+    y: 289
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or: []
+--- !u!114 &-7597375345191868455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 37035648-9b7c-403a-9e09-4f68fa6aebcb
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: fammela vedere
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 674
+    y: 651
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &-4234848161560789347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 730d2d64-cea1-4a5f-be8b-da4576f19587
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Dammi il pane
+  children:
+  - 68157bcc-c48b-41b6-880d-6e5612d9bc4e
+  rect:
+    serializedVersion: 2
+    x: 381
+    y: 125.000015
+    width: 300
+    height: 100
+  onEnterAction: 00000000
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Vai a comprare il pane
+        - 
+        negate: 0
+    - or:
+      - predicate: 2
+        parameters:
+        - Vai a comprare il pane
+        - BuyBread
+        negate: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd71b9e0effd55644a82f38395218e9b, type: 3}
+  m_Name: Test Dialogue
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 1413869825543611434}
+  - {fileID: -8605655590123858430}
+  - {fileID: -4234848161560789347}
+  - {fileID: 1120847798953850598}
+  - {fileID: 3497672337956690476}
+  - {fileID: -7778785693788378034}
+  - {fileID: 346686318084482925}
+  - {fileID: 236248739692055256}
+  - {fileID: -7597375345191868455}
+--- !u!114 &236248739692055256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 923451ac-7e7e-46ff-b027-3cc9e41959d3
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Ho la spada
+  children:
+  - 37035648-9b7c-403a-9e09-4f68fa6aebcb
+  rect:
+    serializedVersion: 2
+    x: 354
+    y: 601
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 6
+        parameters:
+        - e0f15c92-5298-4493-ae64-fa25da4f0618
+        - e0f15c92-5298-4493-ae64-fa25da4f0618
+        negate: 0
+--- !u!114 &346686318084482925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d14f5524-3a1e-4a82-8b9c-df0d73441222
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Va bene
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 712
+    y: 339
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1120847798953850598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 9f4d801f-7bd8-46b9-a9ed-ec1af56874ec
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Non mi piace il tuo atteggiamento, muori!
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 756.00006
+    y: 501
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &1413869825543611434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: 982f28d2-6739-444f-91a6-12a7f35763bc
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Oi Oi, che tragedia!
+  children:
+  - 730d2d64-cea1-4a5f-be8b-da4576f19587
+  - d6fdf4d9-8aaa-49d5-aa69-5f27594177e3
+  - f1534e95-b8a1-4754-b190-36902df8f1ae
+  - 923451ac-7e7e-46ff-b027-3cc9e41959d3
+  rect:
+    serializedVersion: 2
+    x: 20
+    y: 235.00002
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &3497672337956690476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: d6fdf4d9-8aaa-49d5-aa69-5f27594177e3
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Che vuoi?
+  children:
+  - 9f4d801f-7bd8-46b9-a9ed-ec1af56874ec
+  rect:
+    serializedVersion: 2
+    x: 365
+    y: 443
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

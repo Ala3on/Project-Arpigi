@@ -2,6 +2,8 @@
 using UnityEngine;
 using RPG.Saving;
 using Newtonsoft.Json.Linq;
+using System.Collections.Generic;
+using RPG.Core;
 
 namespace GameDevTV.Inventories
 {
@@ -11,15 +13,17 @@ namespace GameDevTV.Inventories
     ///
     /// This component should be placed on the GameObject tagged "Player".
     /// </summary>
-    public class Inventory : MonoBehaviour, ISaveable
+    public class Inventory : MonoBehaviour, ISaveable, IPredicateEvaluator
     {
         // CONFIG DATA
         [Tooltip("Allowed size")]
         [SerializeField] int inventorySize = 16;
+        [SerializeField] private InventorySlot[] defaultItems;
 
         // STATE
         InventorySlot[] slots;
 
+        [System.Serializable]
         public struct InventorySlot
         {
             public InventoryItem item;
@@ -87,6 +91,7 @@ namespace GameDevTV.Inventories
         /// </summary>
         public bool HasItem(InventoryItem item)
         {
+            if (item == null) return false;
             for (int i = 0; i < slots.Length; i++)
             {
                 if (object.ReferenceEquals(slots[i].item, item))
@@ -167,6 +172,11 @@ namespace GameDevTV.Inventories
         private void Awake()
         {
             slots = new InventorySlot[inventorySize];
+            foreach (InventorySlot inventorySlot in defaultItems)
+            {
+                AddToFirstEmptySlot(inventorySlot.item, inventorySlot.number);
+            }
+
         }
 
         /// <summary>
@@ -227,7 +237,7 @@ namespace GameDevTV.Inventories
             public int number;
         }
 
-        public JToken CaptureState()
+        /* public JToken CaptureState()
         {
             var slotStrings = new InventorySlotRecord[inventorySize];
             for (int i = 0; i < inventorySize; i++)
@@ -239,9 +249,28 @@ namespace GameDevTV.Inventories
                 }
             }
             return JToken.FromObject(slotStrings);
+        } */
+
+        public JToken CaptureState()
+        {
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
+            for (int i = 0; i < inventorySize; i++)
+            {
+                if (slots[i].item != null)
+                {
+                    JObject itemState = new JObject();
+                    IDictionary<string, JToken> itemStateDict = itemState;
+                    itemState["item"] = JToken.FromObject(slots[i].item.GetItemID());
+                    itemState["number"] = JToken.FromObject(slots[i].number);
+                    stateDict[i.ToString()] = itemState;
+                }
+            }
+            return state;
         }
 
-        public void RestoreState(JToken state)
+
+        /* public void RestoreState(JToken state)
         {
             var slotStrings = state.ToObject<InventorySlotRecord[]>();
             for (int i = 0; i < inventorySize; i++)
@@ -253,6 +282,43 @@ namespace GameDevTV.Inventories
             {
                 inventoryUpdated();
             }
+        } */
+        public void RestoreState(JToken state)
+        {
+            if (state is JObject stateObject)
+            {
+                slots = new InventorySlot[inventorySize];
+                IDictionary<string, JToken> stateDict = stateObject;
+                for (int i = 0; i < inventorySize; i++)
+                {
+                    if (stateDict.ContainsKey(i.ToString()) && stateDict[i.ToString()] is JObject itemState)
+                    {
+                        IDictionary<string, JToken> itemStateDict = itemState;
+                        slots[i].item = InventoryItem.GetFromID(itemStateDict["item"].ToObject<string>());
+                        slots[i].number = itemStateDict["number"].ToObject<int>();
+                    }
+                }
+                inventoryUpdated?.Invoke();
+            }
+        }
+
+        public bool? Evaluate(EPredicate predicate, string[] parameters)
+        {
+            switch (predicate)
+            {
+                case EPredicate.HasItem:
+                    return HasItem(InventoryItem.GetFromID(parameters[0]));
+                case EPredicate.HasItems: //Only works for stackable items.
+                    InventoryItem item = InventoryItem.GetFromID(parameters[0]);
+                    int stack = FindStack(item);
+                    if (stack == -1) return false;
+                    if (int.TryParse(parameters[1], out int result))
+                    {
+                        return slots[stack].number >= result;
+                    }
+                    return false;
+            }
+            return null;
         }
     }
 }
