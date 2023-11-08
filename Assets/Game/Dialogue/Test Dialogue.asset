@@ -21,8 +21,8 @@ MonoBehaviour:
     y: 165
     width: 300
     height: 100
-  onEnterAction: 6
-  onExitAction: 0
+  onEnterAction: 06000000
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &-7778785693788378034
@@ -47,20 +47,10 @@ MonoBehaviour:
     y: 289
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Vai a comprare il pane
-        negate: 0
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Vai a comprare il pane
-        negate: 1
+    and: []
 --- !u!114 &-7597375345191868455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,8 +72,8 @@ MonoBehaviour:
     y: 651
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &-4234848161560789347
@@ -108,15 +98,20 @@ MonoBehaviour:
     y: 124.000015
     width: 300
     height: 100
-  onEnterAction: 3
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
     and:
     - or:
-      - predicate: HasQuest
+      - predicate: 1
         parameters:
         - Vai a comprare il pane
         negate: 0
+    - or:
+      - predicate: 3
+        parameters:
+        - Vai a comprare il pane
+        negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,21 +156,12 @@ MonoBehaviour:
     y: 601
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
     and:
     - or:
-      - predicate: HasQuest
-        parameters:
-        - Vai a comprare il pane
-        negate: 0
-    - or:
-      - predicate: CompletedQuest
-        parameters:
-        - Vai a comprare il pane
-        negate: 0
-      - predicate: HasInventoryItem
+      - predicate: 6
         parameters:
         - e0f15c92-5298-4493-ae64-fa25da4f0618
         negate: 0
@@ -200,8 +186,8 @@ MonoBehaviour:
     y: 339
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &1120847798953850598
@@ -225,8 +211,8 @@ MonoBehaviour:
     y: 501
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 1
+  onEnterAction: 
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &1413869825543611434
@@ -254,8 +240,8 @@ MonoBehaviour:
     y: 235.00002
     width: 300
     height: 100
-  onEnterAction: 2
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
     and: []
 --- !u!114 &3497672337956690476
@@ -280,12 +266,7 @@ MonoBehaviour:
     y: 443
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
   condition:
-    and:
-    - or:
-      - predicate: HasQuest
-        parameters:
-        - Vai a comprare il pane
-        negate: 1
+    and: []

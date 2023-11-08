@@ -191,13 +191,28 @@ namespace RPG.Dialogue
             }
         }
 
-        private void TriggerAction(DialogueAction dialogueAction)
+        /* private void TriggerAction(DialogueAction dialogueAction)
         {
             if (dialogueAction == DialogueAction.None) return;
             if (currentConversant == null) return;
             foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
             {
                 trigger.Trigger(dialogueAction);
+            }
+        } */
+
+        private void TriggerAction(IEnumerable<DialogueAction> actions)
+        {
+            if (currentConversant == null) return;
+            DialogueTrigger dialogueTrigger = currentConversant.GetComponent<DialogueTrigger>();
+
+            foreach (DialogueAction action in actions)
+            {
+                if (action == DialogueAction.None)
+                    continue;
+
+                foreach (var trigger in dialogueTrigger.Triggers)
+                    trigger.TriggerAction(action);
             }
         }
 

@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8882898299957426561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: fac01d08-ce9f-412b-bb12-5bce5fa23917
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Grazie
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 749
+    y: 465
+    width: 300
+    height: 100
+  onEnterAction: 06000000
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-7101154157018453320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22,8 +47,10 @@ MonoBehaviour:
     y: 38.999996
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-5184956600474165754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,8 +73,10 @@ MonoBehaviour:
     y: 259
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-4713358991291212702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,8 +99,10 @@ MonoBehaviour:
     y: 250.00002
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-3669805768149045405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94,8 +125,10 @@ MonoBehaviour:
     y: 89
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-3585640358283801470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,8 +151,10 @@ MonoBehaviour:
     y: 251
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-1510230082280859728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,8 +177,10 @@ MonoBehaviour:
     y: 101.000015
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &-101307075026359417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,8 +203,10 @@ MonoBehaviour:
     y: 169
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,6 +243,8 @@ MonoBehaviour:
   - {fileID: 7173948702812556995}
   - {fileID: -3585640358283801470}
   - {fileID: 964278143134903504}
+  - {fileID: 7787070033061061934}
+  - {fileID: -8882898299957426561}
 --- !u!114 &964278143134903504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,8 +266,10 @@ MonoBehaviour:
     y: 180.00002
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1114215026612444401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,8 +293,10 @@ MonoBehaviour:
     y: 37.999996
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1183121614003275208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,14 +314,17 @@ MonoBehaviour:
   children:
   - 07335df5-19dd-4c95-ab2a-be23209a0558
   - d290fc2b-16b8-4e5f-826e-c870051ef2c8
+  - c787d5d0-7241-4711-9dee-d2ea426d0191
   rect:
     serializedVersion: 2
     x: 31.999985
     y: 144.00002
     width: 300
     height: 100
-  onEnterAction: 5
-  onExitAction: 0
+  onEnterAction: 05000000
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1249641188497335927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,8 +347,10 @@ MonoBehaviour:
     y: 38.999996
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1349047310758812575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,8 +375,10 @@ MonoBehaviour:
     y: 165.00002
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1438415058976514413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,8 +401,10 @@ MonoBehaviour:
     y: 89
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &1905996407412813612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,8 +427,10 @@ MonoBehaviour:
     y: 169
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &4072852661686353483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,8 +456,10 @@ MonoBehaviour:
     y: 170
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &4227138239304595708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,8 +482,10 @@ MonoBehaviour:
     y: 168
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &5445239121384985770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,8 +508,10 @@ MonoBehaviour:
     y: 160.00002
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 5
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &7064853655751031322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,8 +534,10 @@ MonoBehaviour:
     y: 276
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &7173948702812556995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,8 +560,10 @@ MonoBehaviour:
     y: 101.000015
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &7184668025093520150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -520,8 +586,10 @@ MonoBehaviour:
     y: 169
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &7390705943986026890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,8 +612,53 @@ MonoBehaviour:
     y: 37.999996
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &7787070033061061934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: c787d5d0-7241-4711-9dee-d2ea426d0191
+  m_EditorClassIdentifier: 
+  speaker: 0
+  text: Ho il pane
+  children:
+  - fac01d08-ce9f-412b-bb12-5bce5fa23917
+  rect:
+    serializedVersion: 2
+    x: 429
+    y: 415
+    width: 300
+    height: 100
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and:
+    - or:
+      - predicate: 1
+        parameters:
+        - Vai a comprare il pane
+        negate: 0
+    - or:
+      - predicate: 7
+        parameters:
+        - 412f016a-e3a3-45d7-8c65-6d84a6bdc961
+        - 3
+        negate: 0
+    - or:
+      - predicate: 3
+        parameters:
+        - Vai a comprare il pane
+        - 
+        negate: 1
 --- !u!114 &8200864293610347540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,8 +681,10 @@ MonoBehaviour:
     y: 170
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
 --- !u!114 &8957907062474546817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,5 +707,7 @@ MonoBehaviour:
     y: 169
     width: 300
     height: 100
-  onEnterAction: 0
-  onExitAction: 0
+  onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []

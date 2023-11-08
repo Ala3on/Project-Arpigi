@@ -3405,7 +3405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.512
+      value: 40.84
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3413,7 +3413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.48
+      value: 10.22
       objectReference: {fileID: 0}
     - target: {fileID: 5597965981649743078, guid: cb9aad0db10919d478faf33b392eef69, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6220,22 +6220,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 1
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 594834340}
-        m_TargetAssemblyTypeName: RPG.Combat.AggroGroup, Assembly-CSharp
-        m_MethodName: Activate
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+  triggers:
+  - action: 6
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 647633405}
+          m_TargetAssemblyTypeName: RPG.Quests.QuestCompletion, Assembly-CSharp
+          m_MethodName: CompleteObjective
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &647633405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6250,6 +6251,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest: {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
   objective: BuyBread
+  objectiveReward:
+  - item: {fileID: 11400000, guid: b1593c1de0b274946aa2a7fcb6ef51ac, type: 2}
+    amount: 1
 --- !u!114 &647633406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6262,22 +6266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 6
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 647633405}
-        m_TargetAssemblyTypeName: RPG.Quests.QuestCompletion, Assembly-CSharp
-        m_MethodName: CompleteObjective
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  triggers: []
 --- !u!1001 &648488934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15704,22 +15693,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  action: 5
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1695650727}
-        m_TargetAssemblyTypeName: RPG.Quests.QuestGiver, Assembly-CSharp
-        m_MethodName: GiveQuest
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  triggers:
+  - action: 5
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1695650727}
+          m_TargetAssemblyTypeName: RPG.Quests.QuestGiver, Assembly-CSharp
+          m_MethodName: GiveQuest
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - action: 6
+    onTrigger:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1695650753}
+          m_TargetAssemblyTypeName: RPG.Quests.QuestCompletion, Assembly-CSharp
+          m_MethodName: CompleteObjective
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1695650727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15739,6 +15745,21 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6943693310539987461, guid: 729b925ce85e17148b49e3b074ff681a, type: 3}
   m_PrefabInstance: {fileID: 2056011046}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1695650753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1695650712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 032d969fc997e954d99c3ace21ca689a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
+  objective: GoHome
+  objectiveReward: []
 --- !u!1001 &1696278589
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22643,7 +22664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultEquipments.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultEquipments.Array.data[0]
@@ -22652,15 +22673,19 @@ PrefabInstance:
     - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultEquipments.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 8edfcaf1c12f5e6479d4ca92c5a5f63a, type: 2}
+      objectReference: {fileID: 11400000, guid: 7c450962ea95a774e9607443c0f6b436, type: 2}
     - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultEquipments.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: 058669d3d873d884cb7e72c0baffca4b, type: 2}
+      objectReference: {fileID: 11400000, guid: 638c75ee12edfaa498904026b1b2706a, type: 2}
     - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultEquipments.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 5046166a228d8734c9e25080f56413ed, type: 2}
+      objectReference: {fileID: 11400000, guid: 638c75ee12edfaa498904026b1b2706a, type: 2}
+    - target: {fileID: 6277015781769676095, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultEquipments.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: 638c75ee12edfaa498904026b1b2706a, type: 2}
     - target: {fileID: 6398674682038393332, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -22807,15 +22832,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultItems.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultItems.Array.data[0].item
       value: 
       objectReference: {fileID: 11400000, guid: ae54bfbc5d35ceb4aaf67c06ba2a598b, type: 2}
     - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultItems.Array.data[1].item
+      value: 
+      objectReference: {fileID: 11400000, guid: 8edfcaf1c12f5e6479d4ca92c5a5f63a, type: 2}
+    - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: defaultItems.Array.data[0].number
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6884942230471811772, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
+      propertyPath: defaultItems.Array.data[1].number
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6928528856876019996, guid: 97cb7b163364a754985c0adb37cdc4d5, type: 3}
       propertyPath: m_AnchorMax.y

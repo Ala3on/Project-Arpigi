@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\Core\IAction.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Utils\UI\Dragging\IDragDestination.cs" />
      <Compile Include="Assets\Scripts\Combat\WeaponConfig.cs" />
+     <Compile Include="Assets\Scripts\Core\Condition.cs" />
      <Compile Include="Assets\Scripts\Stats\CharacterClass.cs" />
      <Compile Include="Assets\Scripts\Inventories\Consumable\HealthPotion.cs" />
      <Compile Include="Assets\Scripts\Combat\CombatTarget.cs" />
@@ -121,6 +122,7 @@
      <Compile Include="Assets\Scripts\Inventories\StatsEquipment.cs" />
      <Compile Include="Assets\Scripts\Quests\QuestCompletion.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\Inventories\EquipLocation.cs" />
+     <Compile Include="Assets\Scripts\Core\IPredicateEvaluator.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\InventoryUI.cs" />
      <Compile Include="Assets\Asset Packs\GameDev.tv Assets\Scripts\UI\Inventories\ItemTooltip.cs" />
      <Compile Include="Assets\Scripts\UI\DamageText\DamageText.cs" />
@@ -140,8 +142,6 @@
      <Compile Include="Assets\Scripts\Core\FollowCamera.cs" />
      <Compile Include="Assets\Scripts\Combat\Weapon.cs" />
      <Compile Include="Assets\Scripts\Combat\EnemyHealthDisplay.cs" />
-     <Compile Include="Assets\Scripts\Core\IPredicateEvaluator.cs" />
-     <Compile Include="Assets\Scripts\Core\Condition.cs" />
      <None Include="Assets\Asset Packs\Synty - Polygon Student Sample\README - Usage Rights for these assets.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
