@@ -13,4 +13,8 @@ MonoBehaviour:
   m_Name: Vai a comprare il pane
   m_EditorClassIdentifier: 
   objectives:
-  - Fatti dare il pane
+  - reference: BuyBread
+    description: Compra il pane
+  rewards:
+  - item: {fileID: 11400000, guid: b1593c1de0b274946aa2a7fcb6ef51ac, type: 2}
+    amount: 1

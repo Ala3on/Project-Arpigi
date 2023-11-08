@@ -275,7 +275,7 @@ MonoBehaviour:
     y: 144.00002
     width: 300
     height: 100
-  onEnterAction: 0
+  onEnterAction: 5
   onExitAction: 0
 --- !u!114 &1249641188497335927
 MonoBehaviour:

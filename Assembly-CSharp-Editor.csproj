@@ -37,6 +37,11 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Dialogue\Editor\DialogueEditor.cs" />
+     <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconGUI.cs" />
+     <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconConstants.cs" />
+     <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconSettings.cs" />
+     <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIcons.cs" />
+     <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconSettingsEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

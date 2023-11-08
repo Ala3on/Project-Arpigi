@@ -118,7 +118,7 @@ namespace RPG.Dialogue
 
         public IEnumerable<DialogueNode> GetChoices()
         {
-            return currentDialogue.GetPlayerChildren(currentNode);
+            return FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode));
         }
 
 
@@ -132,7 +132,7 @@ namespace RPG.Dialogue
 
         public void Next()
         {
-            int numPlayerResponses = currentDialogue.GetPlayerChildren(currentNode).Count();
+            int numPlayerResponses = FilterOnCondition(currentDialogue.GetPlayerChildren(currentNode)).Count();
             if (numPlayerResponses > 1)
             {
                 isChoosing = true;
@@ -143,7 +143,7 @@ namespace RPG.Dialogue
 
             isChoosing = false;
 
-            DialogueNode[] children = currentDialogue.GetAllChildren(currentNode).ToArray();
+            DialogueNode[] children = FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).ToArray();
             int index = UnityEngine.Random.Range(0, children.Count());
             TriggerExitAction();
             currentNode = children[index];
@@ -152,10 +152,23 @@ namespace RPG.Dialogue
         }
         public bool HasNext()
         {
-            //return currentDialogue.GetNextDialogue() != null;
+            return FilterOnCondition(currentDialogue.GetAllChildren(currentNode)).Count() > 0;
+        }
 
+        private IEnumerable<DialogueNode> FilterOnCondition(IEnumerable<DialogueNode> inputNode)
+        {
+            foreach (DialogueNode node in inputNode)
+            {
+                if (node.CheckCondition(GetEvaluators()))
+                {
+                    yield return node;
+                }
+            }
+        }
 
-            return currentDialogue.GetAllChildren(currentNode).Count() > 0;
+        private IEnumerable<IPredicateEvaluator> GetEvaluators()
+        {
+            return GetComponents<IPredicateEvaluator>();
         }
 
 
@@ -219,6 +232,10 @@ namespace RPG.Dialogue
 
         public Sprite GetCurrentConversantAvatar()
         {
+            if (currentNode == null)
+            {
+                return null;
+            }
             if (currentNode.IsPlayerSpeaking() || isChoosing)
             {
                 return playerSprite;

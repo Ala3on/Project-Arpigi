@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using RPG.Core;
 using UnityEditor;
 using UnityEngine;
 
@@ -15,6 +16,7 @@ namespace RPG.Dialogue
         [SerializeField] Rect rect = new Rect(10, 30, 300, 100);
         [SerializeField] DialogueAction onEnterAction;
         [SerializeField] DialogueAction onExitAction;
+        [SerializeField] Condition condition;
 
         // construct a Dictionary to lookup the values in OnEnable, and then assign the style from the Dictionary.
         //Dictionary<Speaker, GUIStyle> speakerStyle = new Dictionary<Speaker, GUIStyle>();
@@ -53,6 +55,11 @@ namespace RPG.Dialogue
         public DialogueAction GetOnExitAction()
         {
             return onExitAction;
+        }
+
+        public bool CheckCondition(IEnumerable<IPredicateEvaluator> evaluators)
+        {
+            return condition.Check(evaluators);
         }
 
 
@@ -109,6 +116,8 @@ namespace RPG.Dialogue
                 EditorUtility.SetDirty(this);
             }
         }
+
+
 
 
 #endif

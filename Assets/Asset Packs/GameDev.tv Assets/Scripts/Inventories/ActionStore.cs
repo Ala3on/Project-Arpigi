@@ -208,26 +208,63 @@ namespace GameDevTV.Inventories
             public int number;
         }
 
+        /*  public JToken CaptureState()
+         {
+             var state = new Dictionary<int, DockedItemRecord>();
+             foreach (var pair in dockedItems)
+             {
+                 var record = new DockedItemRecord();
+                 record.itemID = pair.Value.item.GetItemID();
+                 record.number = pair.Value.number;
+                 state[pair.Key] = record;
+             }
+             return JToken.FromObject(state);
+         } */
+
         public JToken CaptureState()
         {
-            var state = new Dictionary<int, DockedItemRecord>();
+            JObject state = new JObject();
+            IDictionary<string, JToken> stateDict = state;
             foreach (var pair in dockedItems)
             {
-                var record = new DockedItemRecord();
-                record.itemID = pair.Value.item.GetItemID();
-                record.number = pair.Value.number;
-                state[pair.Key] = record;
+                JObject dockedState = new JObject();
+                IDictionary<string, JToken> dockedStateDict = dockedState;
+                dockedStateDict["item"] = JToken.FromObject(pair.Value.item.GetItemID());
+                dockedStateDict["number"] = JToken.FromObject(pair.Value.number);
+                stateDict[pair.Key.ToString()] = dockedState;
             }
-            return JToken.FromObject(state);
+            return state;
         }
+
+
+
+        /*  public void RestoreState(JToken state)
+         {
+             var stateDict = state.ToObject<Dictionary<int, DockedItemRecord>>();
+             foreach (var pair in stateDict)
+             {
+                 AddAction(InventoryItem.GetFromID(pair.Value.itemID), pair.Key, pair.Value.number);
+             }
+         } */
 
         public void RestoreState(JToken state)
         {
-            var stateDict = state.ToObject<Dictionary<int, DockedItemRecord>>();
-            foreach (var pair in stateDict)
+            if (state is JObject stateObject)
             {
-                AddAction(InventoryItem.GetFromID(pair.Value.itemID), pair.Key, pair.Value.number);
+                IDictionary<string, JToken> stateDict = stateObject;
+                foreach (var pair in stateDict)
+                {
+                    if (pair.Value is JObject dockedState)
+                    {
+                        int key = Int32.Parse(pair.Key);
+                        IDictionary<string, JToken> dockedStateDict = dockedState;
+                        var item = InventoryItem.GetFromID(dockedStateDict["item"].ToObject<string>());
+                        int number = dockedStateDict["number"].ToObject<int>();
+                        AddAction(item, key, number);
+                    }
+                }
             }
         }
+
     }
 }

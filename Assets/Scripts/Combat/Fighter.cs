@@ -200,7 +200,7 @@ namespace RPG.Combat
             WeaponConfig weapon = equipment.GetItemInSlot(EquipLocation.DragonWeapon) as WeaponConfig;
             if (weapon == null)
             {
-                companion.EquipWeapon(defaultWeapon);
+                companion.EquipWeapon(companion.GetDefaultWeapon());
             }
             else
             {
@@ -212,6 +212,15 @@ namespace RPG.Combat
         {
             Animator animator = GetComponent<Animator>();
             return weapon.SpawnWeapon(rightHandTransform, leftHandTransform, animator);
+        }
+        public WeaponConfig GetCurrentWeapon()
+        {
+            return currentWeaponConfig.value;
+        }
+
+        public WeaponConfig GetDefaultWeapon()
+        {
+            return defaultWeapon;
         }
 
         public JToken CaptureState()
@@ -225,15 +234,11 @@ namespace RPG.Combat
             WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
             if (weapon != null)
             {
-
                 EquipWeapon(weapon);
             }
         }
 
-        public WeaponConfig GetCurrentWeapon()
-        {
-            return currentWeaponConfig.value;
-        }
+
 
 
     }
