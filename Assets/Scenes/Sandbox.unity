@@ -6254,19 +6254,6 @@ MonoBehaviour:
   objectiveReward:
   - item: {fileID: 11400000, guid: b1593c1de0b274946aa2a7fcb6ef51ac, type: 2}
     amount: 1
---- !u!114 &647633406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 647633361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cafd32045bb7f0418a70d9fc8501b04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggers: []
 --- !u!1001 &648488934
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15740,6 +15727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quests:
   - {fileID: 11400000, guid: 70cbd3c26dd13b3499edeb95c7011263, type: 2}
+  - {fileID: 11400000, guid: 874de4955942db8468fa6215c7d845fc, type: 2}
 --- !u!4 &1695650740 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6943693310539987461, guid: 729b925ce85e17148b49e3b074ff681a, type: 3}

@@ -91,6 +91,7 @@ namespace GameDevTV.Inventories
         /// </summary>
         public bool HasItem(InventoryItem item)
         {
+            if (item == null) return false;
             for (int i = 0; i < slots.Length; i++)
             {
                 if (object.ReferenceEquals(slots[i].item, item))

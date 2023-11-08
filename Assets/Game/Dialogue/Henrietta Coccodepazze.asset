@@ -1,30 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8882898299957426561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
-  m_Name: fac01d08-ce9f-412b-bb12-5bce5fa23917
-  m_EditorClassIdentifier: 
-  speaker: 2
-  text: Grazie
-  children: []
-  rect:
-    serializedVersion: 2
-    x: 749
-    y: 465
-    width: 300
-    height: 100
-  onEnterAction: 06000000
-  onExitAction: 
-  condition:
-    and: []
 --- !u!114 &-7101154157018453320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,7 +219,7 @@ MonoBehaviour:
   - {fileID: -3585640358283801470}
   - {fileID: 964278143134903504}
   - {fileID: 7787070033061061934}
-  - {fileID: -8882898299957426561}
+  - {fileID: 2368535932684233559}
 --- !u!114 &964278143134903504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -428,6 +403,31 @@ MonoBehaviour:
     width: 300
     height: 100
   onEnterAction: 
+  onExitAction: 
+  condition:
+    and: []
+--- !u!114 &2368535932684233559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8122aeb2e6a64f9498d991d72c3bc158, type: 3}
+  m_Name: e3fd34e9-c51b-4b1f-aeba-dda949035f36
+  m_EditorClassIdentifier: 
+  speaker: 2
+  text: Grazie
+  children: []
+  rect:
+    serializedVersion: 2
+    x: 749
+    y: 465
+    width: 300
+    height: 100
+  onEnterAction: 06000000
   onExitAction: 
   condition:
     and: []
@@ -631,10 +631,10 @@ MonoBehaviour:
   speaker: 0
   text: Ho il pane
   children:
-  - fac01d08-ce9f-412b-bb12-5bce5fa23917
+  - e3fd34e9-c51b-4b1f-aeba-dda949035f36
   rect:
     serializedVersion: 2
-    x: 429
+    x: 430
     y: 415
     width: 300
     height: 100
@@ -645,6 +645,7 @@ MonoBehaviour:
     - or:
       - predicate: 1
         parameters:
+        - Vai a comprare il pane
         - Vai a comprare il pane
         negate: 0
     - or:

@@ -42,6 +42,9 @@
      <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconSettingsEditor.cs" />
      <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIcons.cs" />
      <Compile Include="Assets\Asset Packs\FolderIcons\Editor\FolderIconGUI.cs" />
+     <Compile Include="Assets\Scripts\Core\Editor\PredicatePropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\Core\Editor\DisjuncitonPropertyDrawer.cs" />
+     <Compile Include="Assets\Scripts\Quests\Editor\QuestCompletionEditor.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.23f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -809,6 +812,10 @@
     <ProjectReference Include="Boxophobic.Utils.Scripts.csproj">
       <Project>{826b4015-a97e-c541-9ce7-03d03d885286}</Project>
       <Name>Boxophobic.Utils.Scripts</Name>
+    </ProjectReference>
+    <ProjectReference Include="SimpleFolderIcon.csproj">
+      <Project>{28a94a91-6f57-828a-da8e-e9cf13d6ad8a}</Project>
+      <Name>SimpleFolderIcon</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

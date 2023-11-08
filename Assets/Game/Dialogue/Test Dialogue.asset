@@ -50,7 +50,8 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   condition:
-    and: []
+    and:
+    - or: []
 --- !u!114 &-7597375345191868455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,10 +96,10 @@ MonoBehaviour:
   rect:
     serializedVersion: 2
     x: 381
-    y: 124.000015
+    y: 125.000015
     width: 300
     height: 100
-  onEnterAction: 
+  onEnterAction: 00000000
   onExitAction: 
   condition:
     and:
@@ -106,11 +107,13 @@ MonoBehaviour:
       - predicate: 1
         parameters:
         - Vai a comprare il pane
+        - 
         negate: 0
     - or:
-      - predicate: 3
+      - predicate: 2
         parameters:
         - Vai a comprare il pane
+        - BuyBread
         negate: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -163,6 +166,7 @@ MonoBehaviour:
     - or:
       - predicate: 6
         parameters:
+        - e0f15c92-5298-4493-ae64-fa25da4f0618
         - e0f15c92-5298-4493-ae64-fa25da4f0618
         negate: 0
 --- !u!114 &346686318084482925
